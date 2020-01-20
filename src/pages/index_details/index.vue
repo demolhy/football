@@ -371,8 +371,19 @@
             </div>
             <div class>
               <div class="echarts-wrap">
-                <div style="height: 182rpx">
-                  <mpvue-echarts :echarts="echarts" :onInit="onInit" canvasId="demo-canvas" />
+                <div style="height: 182rpx;position:relative">
+                  <mpvue-echarts
+                    v-if="!radarImg"
+                    :echarts="echarts"
+                    :onInit="onInit"
+                    canvasId="demo-canvas"
+                  />
+                  <img
+                    @click="onsrc"
+                    :dataSrc="radarImg"
+                    :src="handleCanvarToImg"
+                    style="width: 100%; height: 180px;position:absolute;left:0;right:0;top:0;"
+                  />
                 </div>
                 <div class="box_data">
                   <div class="seg_tab">
@@ -868,12 +879,12 @@
           <div class="live_header">
             <div class="head">
               <div class="left">
-                <img src="../../../static/images/index_details/index_details2.png" alt="">
+                <img src="../../../static/images/index_details/index_details2.png" alt />
                 <p>比利时</p>
               </div>
               <div class="right">
                 <p>爱尔兰</p>
-                <img src="../../../static/images/index_details/index_details1.png" alt="">
+                <img src="../../../static/images/index_details/index_details1.png" alt />
               </div>
             </div>
             <div style="height: 300rpx">
@@ -883,7 +894,11 @@
         </div>
       </div>
       <!-- 聊天 -->
-      <div class="content5 content" :class="key == 4 ? 'on':''">5</div>
+      <div class="content5 content" :class="key == 4 ? 'on':''">
+        <div class="content_btm">
+          <img src="http://tt.winit168.cn/666/lnxy/images/content4.png" alt />
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -1200,6 +1215,7 @@ function initChart3(canvas, width, height) {
 }
 
 function initChart4(canvas, width, height) {
+  var pp = this;
   chart = echarts.init(canvas, null, {
     width: width,
     height: height
@@ -1241,10 +1257,7 @@ function initChart4(canvas, width, height) {
             show: false
           }
         },
-        data: [
-          { value: 1, selected: false },
-          { value: 4, selected: false },
-        ],
+        data: [{ value: 1, selected: false }, { value: 4, selected: false }],
         color: ["#FF5858", "#64C4ED"],
         hoverAnimation: false,
         legendHoverLink: false
@@ -1278,11 +1291,7 @@ function initChart4(canvas, width, height) {
             show: false
           }
         },
-        data: [
-          { value: 1, selected: false },
-          { value: 4, selected: false },
-
-        ],
+        data: [{ value: 1, selected: false }, { value: 4, selected: false }],
         color: ["#FF5858", "#64C4ED"],
         hoverAnimation: false,
         legendHoverLink: false
@@ -1315,11 +1324,7 @@ function initChart4(canvas, width, height) {
             show: false
           }
         },
-        data: [
-          { value: 1, selected: false },
-          { value: 4, selected: false },
-
-        ],
+        data: [{ value: 1, selected: false }, { value: 4, selected: false }],
         color: ["#FF5858", "#64C4ED"],
         hoverAnimation: false,
         legendHoverLink: false
@@ -1329,12 +1334,39 @@ function initChart4(canvas, width, height) {
 
   chart.setOption(option);
 
+  handleCanvarToImg(pp);
+
   return chart; // 返回 chart 后可以自动绑定触摸操作
+}
+
+function handleCanvarToImg(e) {
+  
+  wx.canvasToTempFilePath(
+    {
+      x: 0,
+      y: 0,
+      // width: 260,
+      // height: 180,
+      canvasId: "demo-canvas",
+      success: function(res) {
+        console.log("666" + res.tempFilePath);
+        e.radarImg = res.tempFilePath;
+        console.log(e.radarImg)
+        // that.setData({ radarImg: res.tempFilePath });
+        // then.radarImg = res.tempFilePath;
+        // return res.tempFilePath;
+      }
+    },
+    this
+  );
 }
 
 export default {
   mounted() {},
-  onShow() {},
+  onShow() {
+    var then = this;
+    console.log("123" + this.radarImg);
+  },
   computed: {},
   components: {
     mpvueEcharts
@@ -1373,8 +1405,10 @@ export default {
       onInit2: initChart2,
       onInit3: initChart3,
       onInit4: initChart4,
+      src: handleCanvarToImg,
       current: 0,
-      onhide: 0
+      onhide: 0,
+      radarImg: ""
       // opts: {
       //   onInit: initChart("column", 400, 300, F2)
       // }
@@ -1401,6 +1435,11 @@ export default {
       console.log(e.mp.detail.key);
       this.current = e.mp.detail.key;
       this.onhide = e.mp.detail.key;
+    },
+    onsrc(e) {
+      var then = this;
+      console.log(then.radarImg);
+      
     }
   }
 };
@@ -1997,36 +2036,48 @@ export default {
   padding: 15rpx 0;
   text-align: center;
 }
-.live_content .live_header{
+.live_content .live_header {
   background: #fff;
 }
-.live_content .live_header .head{
-  
+.live_content .live_header .head {
   padding: 30rpx 25rpx;
   display: flex;
   justify-content: space-between;
 }
-.live_content .live_header .left,.live_content .live_header .right{
+.live_content .live_header .left,
+.live_content .live_header .right {
   display: flex;
-  align-items: center
+  align-items: center;
 }
-.live_content .live_header img{
+.live_content .live_header img {
   width: 24rpx;
   height: 24rpx;
 }
-.live_content .live_header p{
-  font-size: 24rpx
+.live_content .live_header p {
+  font-size: 24rpx;
 }
-.live_content .live_header .left p{
-  color: #FB5A51
+.live_content .live_header .left p {
+  color: #fb5a51;
 }
-.live_content .live_header .right p{
-  color: #64C5EE
+.live_content .live_header .right p {
+  color: #64c5ee;
 }
-.live_content .live_header .left img{
+.live_content .live_header .left img {
   margin-right: 10rpx;
 }
-.live_content .live_header .right img{
+.live_content .live_header .right img {
   margin-left: 10rpx;
+}
+.content_btm {
+  position: fixed;
+  bottom: 0;
+  z-index: 99;
+  left: 0;
+  right: 0;
+}
+.content_btm img {
+  width: 100%;
+  height: 88rpx;
+  vertical-align: middle;
 }
 </style>
