@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "wux-selectable": "../../../static/lib/selectable/index",
+    "wux-segmented-control": "../../../static/lib/segmented-control/index",
+    "wux-timeline": "../../../static/lib/timeline/index",
+    "wux-timeline-item": "../../../static/lib/timeline-item/index"
+  }
+}

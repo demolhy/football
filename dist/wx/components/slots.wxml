@@ -1,2 +1,1 @@
-<import src="/components/card.vue.wxml" />
 <import src="/modules/mpvue-echarts/src/echarts.vue.wxml" />

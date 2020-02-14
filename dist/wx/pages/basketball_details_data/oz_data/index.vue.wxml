@@ -1,0 +1,47 @@
+<template name="e33467e2">
+  <view class="_div data-v-6303d02e content">
+    <view class="_div data-v-6303d02e table_title">
+      <view class="_div data-v-6303d02e t1">指数公司</view>
+      <view class="_div data-v-6303d02e t1">客胜</view>
+      <view class="_div data-v-6303d02e t1">主胜</view>
+      <view class="_div data-v-6303d02e t1">返还率</view>
+      <view class="_div data-v-6303d02e t5">变盘时间</view>
+    </view>
+    <view class="_div data-v-6303d02e table_list">
+      <view class="_div data-v-6303d02e list">
+        <view class="_div data-v-6303d02e t1 on">
+          <view class="_div data-v-6303d02e th">易胜博</view>
+        </view>
+        <view class="_div data-v-6303d02e t1">
+          <view class="_div data-v-6303d02e th">2</view>
+        </view>
+        <view class="_div data-v-6303d02e t1">
+          <view class="_div data-v-6303d02e th">2</view>
+        </view>
+        <view class="_div data-v-6303d02e t1">
+          <view class="_div data-v-6303d02e th">2</view>
+        </view>
+        <view class="_div data-v-6303d02e t2">
+          <view class="_div data-v-6303d02e th">01-01 08:22</view>
+        </view>
+      </view>
+      <view class="_div data-v-6303d02e list">
+        <view class="_div data-v-6303d02e t1">
+          <view class="_div data-v-6303d02e th">易胜博</view>
+        </view>
+        <view class="_div data-v-6303d02e t1">
+          <view class="_div data-v-6303d02e th">2</view>
+        </view>
+        <view class="_div data-v-6303d02e t1">
+          <view class="_div data-v-6303d02e th">2</view>
+        </view>
+        <view class="_div data-v-6303d02e t1">
+          <view class="_div data-v-6303d02e th">2</view>
+        </view>
+        <view class="_div data-v-6303d02e t2">
+          <view class="_div data-v-6303d02e th">01-01 08:22</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</template>

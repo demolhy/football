@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "wux-selectable": "../../../static/lib/selectable/index",
+    "wux-segmented-control": "../../../static/lib/segmented-control/index"
+  }
+}

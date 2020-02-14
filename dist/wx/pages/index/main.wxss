@@ -1,3 +1,4 @@
+@import "../../common/vendor.wxss";
 
 .content.data-v-1868f18b {
   margin-top: 86rpx;
@@ -81,6 +82,7 @@
 .box-content .main .left.data-v-1868f18b {
   font-size: 28rpx;
   color: #333333;
+  font-weight: bold;
 }
 .box-content .main .center.data-v-1868f18b {
   color: #ff5353;
@@ -91,6 +93,7 @@
 .box-content .main .right.data-v-1868f18b {
   font-size: 28rpx;
   color: #333333;
+  font-weight: bold;
 }
 .box-content .btm.data-v-1868f18b {
   color: #666666;

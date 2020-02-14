@@ -1,0 +1,12 @@
+{
+  "navigationBarTitleText": "球频道",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "wux-tabs": "../../../static/lib/tabs/index",
+    "wux-tab": "../../../static/lib/tab/index",
+    "wux-badge": "../../../static/lib/badge/index",
+    "wux-refresher": "../../../static/lib/refresher/index",
+    "wux-cell-group": "../../../static/lib/cell-group/index",
+    "wux-cell": "../../../static/lib/cell/index"
+  }
+}

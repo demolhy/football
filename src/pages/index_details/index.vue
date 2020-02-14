@@ -3,7 +3,7 @@
     <div id="headerHeight" class="header">
       <div class="item">
         <div class="left">
-          <img src="../../../static/images/index_details/header1.png" alt />
+          <img src="https://fb.hxweixin.top/images/index_details/header1.png" alt />
           <p>比利时</p>
         </div>
         <div class="center">
@@ -11,7 +11,7 @@
           <p>未开</p>
         </div>
         <div class="right">
-          <img src="../../../static/images/index_details/header2.png" alt />
+          <img src="https://fb.hxweixin.top/images/index_details/header2.png" alt />
           <p>爱尔兰</p>
         </div>
       </div>
@@ -97,7 +97,7 @@
               <img
                 :class="{on : isActive}"
                 @click="onHide"
-                src="../../../static/images/index_details/index_fx2.png"
+                src="https://fb.hxweixin.top/images/index_details/index_fx2.png"
                 alt
               />
             </div>
@@ -105,14 +105,14 @@
           <div class="item_content" :class="{on : isActive}">
             <div class="title">
               <div class="left">
-                <img src="../../../static/images/index_details/index_fx3.png" alt />
+                <img src="https://fb.hxweixin.top/images/index_details/index_fx3.png" alt />
                 华盛顿奇才
               </div>
               <div class="center">
-                <img src="../../../static/images/index_details/index_fx1.png" alt />
+                <img src="https://fb.hxweixin.top/images/index_details/index_fx1.png" alt />
               </div>
               <div class="right">
-                <img src="../../../static/images/index_details/index_fx4.png" alt />
+                <img src="https://fb.hxweixin.top/images/index_details/index_fx4.png" alt />
                 芝加哥公牛
               </div>
             </div>
@@ -150,7 +150,7 @@
               <img
                 :class="{on : isActive1}"
                 @click="onHide1"
-                src="../../../static/images/index_details/index_fx2.png"
+                src="https://fb.hxweixin.top/images/index_details/index_fx2.png"
                 alt
               />
             </div>
@@ -208,14 +208,14 @@
               <img
                 :class="{on : isActive2}"
                 @click="onHide2"
-                src="../../../static/images/index_details/index_fx2.png"
+                src="https://fb.hxweixin.top/images/index_details/index_fx2.png"
                 alt
               />
             </div>
           </div>
           <div class="item_content" :class="{on : isActive2}">
             <div class="title">
-              <img src="../../../static/images/index_details/index_fx3.png" alt />
+              <img src="https://fb.hxweixin.top/images/index_details/index_fx3.png" alt />
               <p>华盛顿奇才</p>
             </div>
             <div class="table">
@@ -284,7 +284,7 @@
               </div>
             </div>
             <div class="title">
-              <img src="../../../static/images/index_details/index_fx4.png" alt />
+              <img src="https://fb.hxweixin.top/images/index_details/index_fx4.png" alt />
               <p>芝加哥公牛</p>
             </div>
             <div class="table">
@@ -370,7 +370,7 @@
               <span class="p2">(共3家)</span>
             </div>
             <div class>
-              <div class="echarts-wrap">
+              <div class="echarts-wrap" v-if="key == 2 && onhide == 0">
                 <div style="height: 182rpx;position:relative">
                   <mpvue-echarts
                     v-if="!radarImg"
@@ -432,7 +432,7 @@
               </div>
               <div class="yz_list">
                 <div class="list">
-                  <div class="t1">易胜博</div>
+                  <div class="t1" @click="toData">易胜博</div>
                   <div>0.8</div>
                   <div>0.8</div>
                   <div>0.8</div>
@@ -553,7 +553,7 @@
               <span class="p2">(共3家)</span>
             </div>
             <div class="oz_data">
-              <div style="height: 320rpx">
+              <div style="height: 320rpx" v-if="onhide == 1">
                 <mpvue-echarts :echarts="echarts" :onInit="onInit3" canvasId="canvas3" />
               </div>
               <div class="box">
@@ -649,7 +649,7 @@
                 </div>
               </div>
               <div class="list">
-                <div class="t2 t1 green">易胜博</div>
+                <div class="t2 t1 green" @click="toData1">易胜博</div>
                 <div class="right">
                   <div class="table">
                     <div>初</div>
@@ -792,8 +792,8 @@
             </div>
             <div class>
               <div class="echarts-wrap">
-                <div style="height: 182rpx">
-                  <mpvue-echarts :echarts="echarts" :onInit="onInit2" canvasId="canvas" />
+                <div style="height: 182rpx" v-if="onhide == 2">
+                  <mpvue-echarts :echarts="echarts" :onInit="onInit2" canvasId="canvas2" />
                 </div>
                 <div class="box_data">
                   <div class="seg_tab">
@@ -842,7 +842,7 @@
               </div>
               <div class="yz_list">
                 <div class="list">
-                  <div class="t1">易胜博</div>
+                  <div class="t1" @click="toData2">易胜博</div>
                   <div>0.8</div>
                   <div>0.8</div>
                   <div>0.8</div>
@@ -879,16 +879,165 @@
           <div class="live_header">
             <div class="head">
               <div class="left">
-                <img src="../../../static/images/index_details/index_details2.png" alt />
+                <img src="https://fb.hxweixin.top/images/index_details/index_details2.png" alt />
                 <p>比利时</p>
               </div>
               <div class="right">
                 <p>爱尔兰</p>
-                <img src="../../../static/images/index_details/index_details1.png" alt />
+                <img src="https://fb.hxweixin.top/images/index_details/index_details1.png" alt />
               </div>
             </div>
-            <div style="height: 300rpx">
-              <mpvue-echarts :echarts="echarts" :onInit="onInit4" canvasId="live-canvas" />
+            <div class="canv">
+              <div class="right" style="height:160rpx" v-if="key == 3">
+                <mpvue-echarts :echarts="echarts" :onInit="onInit4" canvasId="live-canvas" />
+              </div>
+              <div class="left">
+                <div class="canv_list">
+                  <div class="title">射门</div>
+                  <div class="list_prog">
+                    <div :style="{width: prog1+'%'}" class="prog1"></div>
+                    <div :style="{width: prog2+'%'}" class="prog2"></div>
+                  </div>
+                  <div class="list_text">
+                    <p class="p1">178</p>
+                    <p class="p2">142</p>
+                  </div>
+                </div>
+                <div class="canv_list">
+                  <div class="title">射正</div>
+                  <div class="list_prog">
+                    <div :style="{width: prog1+'%'}" class="prog1"></div>
+                    <div :style="{width: prog2+'%'}" class="prog2"></div>
+                  </div>
+                  <div class="list_text">
+                    <p class="p1">7</p>
+                    <p class="p2">4</p>
+                  </div>
+                </div>
+                <div class="canv_list">
+                  <div class="title">射偏</div>
+                  <div class="list_prog">
+                    <div :style="{width: prog1+'%'}" class="prog1"></div>
+                    <div :style="{width: prog2+'%'}" class="prog2"></div>
+                  </div>
+                  <div class="list_text">
+                    <p class="p1">7</p>
+                    <p class="p2">4</p>
+                  </div>
+                </div>
+                <div class="list_foul">
+                  <div class="foul_left">
+                    <div class="text">
+                      <img src="http://tt.winit168.cn/666/lnxy/images/index_details/index_details6.png" alt="">
+                      <span>9</span>
+                    </div>
+                    <div class="text">
+                      <img src="http://tt.winit168.cn/666/lnxy/images/index_details/index_details5.png" alt="">
+                      <span>9</span>
+                    </div>
+                    <div class="text">
+                      <img src="http://tt.winit168.cn/666/lnxy/images/index_details/index_details10.png" alt="">
+                      <span>9</span>
+                    </div>
+                  </div>
+                  <div class="foul_right">
+                    <div class="text">
+                      <img src="http://tt.winit168.cn/666/lnxy/images/index_details/index_details6.png" alt="">
+                      <span>9</span>
+                    </div>
+                    <div class="text">
+                      <img src="http://tt.winit168.cn/666/lnxy/images/index_details/index_details5.png" alt="">
+                      <span>9</span>
+                    </div>
+                    <div class="text">
+                      <img src="http://tt.winit168.cn/666/lnxy/images/index_details/index_details10.png" alt="">
+                      <span>9</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+        <div class="live_foul">
+          <div class="title">
+            <p>事件</p>
+          </div>
+          <div class="list_foul_list">
+            <div class="list_head">
+              <div>
+                <img src="http://tt.winit168.cn/666/lnxy/images/index_details/index_details9.png" alt="">
+                <span>入球</span>
+              </div>
+              <div>
+                <img src="http://tt.winit168.cn/666/lnxy/images/index_details/index_details8.png" alt="">
+                <span>点球</span>
+              </div>
+              <div>
+                <img src="http://tt.winit168.cn/666/lnxy/images/index_details/index_details10.png" alt="">
+                <span>角球</span>
+              </div>
+              <div>
+                <img src="http://tt.winit168.cn/666/lnxy/images/index_details/index_details7.png" alt="">
+                <span>乌龙</span>
+              </div>
+              <div>
+                <img src="http://tt.winit168.cn/666/lnxy/images/index_details/index_details3.png" alt="">
+                <span>红黄牌</span>
+              </div>
+              <div>
+                <img src="http://tt.winit168.cn/666/lnxy/images/index_details/index_details4.png" alt="">
+                <span>换人</span>
+              </div>
+            </div>
+            <div class="list1">
+              <div class="time">
+                <p class="green">12′</p>
+              </div>
+              <div class="data">
+                <div>
+                  <img src="http://tt.winit168.cn/666/lnxy/images/index_details/index_details9.png" alt="">
+                  <span>梅西</span> 
+                </div>
+                <img src="https://fb.hxweixin.top/images/index_details/index_details1.png" alt="">
+              </div>
+            </div>
+            <div class="list1">
+              <div class="time">
+                <p class="green">12′</p>
+              </div>
+              <div class="data">
+                <div>
+                  <img src="http://tt.winit168.cn/666/lnxy/images/index_details/index_details9.png" alt="">
+                  <span>梅西</span> 
+                </div>
+                <img src="https://fb.hxweixin.top/images/index_details/index_details2.png" alt="">
+              </div>
+            </div>
+            <div class="list1">
+              <div class="time">
+                <p class="green">12′</p>
+              </div>
+              <div class="data">
+                <div>
+                  <img src="http://tt.winit168.cn/666/lnxy/images/index_details/index_details9.png" alt="">
+                  <span>梅西</span> 
+                </div>
+                <img src="https://fb.hxweixin.top/images/index_details/index_details2.png" alt="">
+              </div>
+            </div>
+            <div class="list1">
+              <div class="time">
+                <p class="green">12′</p>
+              </div>
+              <div class="data">
+                <div>
+                  <img src="http://tt.winit168.cn/666/lnxy/images/index_details/index_details9.png" alt="">
+                  <span>梅西</span> 
+                </div>
+                <img src="https://fb.hxweixin.top/images/index_details/index_details2.png" alt="">
+              </div>
             </div>
           </div>
         </div>
@@ -938,10 +1087,12 @@ function initChart(canvas, width, height) {
     series: [
       {
         left: 0,
-        z: 1,
+        bottom: 0,
+        top: 0,
+        right: 0,
         type: "pie",
-        width: "160",
-        radius: ["55%", "70%"],
+        radius: ["60%", "50%"],
+        center: ['20%', '50%'],
         avoidLabelOverlap: false,
         label: {
           normal: {
@@ -970,7 +1121,7 @@ function initChart(canvas, width, height) {
   }; // ECharts 配置项
 
   chart.setOption(option);
-
+  console.log('initChart');
   return chart; // 返回 chart 后可以自动绑定触摸操作
 }
 
@@ -987,9 +1138,9 @@ function initChart2(canvas, width, height) {
       formatter: ""
     },
     legend: {
-      orient: "horizontal",
+      orient: "vertical",
       itemWidth: 5,
-      top: "15",
+      top: "middle",
       textStyle: {
         color: "#666666",
         fontSize: "10"
@@ -1002,17 +1153,17 @@ function initChart2(canvas, width, height) {
     series: [
       {
         left: 0,
-        top: "90",
+        bottom: 0,
+        top: 0,
+        right: 0,
         type: "pie",
-        width: "160",
-        radius: ["55%", "70%"],
-        silent: true,
+        radius: ["60%", "50%"],
+        center: ['20%', '50%'],
         avoidLabelOverlap: false,
-        silent: true,
         label: {
           normal: {
             show: false,
-            position: "center"
+            position: "outside"
           },
           emphasis: {
             show: false
@@ -1036,7 +1187,7 @@ function initChart2(canvas, width, height) {
   }; // ECharts 配置项
 
   chart.setOption(option);
-
+  console.log('initChart2');
   return chart; // 返回 chart 后可以自动绑定触摸操作
 }
 
@@ -1054,14 +1205,14 @@ function initChart3(canvas, width, height) {
     },
     legend: [
       {
-        orient: "horizontal",
+        orient: "vertical",
         itemWidth: 5,
-        top: "85",
+        top: "55%",
         textStyle: {
           color: "#666666",
           fontSize: "10"
         },
-        left: 30,
+        left: "12%",
         data: ["上升 1家", "不变 1家", "下降 1家"],
         icon: "circle",
         selectedMode: false
@@ -1069,12 +1220,12 @@ function initChart3(canvas, width, height) {
       {
         orient: "vertical",
         itemWidth: 5,
-        top: "85",
+        top: "55%",
         textStyle: {
           color: "#666666",
           fontSize: "10"
         },
-        left: 135,
+        left: "42%",
         data: ["上升 1家", "不变 1家", "下降 1家"],
         icon: "circle",
         selectedMode: false
@@ -1082,12 +1233,12 @@ function initChart3(canvas, width, height) {
       {
         orient: "vertical",
         itemWidth: 5,
-        top: "85",
+        top: "55%",
         textStyle: {
           color: "#666666",
           fontSize: "10"
         },
-        left: 245,
+        left: "72%",
         data: ["上升 1家", "不变 1家", "下降 1家"],
         icon: "circle",
         selectedMode: false
@@ -1096,10 +1247,10 @@ function initChart3(canvas, width, height) {
     series: [
       {
         left: 0,
-        top: "90",
+        top: "0",
         type: "pie",
-        width: "120",
-        radius: ["55%", "70%"],
+        center: ['20%', '30%'],
+        radius: ["40%", "30%"],
         avoidLabelOverlap: false,
 
         label: {
@@ -1133,11 +1284,11 @@ function initChart3(canvas, width, height) {
         legendHoverLink: false
       },
       {
-        left: 110,
-        top: "90",
+        left: 0,
+        top: "0",
         type: "pie",
-        width: "120",
-        radius: ["55%", "70%"],
+        center: ['50%', '30%'],
+        radius: ["40%", "30%"],
         avoidLabelOverlap: false,
         label: {
           normal: {
@@ -1170,11 +1321,11 @@ function initChart3(canvas, width, height) {
         legendHoverLink: false
       },
       {
-        left: 220,
-        top: "90",
+        left: 0,
+        top: "0",
         type: "pie",
-        width: "120",
-        radius: ["55%", "70%"],
+        center: ['80%', '30%'],
+        radius: ["40%", "30%"],
         avoidLabelOverlap: false,
         label: {
           normal: {
@@ -1210,7 +1361,7 @@ function initChart3(canvas, width, height) {
   }; // ECharts 配置项
 
   chart.setOption(option);
-
+  console.log('initChart3');
   return chart; // 返回 chart 后可以自动绑定触摸操作
 }
 
@@ -1223,6 +1374,33 @@ function initChart4(canvas, width, height) {
   canvas.setChart(chart);
 
   var option = {
+    title: [{
+        subtext: '进攻',
+        left: '19%',
+        top: '27%',
+        textAlign: 'center',
+        textStyle:{
+          color: '#333'
+        }
+    }, {
+        subtext: '危险\n进攻',
+        left: '49%',
+        top: '20%',
+        textAlign: 'center',
+        textStyle:{
+          color: '#333'
+        }
+    },
+    {
+        subtext: '控球率',
+        left: '79%',
+        top: '27%',
+        textAlign: 'center',
+        textStyle:{
+          color: '#333'
+        }
+    }
+    ],
     tooltip: {
       trigger: "item",
       formatter: ""
@@ -1230,24 +1408,18 @@ function initChart4(canvas, width, height) {
     series: [
       {
         left: 0,
-        top: "90",
+        top: "0",
         type: "pie",
-        width: "120",
-        radius: ["55%", "70%"],
+        center: ['20%', '50%'],
+        radius: ["70%", "60%"],
         avoidLabelOverlap: false,
-
         label: {
-          normal: {
-            show: true,
-            position: "center",
-            formatter: function() {
-              return "进攻";
+          normal:{
+            position: 'outer',
+            alignTo: 'none',
+            bleedMargin: 0,
+            formatter:"{c}",
             },
-            textStyle: {
-              color: "#666666",
-              fontSize: 10
-            }
-          },
           emphasis: {
             show: false
           }
@@ -1263,25 +1435,20 @@ function initChart4(canvas, width, height) {
         legendHoverLink: false
       },
       {
-        left: 110,
-        top: "90",
+        left: 0,
+        top: "0",
         type: "pie",
-        width: "120",
-        radius: ["55%", "70%"],
+        center: ['50%', '50%'],
+        radius: ["70%", "60%"],
         avoidLabelOverlap: false,
         label: {
-          normal: {
-            show: true,
-            position: "center",
-            formatter: function() {
-              return "危险\n进攻";
+          normal:{
+            position: 'outer',
+            alignTo: 'none',
+            bleedMargin: 0,
+            formatter:"{c}",
+            verticalAlign: "middle"
             },
-            textStyle: {
-              color: "#666666",
-              fontSize: 10,
-              lineHeight: 13
-            }
-          },
           emphasis: {
             show: false
           }
@@ -1297,24 +1464,19 @@ function initChart4(canvas, width, height) {
         legendHoverLink: false
       },
       {
-        left: 220,
-        top: "90",
+        left: 0,
+        top: "0",
         type: "pie",
-        width: "120",
-        radius: ["55%", "70%"],
+        center: ['80%', '50%'],
+        radius: ["70%", "60%"],
         avoidLabelOverlap: false,
         label: {
-          normal: {
-            show: true,
-            position: "center",
-            formatter: function() {
-              return "控球率";
+          normal:{
+            position: 'outer',
+            alignTo: 'none',
+            bleedMargin: 0,
+            formatter:"{c}",
             },
-            textStyle: {
-              color: "#666666",
-              fontSize: 10
-            }
-          },
           emphasis: {
             show: false
           }
@@ -1333,8 +1495,8 @@ function initChart4(canvas, width, height) {
   }; // ECharts 配置项
 
   chart.setOption(option);
-
-  handleCanvarToImg(pp);
+  console.log('initChart4');
+  // handleCanvarToImg(pp);
 
   return chart; // 返回 chart 后可以自动绑定触摸操作
 }
@@ -1374,7 +1536,7 @@ export default {
   created() {},
   data() {
     return {
-      key: 2,
+      key: 3,
       tabs: [
         {
           key: 0,
@@ -1407,8 +1569,10 @@ export default {
       onInit4: initChart4,
       src: handleCanvarToImg,
       current: 0,
-      onhide: 0,
-      radarImg: ""
+      onhide: '',
+      radarImg: "",
+      prog1: '60',
+      prog2: '40',
       // opts: {
       //   onInit: initChart("column", 400, 300, F2)
       // }
@@ -1418,6 +1582,7 @@ export default {
     onBtn(e) {
       // console.log(e)
       this.key = e.currentTarget.dataset.key;
+      console.log(this.key)
     },
     onHide(e) {
       console.log(e);
@@ -1440,6 +1605,21 @@ export default {
       var then = this;
       console.log(then.radarImg);
       
+    },
+    toData(){
+      wx.navigateTo({
+        url: '../details_data/yz_data/main'
+      })
+    },
+    toData1(){
+      wx.navigateTo({
+        url: '../details_data/oz_data/main'
+      })
+    },
+    toData2(){
+      wx.navigateTo({
+        url: '../details_data/size_data/main'
+      })
     }
   }
 };
@@ -2044,12 +2224,12 @@ export default {
   display: flex;
   justify-content: space-between;
 }
-.live_content .live_header .left,
-.live_content .live_header .right {
+.live_content .live_header .head .left,
+.live_content .live_header .head .right {
   display: flex;
   align-items: center;
 }
-.live_content .live_header img {
+.live_content .live_header .head img {
   width: 24rpx;
   height: 24rpx;
 }
@@ -2079,5 +2259,162 @@ export default {
   width: 100%;
   height: 88rpx;
   vertical-align: middle;
+}
+
+.content4 .canv{
+  /* display: flex; */
+  padding-bottom: 20rpx;
+}
+.content4 .canv .left{
+  /* width: 60%; */
+  box-sizing: border-box;
+  padding: 0 70rpx;
+  margin-top: 30rpx;
+}
+.content4 .canv .right{
+  /* width: 40% */
+}
+.content4 .canv .left .canv_list{
+  margin-bottom: 10rpx;
+  position: relative;
+}
+.content4 .canv .left .canv_list .title{
+  text-align: center;
+  font-size: 22rpx;
+  color: #666;
+  margin-bottom: 10rpx
+}
+.content4 .canv .left .canv_list .list_text{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30rpx
+}
+.content4 .canv .left .canv_list .list_text p{
+  font-size: 22rpx;
+  color: #333;
+  margin-top: 10rpx;
+  position: absolute
+}
+.content4 .canv .left .canv_list .list_text  .p1{
+  bottom: -5rpx;
+  left: -40rpx;
+}
+.content4 .canv .left .canv_list .list_text  .p2{
+  bottom: -5rpx;
+  right: -40rpx;
+}
+.content4 .canv .left .canv_list .list_prog{
+  display: flex;
+}
+.content4 .canv .left .canv_list .list_prog .prog1{
+  background: #FB5A51;
+  height: 16rpx;
+}
+.content4 .canv .left .canv_list .list_prog .prog2{
+  background: #64C5EE;
+  height: 16rpx;
+}
+.content4 .canv .left .list_foul{
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 30rpx
+}
+.content4 .canv .left .list_foul .text{
+  display: flex;
+  align-items: center;
+}
+.content4 .canv .left .list_foul .text img{
+  width: 22rpx;
+  height: 22rpx;
+}
+.content4 .canv .left .list_foul .text span{
+  margin-left: 5rpx;
+  color: #333;
+  font-size: 20rpx
+}
+.content4 .canv .left .list_foul .foul_left,.content4 .canv .left .list_foul .foul_right{
+  display: flex
+}
+.content4 .canv .left .list_foul .foul_left .text{
+  margin-right: 20rpx;
+  display: flex
+}
+.content4 .canv .left .list_foul .foul_right .text{
+  margin-left: 20rpx;
+  display: flex
+}
+.content4 .live_foul .title{
+  position: relative;
+  padding: 40rpx 0 30rpx 0;
+}
+.content4 .live_foul .title p{
+  color: #333;
+  font-size: 26rpx;
+  font-weight: bold;
+  padding-left: 60rpx;
+  position: relative
+}
+.content4 .live_foul .title p::after{
+  content: "";
+  position: absolute;
+  left: 30rpx;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #4CB13B;
+  width: 6rpx;
+  height: 30rpx;
+}
+.content4 .live_foul .list_foul_list{
+  background: #fff
+}
+.content4 .live_foul .list_foul_list .list_head{
+  display: flex;
+}
+.content4 .live_foul .list_foul_list .list_head>div{
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15rpx 0
+}
+.content4 .live_foul .list_foul_list .list_head img{
+  width: 26rpx;
+  height: 26rpx;
+}
+.content4 .live_foul .list_foul_list .list_head span{
+  color: #666;
+  font-size: 20rpx;
+  margin-left: 10rpx;
+}
+.content4 .live_foul .list_foul_list .list1{
+  display: flex;
+  border-top: 2rpx solid #f2f2f2
+}
+.content4 .live_foul .list_foul_list .list1>div{
+  display: flex;
+  align-items: center;
+  padding: 15rpx 0;
+  text-align: center
+}
+.content4 .live_foul .list_foul_list .list1 .time{
+  justify-content: center;
+  width: 10%;
+  border-right: 2rpx solid #f2f2f2;
+  font-size: 20rpx
+}
+.content4 .live_foul .list_foul_list .list1 .data{
+  padding: 0 30rpx;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%
+}
+.content4 .live_foul .list_foul_list .list1 .data img{
+  width: 26rpx;
+  height: 26rpx;
+}
+.content4 .live_foul .list_foul_list .list1 .data span{
+  color: #333;
+  font-size: 24rpx;
+  margin-left: 10rpx;
 }
 </style>

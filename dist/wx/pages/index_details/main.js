@@ -1,15 +1,15 @@
 require("../../common/manifest.js")
 require("../../common/vendor.js")
-global.webpackJsonpMpvue([2],{
+global.webpackJsonpMpvue([3],{
 
-/***/ 27:
+/***/ 92:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__index__ = __webpack_require__(28);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__index__ = __webpack_require__(93);
 
 
 
@@ -25,16 +25,16 @@ app.$mount();
 
 /***/ }),
 
-/***/ 28:
+/***/ 93:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_mpvue_loader_lib_selector_type_script_index_0_index_vue__ = __webpack_require__(30);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_mpvue_loader_lib_template_compiler_index_id_data_v_379af2ce_hasScoped_true_transformToRequire_video_src_source_src_img_src_image_xlink_href_fileExt_template_wxml_script_js_style_wxss_platform_wx_node_modules_mpvue_loader_lib_selector_type_template_index_0_index_vue__ = __webpack_require__(68);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_mpvue_loader_lib_selector_type_script_index_0_index_vue__ = __webpack_require__(95);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_mpvue_loader_lib_template_compiler_index_id_data_v_379af2ce_hasScoped_true_transformToRequire_video_src_source_src_img_src_image_xlink_href_fileExt_template_wxml_script_js_style_wxss_platform_wx_node_modules_mpvue_loader_lib_selector_type_template_index_0_index_vue__ = __webpack_require__(96);
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(29)
+  __webpack_require__(94)
 }
 var normalizeComponent = __webpack_require__(0)
 /* script */
@@ -79,23 +79,184 @@ if (false) {(function () {
 
 /***/ }),
 
-/***/ 29:
+/***/ 94:
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
 
-/***/ 30:
+/***/ 95:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_helpers_defineProperty__ = __webpack_require__(31);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_helpers_defineProperty___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_babel_runtime_helpers_defineProperty__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_echarts_dist_echarts_min__ = __webpack_require__(43);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_echarts_dist_echarts_min___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_echarts_dist_echarts_min__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_mpvue_echarts__ = __webpack_require__(44);
-
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_echarts_dist_echarts_min__ = __webpack_require__(7);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_echarts_dist_echarts_min___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_echarts_dist_echarts_min__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_mpvue_echarts__ = __webpack_require__(8);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -994,7 +1155,7 @@ var chart = null;
 var chart1 = null;
 
 function initChart(canvas, width, height) {
-  chart = __WEBPACK_IMPORTED_MODULE_1_echarts_dist_echarts_min__["init"](canvas, null, {
+  chart = __WEBPACK_IMPORTED_MODULE_0_echarts_dist_echarts_min__["init"](canvas, null, {
     width: width,
     height: height
   });
@@ -1020,10 +1181,12 @@ function initChart(canvas, width, height) {
     },
     series: [{
       left: 0,
-      z: 1,
+      bottom: 0,
+      top: 0,
+      right: 0,
       type: "pie",
-      width: "160",
-      radius: ["55%", "70%"],
+      radius: ["60%", "50%"],
+      center: ['20%', '50%'],
       avoidLabelOverlap: false,
       label: {
         normal: {
@@ -1047,14 +1210,12 @@ function initChart(canvas, width, height) {
   }; // ECharts 配置项
 
   chart.setOption(option);
-
+  console.log('initChart');
   return chart; // 返回 chart 后可以自动绑定触摸操作
 }
 
 function initChart2(canvas, width, height) {
-  var _ref;
-
-  chart = __WEBPACK_IMPORTED_MODULE_1_echarts_dist_echarts_min__["init"](canvas, null, {
+  chart = __WEBPACK_IMPORTED_MODULE_0_echarts_dist_echarts_min__["init"](canvas, null, {
     width: width,
     height: height
   });
@@ -1066,9 +1227,9 @@ function initChart2(canvas, width, height) {
       formatter: ""
     },
     legend: {
-      orient: "horizontal",
+      orient: "vertical",
       itemWidth: 5,
-      top: "15",
+      top: "middle",
       textStyle: {
         color: "#666666",
         fontSize: "10"
@@ -1078,36 +1239,43 @@ function initChart2(canvas, width, height) {
       icon: "circle",
       selectedMode: false
     },
-    series: [(_ref = {
+    series: [{
       left: 0,
-      top: "90",
+      bottom: 0,
+      top: 0,
+      right: 0,
       type: "pie",
-      width: "160",
-      radius: ["55%", "70%"],
-      silent: true,
-      avoidLabelOverlap: false
-    }, __WEBPACK_IMPORTED_MODULE_0_babel_runtime_helpers_defineProperty___default()(_ref, "silent", true), __WEBPACK_IMPORTED_MODULE_0_babel_runtime_helpers_defineProperty___default()(_ref, "label", {
-      normal: {
-        show: false,
-        position: "center"
+      radius: ["60%", "50%"],
+      center: ['20%', '50%'],
+      avoidLabelOverlap: false,
+      label: {
+        normal: {
+          show: false,
+          position: "outside"
+        },
+        emphasis: {
+          show: false
+        }
       },
-      emphasis: {
-        show: false
-      }
-    }), __WEBPACK_IMPORTED_MODULE_0_babel_runtime_helpers_defineProperty___default()(_ref, "labelLine", {
-      normal: {
-        show: false
-      }
-    }), __WEBPACK_IMPORTED_MODULE_0_babel_runtime_helpers_defineProperty___default()(_ref, "data", [{ value: 1, name: "盘口上升公司 1家", selected: false }, { value: 4, name: "盘口不变公司 4家", selected: false }, { value: 1, name: "盘口下降公司 1家", selected: false }]), __WEBPACK_IMPORTED_MODULE_0_babel_runtime_helpers_defineProperty___default()(_ref, "color", ["#FF5858", "#FFD058", "#64C4ED"]), __WEBPACK_IMPORTED_MODULE_0_babel_runtime_helpers_defineProperty___default()(_ref, "hoverAnimation", false), __WEBPACK_IMPORTED_MODULE_0_babel_runtime_helpers_defineProperty___default()(_ref, "legendHoverLink", false), _ref)]
+      labelLine: {
+        normal: {
+          show: false
+        }
+      },
+      data: [{ value: 1, name: "盘口上升公司 1家", selected: false }, { value: 4, name: "盘口不变公司 4家", selected: false }, { value: 1, name: "盘口下降公司 1家", selected: false }],
+      color: ["#FF5858", "#FFD058", "#64C4ED"],
+      hoverAnimation: false,
+      legendHoverLink: false
+    }]
   }; // ECharts 配置项
 
   chart.setOption(option);
-
+  console.log('initChart2');
   return chart; // 返回 chart 后可以自动绑定触摸操作
 }
 
 function initChart3(canvas, width, height) {
-  chart = __WEBPACK_IMPORTED_MODULE_1_echarts_dist_echarts_min__["init"](canvas, null, {
+  chart = __WEBPACK_IMPORTED_MODULE_0_echarts_dist_echarts_min__["init"](canvas, null, {
     width: width,
     height: height
   });
@@ -1119,48 +1287,48 @@ function initChart3(canvas, width, height) {
       formatter: ""
     },
     legend: [{
-      orient: "horizontal",
+      orient: "vertical",
       itemWidth: 5,
-      top: "85",
+      top: "55%",
       textStyle: {
         color: "#666666",
         fontSize: "10"
       },
-      left: 30,
+      left: "12%",
       data: ["上升 1家", "不变 1家", "下降 1家"],
       icon: "circle",
       selectedMode: false
     }, {
       orient: "vertical",
       itemWidth: 5,
-      top: "85",
+      top: "55%",
       textStyle: {
         color: "#666666",
         fontSize: "10"
       },
-      left: 135,
+      left: "42%",
       data: ["上升 1家", "不变 1家", "下降 1家"],
       icon: "circle",
       selectedMode: false
     }, {
       orient: "vertical",
       itemWidth: 5,
-      top: "85",
+      top: "55%",
       textStyle: {
         color: "#666666",
         fontSize: "10"
       },
-      left: 245,
+      left: "72%",
       data: ["上升 1家", "不变 1家", "下降 1家"],
       icon: "circle",
       selectedMode: false
     }],
     series: [{
       left: 0,
-      top: "90",
+      top: "0",
       type: "pie",
-      width: "120",
-      radius: ["55%", "70%"],
+      center: ['20%', '30%'],
+      radius: ["40%", "30%"],
       avoidLabelOverlap: false,
 
       label: {
@@ -1189,11 +1357,11 @@ function initChart3(canvas, width, height) {
       hoverAnimation: false,
       legendHoverLink: false
     }, {
-      left: 110,
-      top: "90",
+      left: 0,
+      top: "0",
       type: "pie",
-      width: "120",
-      radius: ["55%", "70%"],
+      center: ['50%', '30%'],
+      radius: ["40%", "30%"],
       avoidLabelOverlap: false,
       label: {
         normal: {
@@ -1221,11 +1389,11 @@ function initChart3(canvas, width, height) {
       hoverAnimation: false,
       legendHoverLink: false
     }, {
-      left: 220,
-      top: "90",
+      left: 0,
+      top: "0",
       type: "pie",
-      width: "120",
-      radius: ["55%", "70%"],
+      center: ['80%', '30%'],
+      radius: ["40%", "30%"],
       avoidLabelOverlap: false,
       label: {
         normal: {
@@ -1256,41 +1424,61 @@ function initChart3(canvas, width, height) {
   }; // ECharts 配置项
 
   chart.setOption(option);
-
+  console.log('initChart3');
   return chart; // 返回 chart 后可以自动绑定触摸操作
 }
 
 function initChart4(canvas, width, height) {
-  chart = __WEBPACK_IMPORTED_MODULE_1_echarts_dist_echarts_min__["init"](canvas, null, {
+  var pp = this;
+  chart = __WEBPACK_IMPORTED_MODULE_0_echarts_dist_echarts_min__["init"](canvas, null, {
     width: width,
     height: height
   });
   canvas.setChart(chart);
 
   var option = {
+    title: [{
+      subtext: '进攻',
+      left: '19%',
+      top: '27%',
+      textAlign: 'center',
+      textStyle: {
+        color: '#333'
+      }
+    }, {
+      subtext: '危险\n进攻',
+      left: '49%',
+      top: '20%',
+      textAlign: 'center',
+      textStyle: {
+        color: '#333'
+      }
+    }, {
+      subtext: '控球率',
+      left: '79%',
+      top: '27%',
+      textAlign: 'center',
+      textStyle: {
+        color: '#333'
+      }
+    }],
     tooltip: {
       trigger: "item",
       formatter: ""
     },
     series: [{
       left: 0,
-      top: "90",
+      top: "0",
       type: "pie",
-      width: "120",
-      radius: ["55%", "70%"],
+      center: ['20%', '50%'],
+      radius: ["70%", "60%"],
       avoidLabelOverlap: false,
-
       label: {
         normal: {
-          show: true,
-          position: "center",
-          formatter: function formatter() {
-            return "进攻";
-          },
-          textStyle: {
-            color: "#666666",
-            fontSize: 10
-          }
+          position: 'outer',
+          alignTo: 'none',
+          bleedMargin: 0,
+          formatter: "{c}"
         },
         emphasis: {
           show: false
@@ -1306,24 +1494,19 @@ function initChart4(canvas, width, height) {
       hoverAnimation: false,
       legendHoverLink: false
     }, {
-      left: 110,
-      top: "90",
+      left: 0,
+      top: "0",
       type: "pie",
-      width: "120",
-      radius: ["55%", "70%"],
+      center: ['50%', '50%'],
+      radius: ["70%", "60%"],
       avoidLabelOverlap: false,
       label: {
         normal: {
-          show: true,
-          position: "center",
-          formatter: function formatter() {
-            return "危险\n进攻";
-          },
-          textStyle: {
-            color: "#666666",
-            fontSize: 10,
-            lineHeight: 13
-          }
+          position: 'outer',
+          alignTo: 'none',
+          bleedMargin: 0,
+          formatter: "{c}",
+          verticalAlign: "middle"
         },
         emphasis: {
           show: false
@@ -1339,23 +1522,18 @@ function initChart4(canvas, width, height) {
       hoverAnimation: false,
       legendHoverLink: false
     }, {
-      left: 220,
-      top: "90",
+      left: 0,
+      top: "0",
       type: "pie",
-      width: "120",
-      radius: ["55%", "70%"],
+      center: ['80%', '50%'],
+      radius: ["70%", "60%"],
       avoidLabelOverlap: false,
       label: {
         normal: {
-          show: true,
-          position: "center",
-          formatter: function formatter() {
-            return "控球率";
-          },
-          textStyle: {
-            color: "#666666",
-            fontSize: 10
-          }
+          position: 'outer',
+          alignTo: 'none',
+          bleedMargin: 0,
+          formatter: "{c}"
         },
         emphasis: {
           show: false
@@ -1374,22 +1552,46 @@ function initChart4(canvas, width, height) {
   }; // ECharts 配置项
 
   chart.setOption(option);
+  console.log('initChart4');
+  // handleCanvarToImg(pp);
 
   return chart; // 返回 chart 后可以自动绑定触摸操作
 }
 
+function handleCanvarToImg(e) {
+
+  wx.canvasToTempFilePath({
+    x: 0,
+    y: 0,
+    // width: 260,
+    // height: 180,
+    canvasId: "demo-canvas",
+    success: function success(res) {
+      console.log("666" + res.tempFilePath);
+      e.radarImg = res.tempFilePath;
+      console.log(e.radarImg);
+      // that.setData({ radarImg: res.tempFilePath });
+      // then.radarImg = res.tempFilePath;
+      // return res.tempFilePath;
+    }
+  }, this);
+}
+
 /* harmony default export */ __webpack_exports__["a"] = ({
   mounted: function mounted() {},
-  onShow: function onShow() {},
+  onShow: function onShow() {
+    var then = this;
+    console.log("123" + this.radarImg);
+  },
 
   computed: {},
   components: {
-    mpvueEcharts: __WEBPACK_IMPORTED_MODULE_2_mpvue_echarts__["a" /* default */]
+    mpvueEcharts: __WEBPACK_IMPORTED_MODULE_1_mpvue_echarts__["a" /* default */]
   },
   created: function created() {},
   data: function data() {
     return {
-      key: 2,
+      key: 3,
       tabs: [{
         key: 0,
         name: "阵容"
@@ -1409,13 +1611,17 @@ function initChart4(canvas, width, height) {
       isActive: false,
       isActive1: false,
       isActive2: false,
-      echarts: __WEBPACK_IMPORTED_MODULE_1_echarts_dist_echarts_min__,
+      echarts: __WEBPACK_IMPORTED_MODULE_0_echarts_dist_echarts_min__,
       onInit: initChart,
       onInit2: initChart2,
       onInit3: initChart3,
       onInit4: initChart4,
+      src: handleCanvarToImg,
       current: 0,
-      onhide: 0
+      onhide: '',
+      radarImg: "",
+      prog1: '60',
+      prog2: '40'
       // opts: {
       //   onInit: initChart("column", 400, 300, F2)
       // }
@@ -1426,6 +1632,7 @@ function initChart4(canvas, width, height) {
     onBtn: function onBtn(e) {
       // console.log(e)
       this.key = e.currentTarget.dataset.key;
+      console.log(this.key);
     },
     onHide: function onHide(e) {
       console.log(e);
@@ -1443,299 +1650,32 @@ function initChart4(canvas, width, height) {
       console.log(e.mp.detail.key);
       this.current = e.mp.detail.key;
       this.onhide = e.mp.detail.key;
+    },
+    onsrc: function onsrc(e) {
+      var then = this;
+      console.log(then.radarImg);
+    },
+    toData: function toData() {
+      wx.navigateTo({
+        url: '../details_data/yz_data/main'
+      });
+    },
+    toData1: function toData1() {
+      wx.navigateTo({
+        url: '../details_data/oz_data/main'
+      });
+    },
+    toData2: function toData2() {
+      wx.navigateTo({
+        url: '../details_data/size_data/main'
+      });
     }
   }
 });
 
 /***/ }),
 
-/***/ 44:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_mpvue_loader_lib_selector_type_script_index_0_echarts_vue__ = __webpack_require__(46);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__mpvue_loader_lib_template_compiler_index_id_data_v_5e41a82f_hasScoped_true_transformToRequire_video_src_source_src_img_src_image_xlink_href_fileExt_template_wxml_script_js_style_wxss_platform_wx_mpvue_loader_lib_selector_type_template_index_0_echarts_vue__ = __webpack_require__(67);
-var disposed = false
-function injectStyle (ssrContext) {
-  if (disposed) return
-  __webpack_require__(45)
-}
-var normalizeComponent = __webpack_require__(0)
-/* script */
-
-/* template */
-
-/* styles */
-var __vue_styles__ = injectStyle
-/* scopeId */
-var __vue_scopeId__ = "data-v-5e41a82f"
-/* moduleIdentifier (server only) */
-var __vue_module_identifier__ = null
-var Component = normalizeComponent(
-  __WEBPACK_IMPORTED_MODULE_0__babel_loader_mpvue_loader_lib_selector_type_script_index_0_echarts_vue__["a" /* default */],
-  __WEBPACK_IMPORTED_MODULE_1__mpvue_loader_lib_template_compiler_index_id_data_v_5e41a82f_hasScoped_true_transformToRequire_video_src_source_src_img_src_image_xlink_href_fileExt_template_wxml_script_js_style_wxss_platform_wx_mpvue_loader_lib_selector_type_template_index_0_echarts_vue__["a" /* default */],
-  __vue_styles__,
-  __vue_scopeId__,
-  __vue_module_identifier__
-)
-Component.options.__file = "node_modules\\mpvue-echarts\\src\\echarts.vue"
-if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
-if (Component.options.functional) {console.error("[vue-loader] echarts.vue: functional components are not supported with templates, they should use render functions.")}
-
-/* hot reload */
-if (false) {(function () {
-  var hotAPI = require("vue-hot-reload-api")
-  hotAPI.install(require("vue"), false)
-  if (!hotAPI.compatible) return
-  module.hot.accept()
-  if (!module.hot.data) {
-    hotAPI.createRecord("data-v-5e41a82f", Component.options)
-  } else {
-    hotAPI.reload("data-v-5e41a82f", Component.options)
-  }
-  module.hot.dispose(function (data) {
-    disposed = true
-  })
-})()}
-
-/* harmony default export */ __webpack_exports__["a"] = (Component.exports);
-
-
-/***/ }),
-
-/***/ 45:
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ }),
-
-/***/ 46:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_helpers_extends__ = __webpack_require__(47);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_helpers_extends___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_babel_runtime_helpers_extends__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__wx_canvas__ = __webpack_require__(66);
-
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-
-
-
-function wrapTouch(e) {
-  for (var i = 0; i < e.mp.touches.length; i += 1) {
-    var touch = e.mp.touches[i];
-    touch.offsetX = touch.x;
-    touch.offsetY = touch.y;
-  }
-  return e;
-}
-
-/* harmony default export */ __webpack_exports__["a"] = ({
-  props: {
-    echarts: {
-      required: true,
-      type: Object,
-      default: function _default() {
-        return null;
-      }
-    },
-    onInit: {
-      type: Function,
-      default: null
-    },
-    canvasId: {
-      type: String,
-      default: 'ec-canvas'
-    },
-    lazyLoad: {
-      type: Boolean,
-      default: false
-    },
-    disableTouch: {
-      type: Boolean,
-      default: false
-    },
-    throttleTouch: {
-      type: Boolean,
-      default: false
-    }
-  },
-  onReady: function onReady() {
-    if (!this.echarts) {
-      console.warn('组件需绑定 echarts 变量，例：<ec-canvas id="mychart-dom-bar" ' + 'canvas-id="mychart-bar" :echarts="echarts"></ec-canvas>');
-      return;
-    }
-
-    if (!this.lazyLoad) this.init();
-  },
-
-  methods: {
-    init: function init(callback) {
-      var _this = this;
-
-      var version = wx.version.version.split('.').map(function (n) {
-        return parseInt(n, 10);
-      });
-      var isValid = version[0] > 1 || version[0] === 1 && version[1] > 9 || version[0] === 1 && version[1] === 9 && version[2] >= 91;
-      if (!isValid) {
-        console.error('微信基础库版本过低，需大于等于 1.9.91。' + '参见：https://github.com/ecomfe/echarts-for-weixin' + '#%E5%BE%AE%E4%BF%A1%E7%89%88%E6%9C%AC%E8%A6%81%E6%B1%82');
-        return;
-      }
-
-      var canvasId = this.canvasId;
-
-      this.ctx = wx.createCanvasContext(canvasId);
-
-      var canvas = new __WEBPACK_IMPORTED_MODULE_1__wx_canvas__["a" /* default */](this.ctx, canvasId);
-
-      this.echarts.setCanvasCreator(function () {
-        return canvas;
-      });
-
-      var query = wx.createSelectorQuery();
-      query.select('#' + canvasId).boundingClientRect(function (res) {
-        if (!res) {
-          setTimeout(function () {
-            return _this.init();
-          }, 50);
-          return;
-        }
-
-        var width = res.width,
-            height = res.height;
-
-
-        if (typeof callback === 'function') {
-          _this.chart = callback(canvas, width, height);
-        } else if (typeof _this.onInit === 'function') {
-          _this.chart = _this.onInit(canvas, width, height);
-        }
-
-        if (!_this.chart) {
-          return;
-        }
-
-        var _chart$getZr = _this.chart.getZr(),
-            handler = _chart$getZr.handler;
-
-        _this.handler = handler;
-        _this.processGesture = handler.proxy.processGesture || function () {};
-      }).exec();
-    },
-    canvasToTempFilePath: function canvasToTempFilePath(opt) {
-      var canvasId = this.canvasId;
-
-      this.ctx.draw(true, function () {
-        wx.canvasToTempFilePath(__WEBPACK_IMPORTED_MODULE_0_babel_runtime_helpers_extends___default()({
-          canvasId: canvasId
-        }, opt));
-      });
-    },
-    touchStart: function touchStart(e) {
-      var disableTouch = this.disableTouch,
-          chart = this.chart;
-
-      if (disableTouch || !chart || !e.mp.touches.length) return;
-      var touch = e.mp.touches[0];
-      this.handler.dispatch('mousedown', {
-        zrX: touch.x,
-        zrY: touch.y
-      });
-      this.handler.dispatch('mousemove', {
-        zrX: touch.x,
-        zrY: touch.y
-      });
-      this.processGesture(wrapTouch(e), 'start');
-    },
-    touchMove: function touchMove(e) {
-      var disableTouch = this.disableTouch,
-          throttleTouch = this.throttleTouch,
-          chart = this.chart,
-          lastMoveTime = this.lastMoveTime;
-
-      if (disableTouch || !chart || !e.mp.touches.length) return;
-
-      if (throttleTouch) {
-        var currMoveTime = Date.now();
-        if (currMoveTime - lastMoveTime < 240) return;
-        this.lastMoveTime = currMoveTime;
-      }
-
-      var touch = e.mp.touches[0];
-      this.handler.dispatch('mousemove', {
-        zrX: touch.x,
-        zrY: touch.y
-      });
-      this.processGesture(wrapTouch(e), 'change');
-    },
-    touchEnd: function touchEnd(e) {
-      var disableTouch = this.disableTouch,
-          chart = this.chart;
-
-      if (disableTouch || !chart) return;
-      var touch = e.mp.changedTouches ? e.mp.changedTouches[0] : {};
-      this.handler.dispatch('mouseup', {
-        zrX: touch.x,
-        zrY: touch.y
-      });
-      this.handler.dispatch('click', {
-        zrX: touch.x,
-        zrY: touch.y
-      });
-      this.processGesture(wrapTouch(e), 'end');
-    }
-  }
-});
-
-/***/ }),
-
-/***/ 67:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return (_vm.canvasId) ? _c('canvas', {
-    staticClass: "ec-canvas",
-    attrs: {
-      "id": _vm.canvasId,
-      "canvasId": _vm.canvasId,
-      "eventid": '0'
-    },
-    on: {
-      "touchstart": _vm.touchStart,
-      "touchmove": _vm.touchMove,
-      "touchend": _vm.touchEnd,
-      "error": _vm.error
-    }
-  }) : _vm._e()
-}
-var staticRenderFns = []
-render._withStripped = true
-var esExports = { render: render, staticRenderFns: staticRenderFns }
-/* harmony default export */ __webpack_exports__["a"] = (esExports);
-if (false) {
-  module.hot.accept()
-  if (module.hot.data) {
-     require("vue-hot-reload-api").rerender("data-v-5e41a82f", esExports)
-  }
-}
-
-/***/ }),
-
-/***/ 68:
+/***/ 96:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1751,7 +1691,7 @@ var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._sel
     staticClass: "left"
   }, [_c('img', {
     attrs: {
-      "src": "../../../static/images/index_details/header1.png",
+      "src": "https://fb.hxweixin.top/images/index_details/header1.png",
       "alt": ""
     }
   }), _vm._v(" "), _c('p', [_vm._v("比利时")])], 1), _vm._v(" "), _c('div', {
@@ -1762,7 +1702,7 @@ var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._sel
     staticClass: "right"
   }, [_c('img', {
     attrs: {
-      "src": "../../../static/images/index_details/header2.png",
+      "src": "https://fb.hxweixin.top/images/index_details/header2.png",
       "alt": ""
     }
   }), _vm._v(" "), _c('p', [_vm._v("爱尔兰")])], 1)]), _vm._v(" "), _c('div', {
@@ -1842,7 +1782,7 @@ var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._sel
       on: _vm.isActive
     },
     attrs: {
-      "src": "../../../static/images/index_details/index_fx2.png",
+      "src": "https://fb.hxweixin.top/images/index_details/index_fx2.png",
       "alt": "",
       "eventid": '1'
     },
@@ -1903,7 +1843,7 @@ var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._sel
       on: _vm.isActive1
     },
     attrs: {
-      "src": "../../../static/images/index_details/index_fx2.png",
+      "src": "https://fb.hxweixin.top/images/index_details/index_fx2.png",
       "alt": "",
       "eventid": '2'
     },
@@ -1928,7 +1868,7 @@ var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._sel
       on: _vm.isActive2
     },
     attrs: {
-      "src": "../../../static/images/index_details/index_fx2.png",
+      "src": "https://fb.hxweixin.top/images/index_details/index_fx2.png",
       "alt": "",
       "eventid": '3'
     },
@@ -1944,7 +1884,7 @@ var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._sel
     staticClass: "title"
   }, [_c('img', {
     attrs: {
-      "src": "../../../static/images/index_details/index_fx3.png",
+      "src": "https://fb.hxweixin.top/images/index_details/index_fx3.png",
       "alt": ""
     }
   }), _vm._v(" "), _c('p', [_vm._v("华盛顿奇才")])], 1), _vm._v(" "), _vm._m(4), _vm._v(" "), _c('div', [_vm._m(5), _vm._v(" "), _vm._m(6), _vm._v(" "), _vm._m(7), _vm._v(" "), _c('div', {
@@ -1977,7 +1917,7 @@ var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._sel
     staticClass: "title"
   }, [_c('img', {
     attrs: {
-      "src": "../../../static/images/index_details/index_fx4.png",
+      "src": "https://fb.hxweixin.top/images/index_details/index_fx4.png",
       "alt": ""
     }
   }), _vm._v(" "), _c('p', [_vm._v("芝加哥公牛")])], 1), _vm._v(" "), _vm._m(8), _vm._v(" "), _c('div', [_vm._m(9), _vm._v(" "), _vm._m(10), _vm._v(" "), _vm._m(11), _vm._v(" "), _c('div', {
@@ -2025,27 +1965,61 @@ var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._sel
     class: _vm.onhide == 0 ? 'on' : ''
   }, [_c('div', {
     staticClass: "seg_content"
-  }, [_vm._m(12), _vm._v(" "), _c('div', {}, [_c('div', {
+  }, [_vm._m(12), _vm._v(" "), _c('div', {}, [(_vm.key == 2 && _vm.onhide == 0) ? _c('div', {
     staticClass: "echarts-wrap"
   }, [_c('div', {
     staticStyle: {
-      "height": "182rpx"
+      "height": "182rpx",
+      "position": "relative"
     }
-  }, [_c('mpvue-echarts', {
+  }, [(!_vm.radarImg) ? _c('mpvue-echarts', {
     attrs: {
       "echarts": _vm.echarts,
       "onInit": _vm.onInit,
       "canvasId": "demo-canvas",
       "mpcomid": '2'
     }
-  })], 1), _vm._v(" "), _vm._m(13)])])]), _vm._v(" "), _vm._m(14), _vm._v(" "), _vm._m(15), _vm._v(" "), _vm._m(16)]), _vm._v(" "), _c('div', {
+  }) : _vm._e(), _vm._v(" "), _c('img', {
+    staticStyle: {
+      "width": "100%",
+      "height": "180px",
+      "position": "absolute",
+      "left": "0",
+      "right": "0",
+      "top": "0"
+    },
+    attrs: {
+      "dataSrc": _vm.radarImg,
+      "src": _vm.handleCanvarToImg,
+      "eventid": '5'
+    },
+    on: {
+      "click": _vm.onsrc
+    }
+  })], 1), _vm._v(" "), _vm._m(13)]) : _vm._e()])]), _vm._v(" "), _c('div', {
+    staticClass: "yz_data"
+  }, [_vm._m(14), _vm._v(" "), _c('div', {
+    staticClass: "yz_content"
+  }, [_vm._m(15), _vm._v(" "), _c('div', {
+    staticClass: "yz_list"
+  }, [_c('div', {
+    staticClass: "list"
+  }, [_c('div', {
+    staticClass: "t1",
+    attrs: {
+      "eventid": '6'
+    },
+    on: {
+      "click": _vm.toData
+    }
+  }, [_vm._v("易胜博")]), _vm._v(" "), _c('div', [_vm._v("0.8")]), _vm._v(" "), _c('div', [_vm._v("0.8")]), _vm._v(" "), _c('div', [_vm._v("0.8")]), _vm._v(" "), _c('div', [_vm._v("0.8")]), _vm._v(" "), _c('div', [_vm._v("0.8")]), _vm._v(" "), _c('div', [_vm._v("0.8")])]), _vm._v(" "), _vm._m(16), _vm._v(" "), _vm._m(17)])])]), _vm._v(" "), _vm._m(18), _vm._v(" "), _vm._m(19)]), _vm._v(" "), _c('div', {
     staticClass: "seg",
     class: _vm.onhide == 1 ? 'on' : ''
   }, [_c('div', {
     staticClass: "oz_content"
-  }, [_vm._m(17), _vm._v(" "), _c('div', {
+  }, [_vm._m(20), _vm._v(" "), _c('div', {
     staticClass: "oz_data"
-  }, [_c('div', {
+  }, [(_vm.onhide == 1) ? _c('div', {
     staticStyle: {
       "height": "320rpx"
     }
@@ -2056,18 +2030,32 @@ var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._sel
       "canvasId": "canvas3",
       "mpcomid": '3'
     }
-  })], 1), _vm._v(" "), _c('div', {
+  })], 1) : _vm._e(), _vm._v(" "), _c('div', {
     staticClass: "box"
   }, [_c('p', {
     staticClass: "title"
-  }, [_vm._v("当前最大指数公司及数值")]), _vm._v(" "), _vm._m(18)], 1)])]), _vm._v(" "), _vm._m(19)]), _vm._v(" "), _c('div', {
+  }, [_vm._v("当前最大指数公司及数值")]), _vm._v(" "), _vm._m(21)], 1)])]), _vm._v(" "), _c('div', {
+    staticClass: "oz_list"
+  }, [_vm._m(22), _vm._v(" "), _vm._m(23), _vm._v(" "), _c('div', {
+    staticClass: "list_box"
+  }, [_vm._m(24), _vm._v(" "), _vm._m(25), _vm._v(" "), _vm._m(26), _vm._v(" "), _c('div', {
+    staticClass: "list"
+  }, [_c('div', {
+    staticClass: "t2 t1 green",
+    attrs: {
+      "eventid": '7'
+    },
+    on: {
+      "click": _vm.toData1
+    }
+  }, [_vm._v("易胜博")]), _vm._v(" "), _vm._m(27)]), _vm._v(" "), _vm._m(28), _vm._v(" "), _vm._m(29), _vm._v(" "), _vm._m(30), _vm._v(" "), _vm._m(31), _vm._v(" "), _vm._m(32), _vm._v(" "), _vm._m(33)])])]), _vm._v(" "), _c('div', {
     staticClass: "seg",
     class: _vm.onhide == 2 ? 'on' : ''
   }, [_c('div', {
     staticClass: "seg_content"
-  }, [_vm._m(20), _vm._v(" "), _c('div', {}, [_c('div', {
+  }, [_vm._m(34), _vm._v(" "), _c('div', {}, [_c('div', {
     staticClass: "echarts-wrap"
-  }, [_c('div', {
+  }, [(_vm.onhide == 2) ? _c('div', {
     staticStyle: {
       "height": "182rpx"
     }
@@ -2075,10 +2063,26 @@ var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._sel
     attrs: {
       "echarts": _vm.echarts,
       "onInit": _vm.onInit2,
-      "canvasId": "canvas",
+      "canvasId": "canvas2",
       "mpcomid": '4'
     }
-  })], 1), _vm._v(" "), _vm._m(21)])])]), _vm._v(" "), _vm._m(22)])], 1), _vm._v(" "), _c('div', {
+  })], 1) : _vm._e(), _vm._v(" "), _vm._m(35)])])]), _vm._v(" "), _c('div', {
+    staticClass: "yz_data"
+  }, [_vm._m(36), _vm._v(" "), _c('div', {
+    staticClass: "yz_content"
+  }, [_vm._m(37), _vm._v(" "), _c('div', {
+    staticClass: "yz_list"
+  }, [_c('div', {
+    staticClass: "list"
+  }, [_c('div', {
+    staticClass: "t1",
+    attrs: {
+      "eventid": '8'
+    },
+    on: {
+      "click": _vm.toData2
+    }
+  }, [_vm._v("易胜博")]), _vm._v(" "), _c('div', [_vm._v("0.8")]), _vm._v(" "), _c('div', [_vm._v("0.8")]), _vm._v(" "), _c('div', [_vm._v("0.8")]), _vm._v(" "), _c('div', [_vm._v("0.8")]), _vm._v(" "), _c('div', [_vm._v("0.8")]), _vm._v(" "), _c('div', [_vm._v("0.8")])]), _vm._v(" "), _vm._m(38), _vm._v(" "), _vm._m(39)])])])])], 1), _vm._v(" "), _c('div', {
     staticClass: "content4 content",
     class: _vm.key == 3 ? 'on' : ''
   }, [_c('div', {
@@ -2091,19 +2095,22 @@ var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._sel
     staticClass: "left"
   }, [_c('img', {
     attrs: {
-      "src": "../../../static/images/index_details/index_details2.png",
+      "src": "https://fb.hxweixin.top/images/index_details/index_details2.png",
       "alt": ""
     }
   }), _vm._v(" "), _c('p', [_vm._v("比利时")])], 1), _vm._v(" "), _c('div', {
     staticClass: "right"
   }, [_c('p', [_vm._v("爱尔兰")]), _vm._v(" "), _c('img', {
     attrs: {
-      "src": "../../../static/images/index_details/index_details1.png",
+      "src": "https://fb.hxweixin.top/images/index_details/index_details1.png",
       "alt": ""
     }
   })], 1)]), _vm._v(" "), _c('div', {
+    staticClass: "canv"
+  }, [(_vm.key == 3) ? _c('div', {
+    staticClass: "right",
     staticStyle: {
-      "height": "300rpx"
+      "height": "160rpx"
     }
   }, [_c('mpvue-echarts', {
     attrs: {
@@ -2112,10 +2119,108 @@ var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._sel
       "canvasId": "live-canvas",
       "mpcomid": '5'
     }
-  })], 1)])])]), _vm._v(" "), _c('div', {
+  })], 1) : _vm._e(), _vm._v(" "), _c('div', {
+    staticClass: "left"
+  }, [_c('div', {
+    staticClass: "canv_list"
+  }, [_c('div', {
+    staticClass: "title"
+  }, [_vm._v("射门")]), _vm._v(" "), _c('div', {
+    staticClass: "list_prog"
+  }, [_c('div', {
+    staticClass: "prog1",
+    style: ({
+      width: _vm.prog1 + '%'
+    })
+  }), _vm._v(" "), _c('div', {
+    staticClass: "prog2",
+    style: ({
+      width: _vm.prog2 + '%'
+    })
+  })]), _vm._v(" "), _c('div', {
+    staticClass: "list_text"
+  }, [_c('p', {
+    staticClass: "p1"
+  }, [_vm._v("178")]), _vm._v(" "), _c('p', {
+    staticClass: "p2"
+  }, [_vm._v("142")])], 1)]), _vm._v(" "), _c('div', {
+    staticClass: "canv_list"
+  }, [_c('div', {
+    staticClass: "title"
+  }, [_vm._v("射正")]), _vm._v(" "), _c('div', {
+    staticClass: "list_prog"
+  }, [_c('div', {
+    staticClass: "prog1",
+    style: ({
+      width: _vm.prog1 + '%'
+    })
+  }), _vm._v(" "), _c('div', {
+    staticClass: "prog2",
+    style: ({
+      width: _vm.prog2 + '%'
+    })
+  })]), _vm._v(" "), _c('div', {
+    staticClass: "list_text"
+  }, [_c('p', {
+    staticClass: "p1"
+  }, [_vm._v("7")]), _vm._v(" "), _c('p', {
+    staticClass: "p2"
+  }, [_vm._v("4")])], 1)]), _vm._v(" "), _c('div', {
+    staticClass: "canv_list"
+  }, [_c('div', {
+    staticClass: "title"
+  }, [_vm._v("射偏")]), _vm._v(" "), _c('div', {
+    staticClass: "list_prog"
+  }, [_c('div', {
+    staticClass: "prog1",
+    style: ({
+      width: _vm.prog1 + '%'
+    })
+  }), _vm._v(" "), _c('div', {
+    staticClass: "prog2",
+    style: ({
+      width: _vm.prog2 + '%'
+    })
+  })]), _vm._v(" "), _c('div', {
+    staticClass: "list_text"
+  }, [_c('p', {
+    staticClass: "p1"
+  }, [_vm._v("7")]), _vm._v(" "), _c('p', {
+    staticClass: "p2"
+  }, [_vm._v("4")])], 1)]), _vm._v(" "), _vm._m(40)])])])]), _vm._v(" "), _c('div', {
+    staticClass: "live_foul"
+  }, [_c('div', {
+    staticClass: "title"
+  }, [_c('p', [_vm._v("事件")])], 1), _vm._v(" "), _c('div', {
+    staticClass: "list_foul_list"
+  }, [_vm._m(41), _vm._v(" "), _c('div', {
+    staticClass: "list1"
+  }, [_c('div', {
+    staticClass: "time"
+  }, [_c('p', {
+    staticClass: "green"
+  }, [_vm._v("12′")])], 1), _vm._v(" "), _vm._m(42)]), _vm._v(" "), _c('div', {
+    staticClass: "list1"
+  }, [_c('div', {
+    staticClass: "time"
+  }, [_c('p', {
+    staticClass: "green"
+  }, [_vm._v("12′")])], 1), _vm._v(" "), _vm._m(43)]), _vm._v(" "), _c('div', {
+    staticClass: "list1"
+  }, [_c('div', {
+    staticClass: "time"
+  }, [_c('p', {
+    staticClass: "green"
+  }, [_vm._v("12′")])], 1), _vm._v(" "), _vm._m(44)]), _vm._v(" "), _c('div', {
+    staticClass: "list1"
+  }, [_c('div', {
+    staticClass: "time"
+  }, [_c('p', {
+    staticClass: "green"
+  }, [_vm._v("12′")])], 1), _vm._v(" "), _vm._m(45)])])])]), _vm._v(" "), _c('div', {
     staticClass: "content5 content",
     class: _vm.key == 4 ? 'on' : ''
-  }, [_vm._v("5")])])])
+  }, [_vm._m(46)])])])
 }
 var staticRenderFns = [function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
@@ -2124,21 +2229,21 @@ var staticRenderFns = [function () {var _vm=this;var _h=_vm.$createElement;var _
     staticClass: "left"
   }, [_c('img', {
     attrs: {
-      "src": "../../../static/images/index_details/index_fx3.png",
+      "src": "https://fb.hxweixin.top/images/index_details/index_fx3.png",
       "alt": ""
     }
   }), _vm._v("\n              华盛顿奇才\n            ")]), _vm._v(" "), _c('div', {
     staticClass: "center"
   }, [_c('img', {
     attrs: {
-      "src": "../../../static/images/index_details/index_fx1.png",
+      "src": "https://fb.hxweixin.top/images/index_details/index_fx1.png",
       "alt": ""
     }
   })]), _vm._v(" "), _c('div', {
     staticClass: "right"
   }, [_c('img', {
     attrs: {
-      "src": "../../../static/images/index_details/index_fx4.png",
+      "src": "https://fb.hxweixin.top/images/index_details/index_fx4.png",
       "alt": ""
     }
   }), _vm._v("\n              芝加哥公牛\n            ")])])
@@ -2416,34 +2521,30 @@ var staticRenderFns = [function () {var _vm=this;var _h=_vm.$createElement;var _
   }, [_c('div', [_vm._v("305")]), _vm._v(" "), _c('div', [_vm._v("易胜博")]), _vm._v(" "), _c('div', [_vm._v("0.98")]), _vm._v(" "), _c('div', [_vm._v("0.88")])])])])
 },function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
-    staticClass: "yz_data"
-  }, [_c('div', {
     staticClass: "seg_nav"
   }, [_c('span', {
     staticClass: "p1"
   }, [_vm._v("定制公司")]), _vm._v(" "), _c('span', {
     staticClass: "p2"
-  }, [_vm._v("(共3家)")])]), _vm._v(" "), _c('div', {
-    staticClass: "yz_content"
-  }, [_c('div', {
+  }, [_vm._v("(共3家)")])])
+},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
     staticClass: "yz_title"
   }, [_c('div', {
     staticClass: "t1"
-  }, [_vm._v("公司")]), _vm._v(" "), _c('div', [_vm._v("初")]), _vm._v(" "), _c('div', [_vm._v("即")])]), _vm._v(" "), _c('div', {
-    staticClass: "yz_list"
-  }, [_c('div', {
+  }, [_vm._v("公司")]), _vm._v(" "), _c('div', [_vm._v("初")]), _vm._v(" "), _c('div', [_vm._v("即")])])
+},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
     staticClass: "list"
   }, [_c('div', {
     staticClass: "t1"
-  }, [_vm._v("易胜博")]), _vm._v(" "), _c('div', [_vm._v("0.8")]), _vm._v(" "), _c('div', [_vm._v("0.8")]), _vm._v(" "), _c('div', [_vm._v("0.8")]), _vm._v(" "), _c('div', [_vm._v("0.8")]), _vm._v(" "), _c('div', [_vm._v("0.8")]), _vm._v(" "), _c('div', [_vm._v("0.8")])]), _vm._v(" "), _c('div', {
+  }, [_vm._v("易胜博")]), _vm._v(" "), _c('div', [_vm._v("0.8")]), _vm._v(" "), _c('div', [_vm._v("0.8")]), _vm._v(" "), _c('div', [_vm._v("0.8")]), _vm._v(" "), _c('div', [_vm._v("0.8")]), _vm._v(" "), _c('div', [_vm._v("0.8")]), _vm._v(" "), _c('div', [_vm._v("0.8")])])
+},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
     staticClass: "list"
   }, [_c('div', {
     staticClass: "t1"
-  }, [_vm._v("易胜博")]), _vm._v(" "), _c('div', [_vm._v("0.8")]), _vm._v(" "), _c('div', [_vm._v("0.8")]), _vm._v(" "), _c('div', [_vm._v("0.8")]), _vm._v(" "), _c('div', [_vm._v("0.8")]), _vm._v(" "), _c('div', [_vm._v("0.8")]), _vm._v(" "), _c('div', [_vm._v("0.8")])]), _vm._v(" "), _c('div', {
-    staticClass: "list"
-  }, [_c('div', {
-    staticClass: "t1"
-  }, [_vm._v("易胜博")]), _vm._v(" "), _c('div', [_vm._v("0.8")]), _vm._v(" "), _c('div', [_vm._v("0.8")]), _vm._v(" "), _c('div', [_vm._v("0.8")]), _vm._v(" "), _c('div', [_vm._v("0.8")]), _vm._v(" "), _c('div', [_vm._v("0.8")]), _vm._v(" "), _c('div', [_vm._v("0.8")])])])])])
+  }, [_vm._v("易胜博")]), _vm._v(" "), _c('div', [_vm._v("0.8")]), _vm._v(" "), _c('div', [_vm._v("0.8")]), _vm._v(" "), _c('div', [_vm._v("0.8")]), _vm._v(" "), _c('div', [_vm._v("0.8")]), _vm._v(" "), _c('div', [_vm._v("0.8")]), _vm._v(" "), _c('div', [_vm._v("0.8")])])
 },function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
     staticClass: "yz_data"
@@ -2524,20 +2625,20 @@ var staticRenderFns = [function () {var _vm=this;var _h=_vm.$createElement;var _
   }, [_c('div', [_vm._v("8.8")]), _vm._v(" "), _c('div', [_vm._v("6.5")]), _vm._v(" "), _c('div', [_vm._v("6.8")])])])
 },function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
-    staticClass: "oz_list"
-  }, [_c('div', {
     staticClass: "seg_nav"
   }, [_c('span', {
     staticClass: "p1"
   }, [_vm._v("定制公司")]), _vm._v(" "), _c('span', {
     staticClass: "p2"
-  }, [_vm._v("(共3家)")])]), _vm._v(" "), _c('div', {
+  }, [_vm._v("(共3家)")])])
+},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
     staticClass: "list_title"
   }, [_c('div', {
     staticClass: "t1"
-  }, [_vm._v("公司")]), _vm._v(" "), _c('div', [_vm._v("主胜")]), _vm._v(" "), _c('div', [_vm._v("平局")]), _vm._v(" "), _c('div', [_vm._v("客胜")]), _vm._v(" "), _c('div', [_vm._v("返还率")])]), _vm._v(" "), _c('div', {
-    staticClass: "list_box"
-  }, [_c('div', {
+  }, [_vm._v("公司")]), _vm._v(" "), _c('div', [_vm._v("主胜")]), _vm._v(" "), _c('div', [_vm._v("平局")]), _vm._v(" "), _c('div', [_vm._v("客胜")]), _vm._v(" "), _c('div', [_vm._v("返还率")])])
+},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
     staticClass: "list"
   }, [_c('div', {
     staticClass: "t1 green"
@@ -2547,7 +2648,9 @@ var staticRenderFns = [function () {var _vm=this;var _h=_vm.$createElement;var _
     staticClass: "table"
   }, [_c('div', [_vm._v("初")]), _vm._v(" "), _c('div', [_vm._v("2")]), _vm._v(" "), _c('div', [_vm._v("2")]), _vm._v(" "), _c('div', [_vm._v("2")]), _vm._v(" "), _c('div', [_vm._v("2")])]), _vm._v(" "), _c('div', {
     staticClass: "table"
-  }, [_c('div', [_vm._v("即")]), _vm._v(" "), _c('div', [_vm._v("2")]), _vm._v(" "), _c('div', [_vm._v("2")]), _vm._v(" "), _c('div', [_vm._v("2")]), _vm._v(" "), _c('div', [_vm._v("2")])])])]), _vm._v(" "), _c('div', {
+  }, [_c('div', [_vm._v("即")]), _vm._v(" "), _c('div', [_vm._v("2")]), _vm._v(" "), _c('div', [_vm._v("2")]), _vm._v(" "), _c('div', [_vm._v("2")]), _vm._v(" "), _c('div', [_vm._v("2")])])])])
+},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
     staticClass: "list"
   }, [_c('div', {
     staticClass: "t1 green"
@@ -2557,7 +2660,9 @@ var staticRenderFns = [function () {var _vm=this;var _h=_vm.$createElement;var _
     staticClass: "table"
   }, [_c('div', [_vm._v("初")]), _vm._v(" "), _c('div', [_vm._v("2")]), _vm._v(" "), _c('div', [_vm._v("2")]), _vm._v(" "), _c('div', [_vm._v("2")]), _vm._v(" "), _c('div', [_vm._v("2")])]), _vm._v(" "), _c('div', {
     staticClass: "table"
-  }, [_c('div', [_vm._v("即")]), _vm._v(" "), _c('div', [_vm._v("2")]), _vm._v(" "), _c('div', [_vm._v("2")]), _vm._v(" "), _c('div', [_vm._v("2")]), _vm._v(" "), _c('div', [_vm._v("2")])])])]), _vm._v(" "), _c('div', {
+  }, [_c('div', [_vm._v("即")]), _vm._v(" "), _c('div', [_vm._v("2")]), _vm._v(" "), _c('div', [_vm._v("2")]), _vm._v(" "), _c('div', [_vm._v("2")]), _vm._v(" "), _c('div', [_vm._v("2")])])])])
+},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
     staticClass: "list"
   }, [_c('div', {
     staticClass: "t1 green"
@@ -2567,7 +2672,17 @@ var staticRenderFns = [function () {var _vm=this;var _h=_vm.$createElement;var _
     staticClass: "table"
   }, [_c('div', [_vm._v("初")]), _vm._v(" "), _c('div', [_vm._v("2")]), _vm._v(" "), _c('div', [_vm._v("2")]), _vm._v(" "), _c('div', [_vm._v("2")]), _vm._v(" "), _c('div', [_vm._v("2")])]), _vm._v(" "), _c('div', {
     staticClass: "table"
-  }, [_c('div', [_vm._v("即")]), _vm._v(" "), _c('div', [_vm._v("2")]), _vm._v(" "), _c('div', [_vm._v("2")]), _vm._v(" "), _c('div', [_vm._v("2")]), _vm._v(" "), _c('div', [_vm._v("2")])])])]), _vm._v(" "), _c('div', {
+  }, [_c('div', [_vm._v("即")]), _vm._v(" "), _c('div', [_vm._v("2")]), _vm._v(" "), _c('div', [_vm._v("2")]), _vm._v(" "), _c('div', [_vm._v("2")]), _vm._v(" "), _c('div', [_vm._v("2")])])])])
+},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "right"
+  }, [_c('div', {
+    staticClass: "table"
+  }, [_c('div', [_vm._v("初")]), _vm._v(" "), _c('div', [_vm._v("2")]), _vm._v(" "), _c('div', [_vm._v("2")]), _vm._v(" "), _c('div', [_vm._v("2")]), _vm._v(" "), _c('div', [_vm._v("2")])]), _vm._v(" "), _c('div', {
+    staticClass: "table"
+  }, [_c('div', [_vm._v("即")]), _vm._v(" "), _c('div', [_vm._v("2")]), _vm._v(" "), _c('div', [_vm._v("2")]), _vm._v(" "), _c('div', [_vm._v("2")]), _vm._v(" "), _c('div', [_vm._v("2")])])])
+},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
     staticClass: "list"
   }, [_c('div', {
     staticClass: "t2 t1 green"
@@ -2577,7 +2692,9 @@ var staticRenderFns = [function () {var _vm=this;var _h=_vm.$createElement;var _
     staticClass: "table"
   }, [_c('div', [_vm._v("初")]), _vm._v(" "), _c('div', [_vm._v("2")]), _vm._v(" "), _c('div', [_vm._v("2")]), _vm._v(" "), _c('div', [_vm._v("2")]), _vm._v(" "), _c('div', [_vm._v("2")])]), _vm._v(" "), _c('div', {
     staticClass: "table"
-  }, [_c('div', [_vm._v("即")]), _vm._v(" "), _c('div', [_vm._v("2")]), _vm._v(" "), _c('div', [_vm._v("2")]), _vm._v(" "), _c('div', [_vm._v("2")]), _vm._v(" "), _c('div', [_vm._v("2")])])])]), _vm._v(" "), _c('div', {
+  }, [_c('div', [_vm._v("即")]), _vm._v(" "), _c('div', [_vm._v("2")]), _vm._v(" "), _c('div', [_vm._v("2")]), _vm._v(" "), _c('div', [_vm._v("2")]), _vm._v(" "), _c('div', [_vm._v("2")])])])])
+},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
     staticClass: "list"
   }, [_c('div', {
     staticClass: "t2 t1 green"
@@ -2587,7 +2704,9 @@ var staticRenderFns = [function () {var _vm=this;var _h=_vm.$createElement;var _
     staticClass: "table"
   }, [_c('div', [_vm._v("初")]), _vm._v(" "), _c('div', [_vm._v("2")]), _vm._v(" "), _c('div', [_vm._v("2")]), _vm._v(" "), _c('div', [_vm._v("2")]), _vm._v(" "), _c('div', [_vm._v("2")])]), _vm._v(" "), _c('div', {
     staticClass: "table"
-  }, [_c('div', [_vm._v("即")]), _vm._v(" "), _c('div', [_vm._v("2")]), _vm._v(" "), _c('div', [_vm._v("2")]), _vm._v(" "), _c('div', [_vm._v("2")]), _vm._v(" "), _c('div', [_vm._v("2")])])])]), _vm._v(" "), _c('div', {
+  }, [_c('div', [_vm._v("即")]), _vm._v(" "), _c('div', [_vm._v("2")]), _vm._v(" "), _c('div', [_vm._v("2")]), _vm._v(" "), _c('div', [_vm._v("2")]), _vm._v(" "), _c('div', [_vm._v("2")])])])])
+},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
     staticClass: "list"
   }, [_c('div', {
     staticClass: "t2 t1 green"
@@ -2597,7 +2716,9 @@ var staticRenderFns = [function () {var _vm=this;var _h=_vm.$createElement;var _
     staticClass: "table"
   }, [_c('div', [_vm._v("初")]), _vm._v(" "), _c('div', [_vm._v("2")]), _vm._v(" "), _c('div', [_vm._v("2")]), _vm._v(" "), _c('div', [_vm._v("2")]), _vm._v(" "), _c('div', [_vm._v("2")])]), _vm._v(" "), _c('div', {
     staticClass: "table"
-  }, [_c('div', [_vm._v("即")]), _vm._v(" "), _c('div', [_vm._v("2")]), _vm._v(" "), _c('div', [_vm._v("2")]), _vm._v(" "), _c('div', [_vm._v("2")]), _vm._v(" "), _c('div', [_vm._v("2")])])])]), _vm._v(" "), _c('div', {
+  }, [_c('div', [_vm._v("即")]), _vm._v(" "), _c('div', [_vm._v("2")]), _vm._v(" "), _c('div', [_vm._v("2")]), _vm._v(" "), _c('div', [_vm._v("2")]), _vm._v(" "), _c('div', [_vm._v("2")])])])])
+},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
     staticClass: "list"
   }, [_c('div', {
     staticClass: "t2 t1 green"
@@ -2607,7 +2728,9 @@ var staticRenderFns = [function () {var _vm=this;var _h=_vm.$createElement;var _
     staticClass: "table"
   }, [_c('div', [_vm._v("初")]), _vm._v(" "), _c('div', [_vm._v("2")]), _vm._v(" "), _c('div', [_vm._v("2")]), _vm._v(" "), _c('div', [_vm._v("2")]), _vm._v(" "), _c('div', [_vm._v("2")])]), _vm._v(" "), _c('div', {
     staticClass: "table"
-  }, [_c('div', [_vm._v("即")]), _vm._v(" "), _c('div', [_vm._v("2")]), _vm._v(" "), _c('div', [_vm._v("2")]), _vm._v(" "), _c('div', [_vm._v("2")]), _vm._v(" "), _c('div', [_vm._v("2")])])])]), _vm._v(" "), _c('div', {
+  }, [_c('div', [_vm._v("即")]), _vm._v(" "), _c('div', [_vm._v("2")]), _vm._v(" "), _c('div', [_vm._v("2")]), _vm._v(" "), _c('div', [_vm._v("2")]), _vm._v(" "), _c('div', [_vm._v("2")])])])])
+},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
     staticClass: "list"
   }, [_c('div', {
     staticClass: "t2 t1 green"
@@ -2617,7 +2740,9 @@ var staticRenderFns = [function () {var _vm=this;var _h=_vm.$createElement;var _
     staticClass: "table"
   }, [_c('div', [_vm._v("初")]), _vm._v(" "), _c('div', [_vm._v("2")]), _vm._v(" "), _c('div', [_vm._v("2")]), _vm._v(" "), _c('div', [_vm._v("2")]), _vm._v(" "), _c('div', [_vm._v("2")])]), _vm._v(" "), _c('div', {
     staticClass: "table"
-  }, [_c('div', [_vm._v("即")]), _vm._v(" "), _c('div', [_vm._v("2")]), _vm._v(" "), _c('div', [_vm._v("2")]), _vm._v(" "), _c('div', [_vm._v("2")]), _vm._v(" "), _c('div', [_vm._v("2")])])])]), _vm._v(" "), _c('div', {
+  }, [_c('div', [_vm._v("即")]), _vm._v(" "), _c('div', [_vm._v("2")]), _vm._v(" "), _c('div', [_vm._v("2")]), _vm._v(" "), _c('div', [_vm._v("2")]), _vm._v(" "), _c('div', [_vm._v("2")])])])])
+},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
     staticClass: "list"
   }, [_c('div', {
     staticClass: "t2 t1 green"
@@ -2627,17 +2752,7 @@ var staticRenderFns = [function () {var _vm=this;var _h=_vm.$createElement;var _
     staticClass: "table"
   }, [_c('div', [_vm._v("初")]), _vm._v(" "), _c('div', [_vm._v("2")]), _vm._v(" "), _c('div', [_vm._v("2")]), _vm._v(" "), _c('div', [_vm._v("2")]), _vm._v(" "), _c('div', [_vm._v("2")])]), _vm._v(" "), _c('div', {
     staticClass: "table"
-  }, [_c('div', [_vm._v("即")]), _vm._v(" "), _c('div', [_vm._v("2")]), _vm._v(" "), _c('div', [_vm._v("2")]), _vm._v(" "), _c('div', [_vm._v("2")]), _vm._v(" "), _c('div', [_vm._v("2")])])])]), _vm._v(" "), _c('div', {
-    staticClass: "list"
-  }, [_c('div', {
-    staticClass: "t2 t1 green"
-  }, [_vm._v("易胜博")]), _vm._v(" "), _c('div', {
-    staticClass: "right"
-  }, [_c('div', {
-    staticClass: "table"
-  }, [_c('div', [_vm._v("初")]), _vm._v(" "), _c('div', [_vm._v("2")]), _vm._v(" "), _c('div', [_vm._v("2")]), _vm._v(" "), _c('div', [_vm._v("2")]), _vm._v(" "), _c('div', [_vm._v("2")])]), _vm._v(" "), _c('div', {
-    staticClass: "table"
-  }, [_c('div', [_vm._v("即")]), _vm._v(" "), _c('div', [_vm._v("2")]), _vm._v(" "), _c('div', [_vm._v("2")]), _vm._v(" "), _c('div', [_vm._v("2")]), _vm._v(" "), _c('div', [_vm._v("2")])])])])])])
+  }, [_c('div', [_vm._v("即")]), _vm._v(" "), _c('div', [_vm._v("2")]), _vm._v(" "), _c('div', [_vm._v("2")]), _vm._v(" "), _c('div', [_vm._v("2")]), _vm._v(" "), _c('div', [_vm._v("2")])])])])
 },function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
     staticClass: "seg_nav"
@@ -2664,34 +2779,179 @@ var staticRenderFns = [function () {var _vm=this;var _h=_vm.$createElement;var _
   }, [_c('div', [_vm._v("305")]), _vm._v(" "), _c('div', [_vm._v("易胜博")]), _vm._v(" "), _c('div', [_vm._v("0.98")]), _vm._v(" "), _c('div', [_vm._v("0.88")])])])])
 },function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
-    staticClass: "yz_data"
-  }, [_c('div', {
     staticClass: "seg_nav"
   }, [_c('span', {
     staticClass: "p1"
   }, [_vm._v("定制公司")]), _vm._v(" "), _c('span', {
     staticClass: "p2"
-  }, [_vm._v("(共3家)")])]), _vm._v(" "), _c('div', {
-    staticClass: "yz_content"
-  }, [_c('div', {
+  }, [_vm._v("(共3家)")])])
+},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
     staticClass: "yz_title"
   }, [_c('div', {
     staticClass: "t1"
-  }, [_vm._v("公司")]), _vm._v(" "), _c('div', [_vm._v("初")]), _vm._v(" "), _c('div', [_vm._v("即")])]), _vm._v(" "), _c('div', {
-    staticClass: "yz_list"
-  }, [_c('div', {
+  }, [_vm._v("公司")]), _vm._v(" "), _c('div', [_vm._v("初")]), _vm._v(" "), _c('div', [_vm._v("即")])])
+},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
     staticClass: "list"
   }, [_c('div', {
     staticClass: "t1"
-  }, [_vm._v("易胜博")]), _vm._v(" "), _c('div', [_vm._v("0.8")]), _vm._v(" "), _c('div', [_vm._v("0.8")]), _vm._v(" "), _c('div', [_vm._v("0.8")]), _vm._v(" "), _c('div', [_vm._v("0.8")]), _vm._v(" "), _c('div', [_vm._v("0.8")]), _vm._v(" "), _c('div', [_vm._v("0.8")])]), _vm._v(" "), _c('div', {
+  }, [_vm._v("易胜博")]), _vm._v(" "), _c('div', [_vm._v("0.8")]), _vm._v(" "), _c('div', [_vm._v("0.8")]), _vm._v(" "), _c('div', [_vm._v("0.8")]), _vm._v(" "), _c('div', [_vm._v("0.8")]), _vm._v(" "), _c('div', [_vm._v("0.8")]), _vm._v(" "), _c('div', [_vm._v("0.8")])])
+},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
     staticClass: "list"
   }, [_c('div', {
     staticClass: "t1"
-  }, [_vm._v("易胜博")]), _vm._v(" "), _c('div', [_vm._v("0.8")]), _vm._v(" "), _c('div', [_vm._v("0.8")]), _vm._v(" "), _c('div', [_vm._v("0.8")]), _vm._v(" "), _c('div', [_vm._v("0.8")]), _vm._v(" "), _c('div', [_vm._v("0.8")]), _vm._v(" "), _c('div', [_vm._v("0.8")])]), _vm._v(" "), _c('div', {
-    staticClass: "list"
+  }, [_vm._v("易胜博")]), _vm._v(" "), _c('div', [_vm._v("0.8")]), _vm._v(" "), _c('div', [_vm._v("0.8")]), _vm._v(" "), _c('div', [_vm._v("0.8")]), _vm._v(" "), _c('div', [_vm._v("0.8")]), _vm._v(" "), _c('div', [_vm._v("0.8")]), _vm._v(" "), _c('div', [_vm._v("0.8")])])
+},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "list_foul"
   }, [_c('div', {
-    staticClass: "t1"
-  }, [_vm._v("易胜博")]), _vm._v(" "), _c('div', [_vm._v("0.8")]), _vm._v(" "), _c('div', [_vm._v("0.8")]), _vm._v(" "), _c('div', [_vm._v("0.8")]), _vm._v(" "), _c('div', [_vm._v("0.8")]), _vm._v(" "), _c('div', [_vm._v("0.8")]), _vm._v(" "), _c('div', [_vm._v("0.8")])])])])])
+    staticClass: "foul_left"
+  }, [_c('div', {
+    staticClass: "text"
+  }, [_c('img', {
+    attrs: {
+      "src": "http://tt.winit168.cn/666/lnxy/images/index_details/index_details6.png",
+      "alt": ""
+    }
+  }), _vm._v(" "), _c('span', [_vm._v("9")])]), _vm._v(" "), _c('div', {
+    staticClass: "text"
+  }, [_c('img', {
+    attrs: {
+      "src": "http://tt.winit168.cn/666/lnxy/images/index_details/index_details5.png",
+      "alt": ""
+    }
+  }), _vm._v(" "), _c('span', [_vm._v("9")])]), _vm._v(" "), _c('div', {
+    staticClass: "text"
+  }, [_c('img', {
+    attrs: {
+      "src": "http://tt.winit168.cn/666/lnxy/images/index_details/index_details10.png",
+      "alt": ""
+    }
+  }), _vm._v(" "), _c('span', [_vm._v("9")])])]), _vm._v(" "), _c('div', {
+    staticClass: "foul_right"
+  }, [_c('div', {
+    staticClass: "text"
+  }, [_c('img', {
+    attrs: {
+      "src": "http://tt.winit168.cn/666/lnxy/images/index_details/index_details6.png",
+      "alt": ""
+    }
+  }), _vm._v(" "), _c('span', [_vm._v("9")])]), _vm._v(" "), _c('div', {
+    staticClass: "text"
+  }, [_c('img', {
+    attrs: {
+      "src": "http://tt.winit168.cn/666/lnxy/images/index_details/index_details5.png",
+      "alt": ""
+    }
+  }), _vm._v(" "), _c('span', [_vm._v("9")])]), _vm._v(" "), _c('div', {
+    staticClass: "text"
+  }, [_c('img', {
+    attrs: {
+      "src": "http://tt.winit168.cn/666/lnxy/images/index_details/index_details10.png",
+      "alt": ""
+    }
+  }), _vm._v(" "), _c('span', [_vm._v("9")])])])])
+},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "list_head"
+  }, [_c('div', [_c('img', {
+    attrs: {
+      "src": "http://tt.winit168.cn/666/lnxy/images/index_details/index_details9.png",
+      "alt": ""
+    }
+  }), _vm._v(" "), _c('span', [_vm._v("入球")])]), _vm._v(" "), _c('div', [_c('img', {
+    attrs: {
+      "src": "http://tt.winit168.cn/666/lnxy/images/index_details/index_details8.png",
+      "alt": ""
+    }
+  }), _vm._v(" "), _c('span', [_vm._v("点球")])]), _vm._v(" "), _c('div', [_c('img', {
+    attrs: {
+      "src": "http://tt.winit168.cn/666/lnxy/images/index_details/index_details10.png",
+      "alt": ""
+    }
+  }), _vm._v(" "), _c('span', [_vm._v("角球")])]), _vm._v(" "), _c('div', [_c('img', {
+    attrs: {
+      "src": "http://tt.winit168.cn/666/lnxy/images/index_details/index_details7.png",
+      "alt": ""
+    }
+  }), _vm._v(" "), _c('span', [_vm._v("乌龙")])]), _vm._v(" "), _c('div', [_c('img', {
+    attrs: {
+      "src": "http://tt.winit168.cn/666/lnxy/images/index_details/index_details3.png",
+      "alt": ""
+    }
+  }), _vm._v(" "), _c('span', [_vm._v("红黄牌")])]), _vm._v(" "), _c('div', [_c('img', {
+    attrs: {
+      "src": "http://tt.winit168.cn/666/lnxy/images/index_details/index_details4.png",
+      "alt": ""
+    }
+  }), _vm._v(" "), _c('span', [_vm._v("换人")])])])
+},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "data"
+  }, [_c('div', [_c('img', {
+    attrs: {
+      "src": "http://tt.winit168.cn/666/lnxy/images/index_details/index_details9.png",
+      "alt": ""
+    }
+  }), _vm._v(" "), _c('span', [_vm._v("梅西")])]), _vm._v(" "), _c('img', {
+    attrs: {
+      "src": "https://fb.hxweixin.top/images/index_details/index_details1.png",
+      "alt": ""
+    }
+  })])
+},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "data"
+  }, [_c('div', [_c('img', {
+    attrs: {
+      "src": "http://tt.winit168.cn/666/lnxy/images/index_details/index_details9.png",
+      "alt": ""
+    }
+  }), _vm._v(" "), _c('span', [_vm._v("梅西")])]), _vm._v(" "), _c('img', {
+    attrs: {
+      "src": "https://fb.hxweixin.top/images/index_details/index_details2.png",
+      "alt": ""
+    }
+  })])
+},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "data"
+  }, [_c('div', [_c('img', {
+    attrs: {
+      "src": "http://tt.winit168.cn/666/lnxy/images/index_details/index_details9.png",
+      "alt": ""
+    }
+  }), _vm._v(" "), _c('span', [_vm._v("梅西")])]), _vm._v(" "), _c('img', {
+    attrs: {
+      "src": "https://fb.hxweixin.top/images/index_details/index_details2.png",
+      "alt": ""
+    }
+  })])
+},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "data"
+  }, [_c('div', [_c('img', {
+    attrs: {
+      "src": "http://tt.winit168.cn/666/lnxy/images/index_details/index_details9.png",
+      "alt": ""
+    }
+  }), _vm._v(" "), _c('span', [_vm._v("梅西")])]), _vm._v(" "), _c('img', {
+    attrs: {
+      "src": "https://fb.hxweixin.top/images/index_details/index_details2.png",
+      "alt": ""
+    }
+  })])
+},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "content_btm"
+  }, [_c('img', {
+    attrs: {
+      "src": "http://tt.winit168.cn/666/lnxy/images/content4.png",
+      "alt": ""
+    }
+  })])
 }]
 render._withStripped = true
 var esExports = { render: render, staticRenderFns: staticRenderFns }
@@ -2705,4 +2965,4 @@ if (false) {
 
 /***/ })
 
-},[27]);
+},[92]);

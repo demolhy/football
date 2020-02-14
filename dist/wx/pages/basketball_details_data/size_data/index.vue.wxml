@@ -1,0 +1,47 @@
+<template name="190f930e">
+  <view class="_div data-v-1003b9da content">
+    <view class="_div data-v-1003b9da table_title">
+      <view class="_div data-v-1003b9da t1">指数公司</view>
+      <view class="_div data-v-1003b9da t1">大分</view>
+      <view class="_div data-v-1003b9da t1">盘口</view>
+      <view class="_div data-v-1003b9da t1">小分</view>
+      <view class="_div data-v-1003b9da t5">变盘时间</view>
+    </view>
+    <view class="_div data-v-1003b9da table_list">
+      <view class="_div data-v-1003b9da list">
+        <view class="_div data-v-1003b9da t1 on">
+          <view class="_div data-v-1003b9da th">易胜博</view>
+        </view>
+        <view class="_div data-v-1003b9da t1">
+          <view class="_div data-v-1003b9da th">2</view>
+        </view>
+        <view class="_div data-v-1003b9da t1">
+          <view class="_div data-v-1003b9da th">2</view>
+        </view>
+        <view class="_div data-v-1003b9da t1">
+          <view class="_div data-v-1003b9da th">2</view>
+        </view>
+        <view class="_div data-v-1003b9da t2">
+          <view class="_div data-v-1003b9da th">01-01 08:22</view>
+        </view>
+      </view>
+      <view class="_div data-v-1003b9da list">
+        <view class="_div data-v-1003b9da t1">
+          <view class="_div data-v-1003b9da th">易胜博</view>
+        </view>
+        <view class="_div data-v-1003b9da t1">
+          <view class="_div data-v-1003b9da th">2</view>
+        </view>
+        <view class="_div data-v-1003b9da t1">
+          <view class="_div data-v-1003b9da th">2</view>
+        </view>
+        <view class="_div data-v-1003b9da t1">
+          <view class="_div data-v-1003b9da th">2</view>
+        </view>
+        <view class="_div data-v-1003b9da t2">
+          <view class="_div data-v-1003b9da th">01-01 08:22</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</template>

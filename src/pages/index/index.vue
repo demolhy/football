@@ -10,10 +10,11 @@
       <img src="../../../static/images/index/screen_img.png" alt />
     </div>
 
+    <!-- 即时 -->
     <div class="content1 content" :class="index == 0 ? 'on' : ''">
       <div class="list" @click="toDetail">
         <div class="header">
-          <div class="left">
+          <div class="left"> 
             <img src="../../../static/images/index/header_img1.png" alt />
             <span>欧俱杯</span>
           </div>
@@ -29,7 +30,7 @@
           <div class="main item">
             <p class="left">哈迪拉</p>
             <p class="center">1:2</p>
-            <p class="right">内斯兹奥纳</p>
+            <p class="right">内斯兹奥纳</p> 
           </div>
           <div class="btm item">
             <p class="left">11:00</p>
@@ -247,7 +248,7 @@
               <div class="icon2 icon on" @change="coll"></div>
             </div>
           </div>
-          <div class="box-conte nt">
+          <div class="box-content">
             <div class="main item">
               <p class="left">哈迪拉</p>
               <p class="center">VS</p>
@@ -453,6 +454,7 @@ export default {
 .box-content .main .left {
   font-size: 28rpx;
   color: #333333;
+  font-weight: bold
 }
 .box-content .main .center {
   color: #ff5353;
@@ -463,6 +465,7 @@ export default {
 .box-content .main .right {
   font-size: 28rpx;
   color: #333333;
+  font-weight: bold
 }
 .box-content .btm {
   color: #666666;

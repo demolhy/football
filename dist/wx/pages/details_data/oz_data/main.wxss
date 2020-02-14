@@ -1,0 +1,54 @@
+@import "../../../common/vendor.wxss";
+
+.content.data-v-2de716b3 {
+  background: #fff;
+  border-top: 2rpx solid #f2f2f2;
+}
+.table_title.data-v-2de716b3 {
+  display: flex;
+  text-align: center;
+  font-size: 22rpx;
+  color: #333;
+  padding: 15rpx 0;
+}
+.table_title .t1.data-v-2de716b3 {
+  width: 30%;
+}
+.table_title .t2.data-v-2de716b3 {
+  width: 15%;
+}
+.table_title .t3.data-v-2de716b3 {
+  width: 30%;
+}
+.table_title .t4.data-v-2de716b3 {
+  width: 25%;
+}
+.table_list .list.data-v-2de716b3 {
+  display: flex;
+  text-align: center;
+  font-size: 22rpx;
+  color: #333;
+  border-top: 2rpx solid #f2f2f2;
+}
+.table_list .list .th.data-v-2de716b3 {
+  padding: 15rpx 0;
+}
+.table_list .list>._div.data-v-2de716b3 {
+  border-right: 2rpx solid #f2f2f2;
+}
+.table_list .list>._div.data-v-2de716b3:last-child {
+  border: none;
+}
+.table_list .list .t1.data-v-2de716b3 {
+  width: 30%;
+  display: flex;
+}
+.table_list .list .t1 .th.data-v-2de716b3 {
+  flex: 1;
+}
+.table_list .list .t2.data-v-2de716b3 {
+  width: 15%;
+}
+.table_list .list .t4.data-v-2de716b3 {
+  width: 25%;
+}

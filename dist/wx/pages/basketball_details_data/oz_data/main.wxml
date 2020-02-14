@@ -1,0 +1,1 @@
+<import src="/pages/basketball_details_data/oz_data/index.vue.wxml" /><template is="e33467e2" data="{{ ...$root['0'], $root }}"/>

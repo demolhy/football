@@ -1,4 +1,4 @@
-<template name="28717657">
+<template name="6cfe363e">
   <view class="_div data-v-1868f18b">
     <wux-tabs wux-class="bordered" controlled current="{{key}}" bindchange="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}" class="_wux-tabs data-v-1868f18b">
       <block wx:key="item.key" key="{{item.key}}" wx:for="{{tabs}}" wx:for-index="index" wx:for-item="item">
@@ -225,7 +225,7 @@
               <view class="_div data-v-1868f18b icon2 icon on" bindchange="handleProxy" data-eventid="{{'15'}}" data-comkey="{{$k}}"></view>
             </view>
           </view>
-          <view class="_div data-v-1868f18b box-conte nt">
+          <view class="_div data-v-1868f18b box-content">
             <view class="_div data-v-1868f18b main item">
               <view class="_p data-v-1868f18b left">哈迪拉</view>
               <view class="_p data-v-1868f18b center">VS</view>

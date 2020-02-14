@@ -1,0 +1,215 @@
+<template name="c0b82716">
+  <view class="_div data-v-0277f77c">
+    <wux-tabs wux-class="bordered" controlled current="{{key}}" bindchange="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}" class="_wux-tabs data-v-0277f77c">
+      <block wx:key="item.key" key="{{item.key}}" wx:for="{{tabs}}" wx:for-index="index" wx:for-item="item">
+        <wux-tab key="{{item.key}}" title="{{item.title}}" class="_wux-tab data-v-0277f77c"></wux-tab>
+      </block>
+    </wux-tabs>
+    <view class="_div data-v-0277f77c screen">
+      <image src="/static/images/index/screen_img.png" alt class="_img data-v-0277f77c"></image>
+    </view>
+    <view class="_div data-v-0277f77c content1 content {{index == 0 ? 'on' : ''}}">
+      <view class="_div data-v-0277f77c list" bindtap="handleProxy" data-eventid="{{'3'}}" data-comkey="{{$k}}">
+        <view class="_div data-v-0277f77c header">
+          <view class="_div data-v-0277f77c left">
+            <image src="/static/images/index/header_img1.png" alt class="_img data-v-0277f77c"></image> <label class="_span data-v-0277f77c">欧俱杯</label> <label class="_span data-v-0277f77c time">11:00</label>
+          </view>
+          <view class="_div data-v-0277f77c center">
+            <view class="_p data-v-0277f77c">第4节 05:44′</view>
+          </view>
+          <view class="_div data-v-0277f77c right">
+            <view class="_div data-v-0277f77c icon1 icon on" bindchange="handleProxy" data-eventid="{{'1'}}" data-comkey="{{$k}}"></view>
+            <view class="_div data-v-0277f77c icon2 icon on" bindchange="handleProxy" data-eventid="{{'2'}}" data-comkey="{{$k}}"></view>
+          </view>
+        </view>
+        <view class="_div data-v-0277f77c box-content">
+          <view class="_div data-v-0277f77c main item">
+            <view class="_p data-v-0277f77c left"><label class="_span data-v-0277f77c zk">[主]</label> 哈迪拉 </view>
+            <view class="_p data-v-0277f77c center">1:2</view>
+            <view class="_p data-v-0277f77c right"> 内斯兹奥纳 <label class="_span data-v-0277f77c zk">[客]</label></view>
+          </view>
+        </view>
+      </view>
+      <view class="_div data-v-0277f77c list">
+        <view class="_div data-v-0277f77c header">
+          <view class="_div data-v-0277f77c left">
+            <image src="/static/images/index/header_img2.png" alt class="_img data-v-0277f77c"></image> <label class="_span data-v-0277f77c">欧俱杯</label> <label class="_span data-v-0277f77c time">11:00</label>
+          </view>
+          <view class="_div data-v-0277f77c center ed">
+            <view class="_p data-v-0277f77c">完</view>
+          </view>
+          <view class="_div data-v-0277f77c right">
+            <view class="_div data-v-0277f77c icon1 icon" bindchange="handleProxy" data-eventid="{{'4'}}" data-comkey="{{$k}}"></view>
+            <view class="_div data-v-0277f77c icon2 icon" bindchange="handleProxy" data-eventid="{{'5'}}" data-comkey="{{$k}}"></view>
+          </view>
+        </view>
+        <view class="_div data-v-0277f77c box-content">
+          <view class="_div data-v-0277f77c main item">
+            <view class="_p data-v-0277f77c left"><label class="_span data-v-0277f77c zk">[主]</label> 哈迪拉 </view>
+            <view class="_p data-v-0277f77c center">1:2</view>
+            <view class="_p data-v-0277f77c right"> 内斯兹奥纳 <label class="_span data-v-0277f77c zk">[客]</label></view>
+          </view>
+        </view>
+      </view>
+      <view class="_div data-v-0277f77c list">
+        <view class="_div data-v-0277f77c header">
+          <view class="_div data-v-0277f77c left">
+            <image src="/static/images/index/header_img2.png" alt class="_img data-v-0277f77c"></image> <label class="_span data-v-0277f77c">欧俱杯</label> <label class="_span data-v-0277f77c time">11:00</label>
+          </view>
+          <view class="_div data-v-0277f77c center">
+            <view class="_p data-v-0277f77c">第4节 05:44′</view>
+          </view>
+          <view class="_div data-v-0277f77c right">
+            <view class="_div data-v-0277f77c icon1 icon" bindchange="handleProxy" data-eventid="{{'6'}}" data-comkey="{{$k}}"></view>
+            <view class="_div data-v-0277f77c icon2 icon" bindchange="handleProxy" data-eventid="{{'7'}}" data-comkey="{{$k}}"></view>
+          </view>
+        </view>
+        <view class="_div data-v-0277f77c box-content">
+          <view class="_div data-v-0277f77c main item">
+            <view class="_p data-v-0277f77c left"><label class="_span data-v-0277f77c zk">[主]</label> 哈迪拉 </view>
+            <view class="_p data-v-0277f77c center">1:2</view>
+            <view class="_p data-v-0277f77c right"> 内斯兹奥纳 <label class="_span data-v-0277f77c zk">[客]</label></view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="_div data-v-0277f77c content2 content {{index == 1 ? 'on' : ''}}">
+      <view class="_div data-v-0277f77c times_nav">
+        <block wx:key="item.key" key="{{item.key}}" wx:for="{{times}}" wx:for-index="index" wx:for-item="item">
+          <view class="_div data-v-0277f77c item {{item.id == 0 ? 'on' : ''}}">
+            <view class="_div data-v-0277f77c">
+              <view class="_p data-v-0277f77c date">{{item.date}}</view>
+              <view class="_p data-v-0277f77c week">{{item.week}}</view>
+            </view>
+          </view>
+        </block>
+      </view>
+      <view class="_div data-v-0277f77c content_already">
+        <view class="_div data-v-0277f77c list">
+          <view class="_div data-v-0277f77c header">
+            <view class="_div data-v-0277f77c left">
+              <image src="/static/images/index/header_img1.png" alt class="_img data-v-0277f77c"></image> <label class="_span data-v-0277f77c">欧俱杯</label> <label class="_span data-v-0277f77c time">11:00</label>
+            </view>
+            <view class="_div data-v-0277f77c center">
+              <view class="_p data-v-0277f77c">完</view>
+            </view>
+            <view class="_div data-v-0277f77c right">
+              <view class="_div data-v-0277f77c icon1 icon on" bindchange="handleProxy" data-eventid="{{'8'}}" data-comkey="{{$k}}"></view>
+              <view class="_div data-v-0277f77c icon2 icon on" bindchange="handleProxy" data-eventid="{{'9'}}" data-comkey="{{$k}}"></view>
+            </view>
+          </view>
+          <view class="_div data-v-0277f77c box-content">
+            <view class="_div data-v-0277f77c main item">
+              <view class="_p data-v-0277f77c left"><label class="_span data-v-0277f77c zk">[主]</label> 哈迪拉 </view>
+              <view class="_p data-v-0277f77c center">1:2</view>
+              <view class="_p data-v-0277f77c right"> 内斯兹奥纳 <label class="_span data-v-0277f77c zk">[客]</label></view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="_div data-v-0277f77c content3 content {{index == 2 ? 'on' : ''}}">
+      <view class="_div data-v-0277f77c times_nav">
+        <block wx:key="item.key" key="{{item.key}}" wx:for="{{times}}" wx:for-index="index" wx:for-item="item">
+          <view class="_div data-v-0277f77c item {{item.id == 0 ? 'on' : ''}}">
+            <view class="_div data-v-0277f77c">
+              <view class="_p data-v-0277f77c date">{{item.date}}</view>
+              <view class="_p data-v-0277f77c week">{{item.week}}</view>
+            </view>
+          </view>
+        </block>
+      </view>
+      <view class="_div data-v-0277f77c content_already">
+        <view class="_div data-v-0277f77c list">
+          <view class="_div data-v-0277f77c header">
+            <view class="_div data-v-0277f77c left">
+              <image src="/static/images/index/header_img1.png" alt class="_img data-v-0277f77c"></image> <label class="_span data-v-0277f77c">欧俱杯</label> <label class="_span data-v-0277f77c time">11:00</label>
+            </view>
+            <view class="_div data-v-0277f77c center">
+              <view class="_p data-v-0277f77c">未开</view>
+            </view>
+            <view class="_div data-v-0277f77c right">
+              <view class="_div data-v-0277f77c icon1 icon on" bindchange="handleProxy" data-eventid="{{'10'}}" data-comkey="{{$k}}"></view>
+              <view class="_div data-v-0277f77c icon2 icon on" bindchange="handleProxy" data-eventid="{{'11'}}" data-comkey="{{$k}}"></view>
+            </view>
+          </view>
+          <view class="_div data-v-0277f77c box-content">
+            <view class="_div data-v-0277f77c main item">
+              <view class="_p data-v-0277f77c left"><label class="_span data-v-0277f77c zk">[主]</label> 哈迪拉 </view>
+              <view class="_p data-v-0277f77c center">1:2</view>
+              <view class="_p data-v-0277f77c right"> 内斯兹奥纳 <label class="_span data-v-0277f77c zk">[客]</label></view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="_div data-v-0277f77c content4 content {{index == 3 ? 'on' : ''}}">
+      <view class="_div data-v-0277f77c info">2019-12-17 星期二(共6场)</view>
+      <view class="_div data-v-0277f77c content-list">
+        <view class="_div data-v-0277f77c list1 list">
+          <view class="_div data-v-0277f77c header">
+            <view class="_div data-v-0277f77c left">
+              <image src="/static/images/index/header_img1.png" alt class="_img data-v-0277f77c"></image> <label class="_span data-v-0277f77c">欧俱杯</label> <label class="_span data-v-0277f77c time">11:00</label>
+            </view>
+            <view class="_div data-v-0277f77c center">
+              <view class="_p data-v-0277f77c">第4节 05:44′</view>
+            </view>
+            <view class="_div data-v-0277f77c right">
+              <view class="_div data-v-0277f77c icon1 icon on" bindchange="handleProxy" data-eventid="{{'12'}}" data-comkey="{{$k}}"></view>
+              <view class="_div data-v-0277f77c icon2 icon on" bindchange="handleProxy" data-eventid="{{'13'}}" data-comkey="{{$k}}"></view>
+            </view>
+          </view>
+          <view class="_div data-v-0277f77c box-content">
+            <view class="_div data-v-0277f77c main item">
+              <view class="_p data-v-0277f77c left"><label class="_span data-v-0277f77c zk">[主]</label> 哈迪拉 </view>
+              <view class="_p data-v-0277f77c center">1:2</view>
+              <view class="_p data-v-0277f77c right"> 内斯兹奥纳 <label class="_span data-v-0277f77c zk">[客]</label></view>
+            </view>
+          </view>
+        </view>
+        <view class="_div data-v-0277f77c list2 list">
+          <view class="_div data-v-0277f77c header">
+            <view class="_div data-v-0277f77c left">
+              <image src="/static/images/index/header_img1.png" alt class="_img data-v-0277f77c"></image> <label class="_span data-v-0277f77c">欧俱杯</label> <label class="_span data-v-0277f77c time">11:00</label>
+            </view>
+            <view class="_div data-v-0277f77c center">
+              <view class="_p data-v-0277f77c">完</view>
+            </view>
+            <view class="_div data-v-0277f77c right">
+              <view class="_div data-v-0277f77c icon1 icon on" bindchange="handleProxy" data-eventid="{{'14'}}" data-comkey="{{$k}}"></view>
+              <view class="_div data-v-0277f77c icon2 icon on" bindchange="handleProxy" data-eventid="{{'15'}}" data-comkey="{{$k}}"></view>
+            </view>
+          </view>
+          <view class="_div data-v-0277f77c box-content">
+            <view class="_div data-v-0277f77c main item">
+              <view class="_p data-v-0277f77c left"><label class="_span data-v-0277f77c zk">[主]</label> 哈迪拉 </view>
+              <view class="_p data-v-0277f77c center">1:2</view>
+              <view class="_p data-v-0277f77c right"> 内斯兹奥纳 <label class="_span data-v-0277f77c zk">[客]</label></view>
+            </view>
+          </view>
+        </view>
+        <view class="_div data-v-0277f77c list3 list">
+          <view class="_div data-v-0277f77c header">
+            <view class="_div data-v-0277f77c left">
+              <image src="/static/images/index/header_img1.png" alt class="_img data-v-0277f77c"></image> <label class="_span data-v-0277f77c">欧俱杯</label> <label class="_span data-v-0277f77c time">11:00</label>
+            </view>
+            <view class="_div data-v-0277f77c center">
+              <view class="_p data-v-0277f77c">未开</view>
+            </view>
+            <view class="_div data-v-0277f77c right">
+              <view class="_div data-v-0277f77c icon1 icon on" bindchange="handleProxy" data-eventid="{{'16'}}" data-comkey="{{$k}}"></view>
+              <view class="_div data-v-0277f77c icon2 icon on" bindchange="handleProxy" data-eventid="{{'17'}}" data-comkey="{{$k}}"></view>
+            </view>
+          </view>
+          <view class="_div data-v-0277f77c box-content">
+            <view class="_div data-v-0277f77c main item">
+              <view class="_p data-v-0277f77c left"><label class="_span data-v-0277f77c zk">[主]</label> 哈迪拉 </view>
+              <view class="_p data-v-0277f77c center">VS</view>
+              <view class="_p data-v-0277f77c right"> 内斯兹奥纳 <label class="_span data-v-0277f77c zk">[客]</label></view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</template>

@@ -1,9 +1,9 @@
-<import src="/modules/mpvue-echarts/src/echarts.vue.wxml" /><template name="daa7e2cc">
+<import src="/modules/mpvue-echarts/src/echarts.vue.wxml" /><template name="63c9f781">
   <view class="_div data-v-379af2ce">
     <view id="headerHeight" class="_div data-v-379af2ce header">
       <view class="_div data-v-379af2ce item">
         <view class="_div data-v-379af2ce left">
-          <image src="/static/images/index_details/header1.png" alt class="_img data-v-379af2ce"></image>
+          <image src="https://fb.hxweixin.top/images/index_details/header1.png" alt class="_img data-v-379af2ce"></image>
           <view class="_p data-v-379af2ce">比利时</view>
         </view>
         <view class="_div data-v-379af2ce center">
@@ -11,7 +11,7 @@
           <view class="_p data-v-379af2ce">未开</view>
         </view>
         <view class="_div data-v-379af2ce right">
-          <image src="/static/images/index_details/header2.png" alt class="_img data-v-379af2ce"></image>
+          <image src="https://fb.hxweixin.top/images/index_details/header2.png" alt class="_img data-v-379af2ce"></image>
           <view class="_p data-v-379af2ce">爱尔兰</view>
         </view>
       </view>
@@ -84,19 +84,19 @@
               <view class="_p data-v-379af2ce">赛前情报</view>
             </view>
             <view class="_div data-v-379af2ce right">
-              <image bindtap="handleProxy" src="/static/images/index_details/index_fx2.png" alt data-eventid="{{'1'}}" data-comkey="{{$k}}" class="_img data-v-379af2ce {{[isActive ? 'on' : '']}}"></image>
+              <image bindtap="handleProxy" src="https://fb.hxweixin.top/images/index_details/index_fx2.png" alt data-eventid="{{'1'}}" data-comkey="{{$k}}" class="_img data-v-379af2ce {{[isActive ? 'on' : '']}}"></image>
             </view>
           </view>
           <view class="_div data-v-379af2ce item_content {{[isActive ? 'on' : '']}}">
             <view class="_div data-v-379af2ce title">
               <view class="_div data-v-379af2ce left">
-                <image src="/static/images/index_details/index_fx3.png" alt class="_img data-v-379af2ce"></image> 华盛顿奇才
+                <image src="https://fb.hxweixin.top/images/index_details/index_fx3.png" alt class="_img data-v-379af2ce"></image> 华盛顿奇才
               </view>
               <view class="_div data-v-379af2ce center">
-                <image src="/static/images/index_details/index_fx1.png" alt class="_img data-v-379af2ce"></image>
+                <image src="https://fb.hxweixin.top/images/index_details/index_fx1.png" alt class="_img data-v-379af2ce"></image>
               </view>
               <view class="_div data-v-379af2ce right">
-                <image src="/static/images/index_details/index_fx4.png" alt class="_img data-v-379af2ce"></image> 芝加哥公牛
+                <image src="https://fb.hxweixin.top/images/index_details/index_fx4.png" alt class="_img data-v-379af2ce"></image> 芝加哥公牛
               </view>
             </view>
             <view class="_div data-v-379af2ce primary">
@@ -129,7 +129,7 @@
               <view class="_p data-v-379af2ce">近期战绩</view>
             </view>
             <view class="_div data-v-379af2ce right">
-              <wux-selectable color="#07913B" value="1" class="_wux-selectable data-v-379af2ce"></wux-selectable>同主客 <image bindtap="handleProxy" src="/static/images/index_details/index_fx2.png" alt data-eventid="{{'2'}}" data-comkey="{{$k}}" class="_img data-v-379af2ce {{[isActive1 ? 'on' : '']}}"></image>
+              <wux-selectable color="#07913B" value="1" class="_wux-selectable data-v-379af2ce"></wux-selectable>同主客 <image bindtap="handleProxy" src="https://fb.hxweixin.top/images/index_details/index_fx2.png" alt data-eventid="{{'2'}}" data-comkey="{{$k}}" class="_img data-v-379af2ce {{[isActive1 ? 'on' : '']}}"></image>
             </view>
           </view>
           <view class="_div data-v-379af2ce item_content {{[isActive1 ? 'on' : '']}}">
@@ -176,12 +176,12 @@
               <view class="_p data-v-379af2ce">联赛盘路走势</view>
             </view>
             <view class="_div data-v-379af2ce right">
-              <image bindtap="handleProxy" src="/static/images/index_details/index_fx2.png" alt data-eventid="{{'3'}}" data-comkey="{{$k}}" class="_img data-v-379af2ce {{[isActive2 ? 'on' : '']}}"></image>
+              <image bindtap="handleProxy" src="https://fb.hxweixin.top/images/index_details/index_fx2.png" alt data-eventid="{{'3'}}" data-comkey="{{$k}}" class="_img data-v-379af2ce {{[isActive2 ? 'on' : '']}}"></image>
             </view>
           </view>
           <view class="_div data-v-379af2ce item_content {{[isActive2 ? 'on' : '']}}">
             <view class="_div data-v-379af2ce title">
-              <image src="/static/images/index_details/index_fx3.png" alt class="_img data-v-379af2ce"></image>
+              <image src="https://fb.hxweixin.top/images/index_details/index_fx3.png" alt class="_img data-v-379af2ce"></image>
               <view class="_p data-v-379af2ce">华盛顿奇才</view>
             </view>
             <view class="_div data-v-379af2ce table">
@@ -236,7 +236,7 @@
               </view>
             </view>
             <view class="_div data-v-379af2ce title">
-              <image src="/static/images/index_details/index_fx4.png" alt class="_img data-v-379af2ce"></image>
+              <image src="https://fb.hxweixin.top/images/index_details/index_fx4.png" alt class="_img data-v-379af2ce"></image>
               <view class="_p data-v-379af2ce">芝加哥公牛</view>
             </view>
             <view class="_div data-v-379af2ce table">
@@ -299,8 +299,10 @@
           <view class="_div data-v-379af2ce seg_content">
             <view class="_div data-v-379af2ce seg_nav"><label class="_span data-v-379af2ce p1">指数统计</label> <label class="_span data-v-379af2ce p2">(共3家)</label></view>
             <view class="_div data-v-379af2ce">
-              <view class="_div data-v-379af2ce echarts-wrap">
-                <view style="height: 182rpx" class="_div data-v-379af2ce"><template canvasId="demo-canvas" data="{{...$root[$kk+'2'], $root}}" is="581ac596"></template></view>
+              <view class="_div data-v-379af2ce echarts-wrap" wx:if="{{key == 2 && onhide == 0}}">
+                <view style="height: 182rpx;position:relative" class="_div data-v-379af2ce"><template wx:if="{{!radarImg}}" canvasId="demo-canvas" data="{{...$root[$kk+'2'], $root}}" is="1f826fa4"></template>
+                  <image bindtap="handleProxy" dataSrc="{{radarImg}}" src="{{handleCanvarToImg}}" style="width: 100%; height: 180px;position:absolute;left:0;right:0;top:0;" data-eventid="{{'5'}}" data-comkey="{{$k}}" class="_img data-v-379af2ce"></image>
+                </view>
                 <view class="_div data-v-379af2ce box_data">
                   <view class="_div data-v-379af2ce seg_tab">
                     <view class="_div data-v-379af2ce title table">
@@ -344,7 +346,7 @@
               </view>
               <view class="_div data-v-379af2ce yz_list">
                 <view class="_div data-v-379af2ce list">
-                  <view class="_div data-v-379af2ce t1">易胜博</view>
+                  <view class="_div data-v-379af2ce t1" bindtap="handleProxy" data-eventid="{{'6'}}" data-comkey="{{$k}}">易胜博</view>
                   <view class="_div data-v-379af2ce">0.8</view>
                   <view class="_div data-v-379af2ce">0.8</view>
                   <view class="_div data-v-379af2ce">0.8</view>
@@ -456,7 +458,7 @@
           <view class="_div data-v-379af2ce oz_content">
             <view class="_div data-v-379af2ce seg_nav"><label class="_span data-v-379af2ce p1">指数统计</label> <label class="_span data-v-379af2ce p2">(共3家)</label></view>
             <view class="_div data-v-379af2ce oz_data">
-              <view style="height: 320rpx" class="_div data-v-379af2ce"><template canvasId="canvas3" data="{{...$root[$kk+'3'], $root}}" is="581ac596"></template></view>
+              <view style="height: 320rpx" wx:if="{{onhide == 1}}" class="_div data-v-379af2ce"><template canvasId="canvas3" data="{{...$root[$kk+'3'], $root}}" is="1f826fa4"></template></view>
               <view class="_div data-v-379af2ce box">
                 <view class="_p data-v-379af2ce title">当前最大指数公司及数值</view>
                 <view class="_div data-v-379af2ce table">
@@ -547,7 +549,7 @@
                 </view>
               </view>
               <view class="_div data-v-379af2ce list">
-                <view class="_div data-v-379af2ce t2 t1 green">易胜博</view>
+                <view class="_div data-v-379af2ce t2 t1 green" bindtap="handleProxy" data-eventid="{{'7'}}" data-comkey="{{$k}}">易胜博</view>
                 <view class="_div data-v-379af2ce right">
                   <view class="_div data-v-379af2ce table">
                     <view class="_div data-v-379af2ce">初</view>
@@ -687,7 +689,7 @@
             <view class="_div data-v-379af2ce seg_nav"><label class="_span data-v-379af2ce p1">指数统计</label> <label class="_span data-v-379af2ce p2">(共3家)</label></view>
             <view class="_div data-v-379af2ce">
               <view class="_div data-v-379af2ce echarts-wrap">
-                <view style="height: 182rpx" class="_div data-v-379af2ce"><template canvasId="canvas" data="{{...$root[$kk+'4'], $root}}" is="581ac596"></template></view>
+                <view style="height: 182rpx" wx:if="{{onhide == 2}}" class="_div data-v-379af2ce"><template canvasId="canvas2" data="{{...$root[$kk+'4'], $root}}" is="1f826fa4"></template></view>
                 <view class="_div data-v-379af2ce box_data">
                   <view class="_div data-v-379af2ce seg_tab">
                     <view class="_div data-v-379af2ce title table">
@@ -731,7 +733,7 @@
               </view>
               <view class="_div data-v-379af2ce yz_list">
                 <view class="_div data-v-379af2ce list">
-                  <view class="_div data-v-379af2ce t1">易胜博</view>
+                  <view class="_div data-v-379af2ce t1" bindtap="handleProxy" data-eventid="{{'8'}}" data-comkey="{{$k}}">易胜博</view>
                   <view class="_div data-v-379af2ce">0.8</view>
                   <view class="_div data-v-379af2ce">0.8</view>
                   <view class="_div data-v-379af2ce">0.8</view>
@@ -767,19 +769,155 @@
           <view class="_div data-v-379af2ce live_header">
             <view class="_div data-v-379af2ce head">
               <view class="_div data-v-379af2ce left">
-                <image src="/static/images/index_details/index_details2.png" alt class="_img data-v-379af2ce"></image>
+                <image src="https://fb.hxweixin.top/images/index_details/index_details2.png" alt class="_img data-v-379af2ce"></image>
                 <view class="_p data-v-379af2ce">比利时</view>
               </view>
               <view class="_div data-v-379af2ce right">
                 <view class="_p data-v-379af2ce">爱尔兰</view>
-                <image src="/static/images/index_details/index_details1.png" alt class="_img data-v-379af2ce"></image>
+                <image src="https://fb.hxweixin.top/images/index_details/index_details1.png" alt class="_img data-v-379af2ce"></image>
               </view>
             </view>
-            <view style="height: 300rpx" class="_div data-v-379af2ce"><template canvasId="live-canvas" data="{{...$root[$kk+'5'], $root}}" is="581ac596"></template></view>
+            <view class="_div data-v-379af2ce canv">
+              <view class="_div data-v-379af2ce right" style="height:160rpx" wx:if="{{key == 3}}"><template canvasId="live-canvas" data="{{...$root[$kk+'5'], $root}}" is="1f826fa4"></template></view>
+              <view class="_div data-v-379af2ce left">
+                <view class="_div data-v-379af2ce canv_list">
+                  <view class="_div data-v-379af2ce title">射门</view>
+                  <view class="_div data-v-379af2ce list_prog">
+                    <view class="_div data-v-379af2ce prog1" style=" {{('width:' + (prog1 + '%') + ';')}}"></view>
+                    <view class="_div data-v-379af2ce prog2" style=" {{('width:' + (prog2 + '%') + ';')}}"></view>
+                  </view>
+                  <view class="_div data-v-379af2ce list_text">
+                    <view class="_p data-v-379af2ce p1">178</view>
+                    <view class="_p data-v-379af2ce p2">142</view>
+                  </view>
+                </view>
+                <view class="_div data-v-379af2ce canv_list">
+                  <view class="_div data-v-379af2ce title">射正</view>
+                  <view class="_div data-v-379af2ce list_prog">
+                    <view class="_div data-v-379af2ce prog1" style=" {{('width:' + (prog1 + '%') + ';')}}"></view>
+                    <view class="_div data-v-379af2ce prog2" style=" {{('width:' + (prog2 + '%') + ';')}}"></view>
+                  </view>
+                  <view class="_div data-v-379af2ce list_text">
+                    <view class="_p data-v-379af2ce p1">7</view>
+                    <view class="_p data-v-379af2ce p2">4</view>
+                  </view>
+                </view>
+                <view class="_div data-v-379af2ce canv_list">
+                  <view class="_div data-v-379af2ce title">射偏</view>
+                  <view class="_div data-v-379af2ce list_prog">
+                    <view class="_div data-v-379af2ce prog1" style=" {{('width:' + (prog1 + '%') + ';')}}"></view>
+                    <view class="_div data-v-379af2ce prog2" style=" {{('width:' + (prog2 + '%') + ';')}}"></view>
+                  </view>
+                  <view class="_div data-v-379af2ce list_text">
+                    <view class="_p data-v-379af2ce p1">7</view>
+                    <view class="_p data-v-379af2ce p2">4</view>
+                  </view>
+                </view>
+                <view class="_div data-v-379af2ce list_foul">
+                  <view class="_div data-v-379af2ce foul_left">
+                    <view class="_div data-v-379af2ce text">
+                      <image src="http://tt.winit168.cn/666/lnxy/images/index_details/index_details6.png" alt class="_img data-v-379af2ce"></image> <label class="_span data-v-379af2ce">9</label>
+                    </view>
+                    <view class="_div data-v-379af2ce text">
+                      <image src="http://tt.winit168.cn/666/lnxy/images/index_details/index_details5.png" alt class="_img data-v-379af2ce"></image> <label class="_span data-v-379af2ce">9</label>
+                    </view>
+                    <view class="_div data-v-379af2ce text">
+                      <image src="http://tt.winit168.cn/666/lnxy/images/index_details/index_details10.png" alt class="_img data-v-379af2ce"></image> <label class="_span data-v-379af2ce">9</label>
+                    </view>
+                  </view>
+                  <view class="_div data-v-379af2ce foul_right">
+                    <view class="_div data-v-379af2ce text">
+                      <image src="http://tt.winit168.cn/666/lnxy/images/index_details/index_details6.png" alt class="_img data-v-379af2ce"></image> <label class="_span data-v-379af2ce">9</label>
+                    </view>
+                    <view class="_div data-v-379af2ce text">
+                      <image src="http://tt.winit168.cn/666/lnxy/images/index_details/index_details5.png" alt class="_img data-v-379af2ce"></image> <label class="_span data-v-379af2ce">9</label>
+                    </view>
+                    <view class="_div data-v-379af2ce text">
+                      <image src="http://tt.winit168.cn/666/lnxy/images/index_details/index_details10.png" alt class="_img data-v-379af2ce"></image> <label class="_span data-v-379af2ce">9</label>
+                    </view>
+                  </view>
+                </view>
+              </view>
+            </view>
+          </view>
+        </view>
+        <view class="_div data-v-379af2ce live_foul">
+          <view class="_div data-v-379af2ce title">
+            <view class="_p data-v-379af2ce">事件</view>
+          </view>
+          <view class="_div data-v-379af2ce list_foul_list">
+            <view class="_div data-v-379af2ce list_head">
+              <view class="_div data-v-379af2ce">
+                <image src="http://tt.winit168.cn/666/lnxy/images/index_details/index_details9.png" alt class="_img data-v-379af2ce"></image> <label class="_span data-v-379af2ce">入球</label>
+              </view>
+              <view class="_div data-v-379af2ce">
+                <image src="http://tt.winit168.cn/666/lnxy/images/index_details/index_details8.png" alt class="_img data-v-379af2ce"></image> <label class="_span data-v-379af2ce">点球</label>
+              </view>
+              <view class="_div data-v-379af2ce">
+                <image src="http://tt.winit168.cn/666/lnxy/images/index_details/index_details10.png" alt class="_img data-v-379af2ce"></image> <label class="_span data-v-379af2ce">角球</label>
+              </view>
+              <view class="_div data-v-379af2ce">
+                <image src="http://tt.winit168.cn/666/lnxy/images/index_details/index_details7.png" alt class="_img data-v-379af2ce"></image> <label class="_span data-v-379af2ce">乌龙</label>
+              </view>
+              <view class="_div data-v-379af2ce">
+                <image src="http://tt.winit168.cn/666/lnxy/images/index_details/index_details3.png" alt class="_img data-v-379af2ce"></image> <label class="_span data-v-379af2ce">红黄牌</label>
+              </view>
+              <view class="_div data-v-379af2ce">
+                <image src="http://tt.winit168.cn/666/lnxy/images/index_details/index_details4.png" alt class="_img data-v-379af2ce"></image> <label class="_span data-v-379af2ce">换人</label>
+              </view>
+            </view>
+            <view class="_div data-v-379af2ce list1">
+              <view class="_div data-v-379af2ce time">
+                <view class="_p data-v-379af2ce green">12′</view>
+              </view>
+              <view class="_div data-v-379af2ce data">
+                <view class="_div data-v-379af2ce">
+                  <image src="http://tt.winit168.cn/666/lnxy/images/index_details/index_details9.png" alt class="_img data-v-379af2ce"></image> <label class="_span data-v-379af2ce">梅西</label>
+                </view>
+                <image src="https://fb.hxweixin.top/images/index_details/index_details1.png" alt class="_img data-v-379af2ce"></image>
+              </view>
+            </view>
+            <view class="_div data-v-379af2ce list1">
+              <view class="_div data-v-379af2ce time">
+                <view class="_p data-v-379af2ce green">12′</view>
+              </view>
+              <view class="_div data-v-379af2ce data">
+                <view class="_div data-v-379af2ce">
+                  <image src="http://tt.winit168.cn/666/lnxy/images/index_details/index_details9.png" alt class="_img data-v-379af2ce"></image> <label class="_span data-v-379af2ce">梅西</label>
+                </view>
+                <image src="https://fb.hxweixin.top/images/index_details/index_details2.png" alt class="_img data-v-379af2ce"></image>
+              </view>
+            </view>
+            <view class="_div data-v-379af2ce list1">
+              <view class="_div data-v-379af2ce time">
+                <view class="_p data-v-379af2ce green">12′</view>
+              </view>
+              <view class="_div data-v-379af2ce data">
+                <view class="_div data-v-379af2ce">
+                  <image src="http://tt.winit168.cn/666/lnxy/images/index_details/index_details9.png" alt class="_img data-v-379af2ce"></image> <label class="_span data-v-379af2ce">梅西</label>
+                </view>
+                <image src="https://fb.hxweixin.top/images/index_details/index_details2.png" alt class="_img data-v-379af2ce"></image>
+              </view>
+            </view>
+            <view class="_div data-v-379af2ce list1">
+              <view class="_div data-v-379af2ce time">
+                <view class="_p data-v-379af2ce green">12′</view>
+              </view>
+              <view class="_div data-v-379af2ce data">
+                <view class="_div data-v-379af2ce">
+                  <image src="http://tt.winit168.cn/666/lnxy/images/index_details/index_details9.png" alt class="_img data-v-379af2ce"></image> <label class="_span data-v-379af2ce">梅西</label>
+                </view>
+                <image src="https://fb.hxweixin.top/images/index_details/index_details2.png" alt class="_img data-v-379af2ce"></image>
+              </view>
+            </view>
           </view>
         </view>
       </view>
-      <view class="_div data-v-379af2ce content5 content {{key == 4 ? 'on' : ''}}">5</view>
+      <view class="_div data-v-379af2ce content5 content {{key == 4 ? 'on' : ''}}">
+        <view class="_div data-v-379af2ce content_btm">
+          <image src="http://tt.winit168.cn/666/lnxy/images/content4.png" alt class="_img data-v-379af2ce"></image>
+        </view>
+      </view>
     </view>
   </view>
 </template>

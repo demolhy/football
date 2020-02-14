@@ -1,0 +1,44 @@
+@import "../../../common/vendor.wxss";
+
+.content.data-v-15be781a {
+  background: #fff;
+  border-top: 2rpx solid #f2f2f2;
+}
+.table_title.data-v-15be781a {
+  display: flex;
+  text-align: center;
+  font-size: 22rpx;
+  color: #333;
+  padding: 15rpx 0;
+}
+.table_title .t1.data-v-15be781a {
+  width: 20%;
+}
+.table_title .t5.data-v-15be781a {
+  width: 25%;
+}
+.table_list .list.data-v-15be781a {
+  display: flex;
+  text-align: center;
+  font-size: 22rpx;
+  color: #333;
+  border-top: 2rpx solid #f2f2f2;
+}
+.table_list .list .th.data-v-15be781a {
+  padding: 15rpx 0;
+}
+.table_list .list>._div.data-v-15be781a {
+  border-right: 2rpx solid #f2f2f2;
+}
+.table_list .list>._div.data-v-15be781a:last-child {
+  border: none;
+}
+.table_list .list .t1.data-v-15be781a {
+  width: 20%;
+}
+.table_list .list .t1.on.data-v-15be781a {
+  background: rgba(0, 0, 0, .1);
+}
+.table_list .list .t2.data-v-15be781a {
+  width: 25%;
+}

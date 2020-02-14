@@ -1,0 +1,47 @@
+<template name="5d523a63">
+  <view class="_div data-v-5489c2bd content">
+    <view class="_div data-v-5489c2bd table_title">
+      <view class="_div data-v-5489c2bd t1">指数公司</view>
+      <view class="_div data-v-5489c2bd t1">主队</view>
+      <view class="_div data-v-5489c2bd t1">盘口</view>
+      <view class="_div data-v-5489c2bd t1">客队</view>
+      <view class="_div data-v-5489c2bd t5">变盘时间</view>
+    </view>
+    <view class="_div data-v-5489c2bd table_list">
+      <view class="_div data-v-5489c2bd list">
+        <view class="_div data-v-5489c2bd t1 on">
+          <view class="_div data-v-5489c2bd th">易胜博</view>
+        </view>
+        <view class="_div data-v-5489c2bd t1">
+          <view class="_div data-v-5489c2bd th">2</view>
+        </view>
+        <view class="_div data-v-5489c2bd t1">
+          <view class="_div data-v-5489c2bd th">2</view>
+        </view>
+        <view class="_div data-v-5489c2bd t1">
+          <view class="_div data-v-5489c2bd th">2</view>
+        </view>
+        <view class="_div data-v-5489c2bd t2">
+          <view class="_div data-v-5489c2bd th">01-01 08:22</view>
+        </view>
+      </view>
+      <view class="_div data-v-5489c2bd list">
+        <view class="_div data-v-5489c2bd t1">
+          <view class="_div data-v-5489c2bd th">易胜博</view>
+        </view>
+        <view class="_div data-v-5489c2bd t1">
+          <view class="_div data-v-5489c2bd th">2</view>
+        </view>
+        <view class="_div data-v-5489c2bd t1">
+          <view class="_div data-v-5489c2bd th">2</view>
+        </view>
+        <view class="_div data-v-5489c2bd t1">
+          <view class="_div data-v-5489c2bd th">2</view>
+        </view>
+        <view class="_div data-v-5489c2bd t2">
+          <view class="_div data-v-5489c2bd th">01-01 08:22</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</template>

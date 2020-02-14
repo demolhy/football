@@ -1,0 +1,48 @@
+<template name="36af8e59">
+  <view class="_div data-v-2de716b3 content">
+    <view class="_div data-v-2de716b3 table_title">
+      <view class="_div data-v-2de716b3 t1">易胜博数据变化</view>
+      <view class="_div data-v-2de716b3 t2">返还率</view>
+      <view class="_div data-v-2de716b3 t3">凯利指数</view>
+      <view class="_div data-v-2de716b3 t4">变盘时间</view>
+    </view>
+    <view class="_div data-v-2de716b3 table_list">
+      <view class="_div data-v-2de716b3 list">
+        <view class="_div data-v-2de716b3 t1">
+          <view class="_div data-v-2de716b3 th">2</view>
+          <view class="_div data-v-2de716b3 th">2</view>
+          <view class="_div data-v-2de716b3 th">2</view>
+        </view>
+        <view class="_div data-v-2de716b3 t2">
+          <view class="_div data-v-2de716b3 th">2</view>
+        </view>
+        <view class="_div data-v-2de716b3 t1">
+          <view class="_div data-v-2de716b3 th">2</view>
+          <view class="_div data-v-2de716b3 th">2</view>
+          <view class="_div data-v-2de716b3 th">2</view>
+        </view>
+        <view class="_div data-v-2de716b3 t4">
+          <view class="_div data-v-2de716b3 th">01-01 08:22</view>
+        </view>
+      </view>
+      <view class="_div data-v-2de716b3 list">
+        <view class="_div data-v-2de716b3 t1">
+          <view class="_div data-v-2de716b3 th">2</view>
+          <view class="_div data-v-2de716b3 th">2</view>
+          <view class="_div data-v-2de716b3 th">2</view>
+        </view>
+        <view class="_div data-v-2de716b3 t2">
+          <view class="_div data-v-2de716b3 th">2</view>
+        </view>
+        <view class="_div data-v-2de716b3 t1">
+          <view class="_div data-v-2de716b3 th">2</view>
+          <view class="_div data-v-2de716b3 th">2</view>
+          <view class="_div data-v-2de716b3 th">2</view>
+        </view>
+        <view class="_div data-v-2de716b3 t4">
+          <view class="_div data-v-2de716b3 th">01-01 08:22</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</template>
