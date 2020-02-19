@@ -5,11 +5,11 @@
         <wux-tab key="{{item.key}}" title="{{item.title}}" class="_wux-tab data-v-1868f18b"></wux-tab>
       </block>
     </wux-tabs>
-    <view class="_div data-v-1868f18b screen">
+    <view class="_div data-v-1868f18b screen" bindtap="handleProxy" data-eventid="{{'1'}}" data-comkey="{{$k}}">
       <image src="/static/images/index/screen_img.png" alt class="_img data-v-1868f18b"></image>
     </view>
     <view class="_div data-v-1868f18b content1 content {{index == 0 ? 'on' : ''}}">
-      <view class="_div data-v-1868f18b list" bindtap="handleProxy" data-eventid="{{'3'}}" data-comkey="{{$k}}">
+      <view class="_div data-v-1868f18b list" bindtap="handleProxy" data-eventid="{{'4'}}" data-comkey="{{$k}}">
         <view class="_div data-v-1868f18b header">
           <view class="_div data-v-1868f18b left">
             <image src="/static/images/index/header_img1.png" alt class="_img data-v-1868f18b"></image> <label class="_span data-v-1868f18b">欧俱杯</label>
@@ -18,8 +18,8 @@
             <view class="_p data-v-1868f18b">第4节 05:44′</view>
           </view>
           <view class="_div data-v-1868f18b right">
-            <view class="_div data-v-1868f18b icon1 icon on" bindchange="handleProxy" data-eventid="{{'1'}}" data-comkey="{{$k}}"></view>
-            <view class="_div data-v-1868f18b icon2 icon on" bindchange="handleProxy" data-eventid="{{'2'}}" data-comkey="{{$k}}"></view>
+            <view class="_div data-v-1868f18b icon1 icon on" bindchange="handleProxy" data-eventid="{{'2'}}" data-comkey="{{$k}}"></view>
+            <view class="_div data-v-1868f18b icon2 icon on" bindchange="handleProxy" data-eventid="{{'3'}}" data-comkey="{{$k}}"></view>
           </view>
         </view>
         <view class="_div data-v-1868f18b box-content">
@@ -48,8 +48,8 @@
             <view class="_p data-v-1868f18b">第4节 05:44′</view>
           </view>
           <view class="_div data-v-1868f18b right">
-            <view class="_div data-v-1868f18b icon1 icon" bindchange="handleProxy" data-eventid="{{'4'}}" data-comkey="{{$k}}"></view>
-            <view class="_div data-v-1868f18b icon2 icon" bindchange="handleProxy" data-eventid="{{'5'}}" data-comkey="{{$k}}"></view>
+            <view class="_div data-v-1868f18b icon1 icon" bindchange="handleProxy" data-eventid="{{'5'}}" data-comkey="{{$k}}"></view>
+            <view class="_div data-v-1868f18b icon2 icon" bindchange="handleProxy" data-eventid="{{'6'}}" data-comkey="{{$k}}"></view>
           </view>
         </view>
         <view class="_div data-v-1868f18b box-content">
@@ -91,8 +91,8 @@
               <view class="_p data-v-1868f18b">完</view>
             </view>
             <view class="_div data-v-1868f18b right">
-              <view class="_div data-v-1868f18b icon1 icon on" bindchange="handleProxy" data-eventid="{{'6'}}" data-comkey="{{$k}}"></view>
-              <view class="_div data-v-1868f18b icon2 icon on" bindchange="handleProxy" data-eventid="{{'7'}}" data-comkey="{{$k}}"></view>
+              <view class="_div data-v-1868f18b icon1 icon on" bindchange="handleProxy" data-eventid="{{'7'}}" data-comkey="{{$k}}"></view>
+              <view class="_div data-v-1868f18b icon2 icon on" bindchange="handleProxy" data-eventid="{{'8'}}" data-comkey="{{$k}}"></view>
             </view>
           </view>
           <view class="_div data-v-1868f18b box-content">
@@ -135,8 +135,8 @@
               <view class="_p data-v-1868f18b">未开</view>
             </view>
             <view class="_div data-v-1868f18b right">
-              <view class="_div data-v-1868f18b icon1 icon on" bindchange="handleProxy" data-eventid="{{'8'}}" data-comkey="{{$k}}"></view>
-              <view class="_div data-v-1868f18b icon2 icon on" bindchange="handleProxy" data-eventid="{{'9'}}" data-comkey="{{$k}}"></view>
+              <view class="_div data-v-1868f18b icon1 icon on" bindchange="handleProxy" data-eventid="{{'9'}}" data-comkey="{{$k}}"></view>
+              <view class="_div data-v-1868f18b icon2 icon on" bindchange="handleProxy" data-eventid="{{'10'}}" data-comkey="{{$k}}"></view>
             </view>
           </view>
           <view class="_div data-v-1868f18b box-content">
@@ -161,8 +161,8 @@
               <view class="_p data-v-1868f18b">第4节 05:44′</view>
             </view>
             <view class="_div data-v-1868f18b right">
-              <view class="_div data-v-1868f18b icon1 icon on" bindchange="handleProxy" data-eventid="{{'10'}}" data-comkey="{{$k}}"></view>
-              <view class="_div data-v-1868f18b icon2 icon on" bindchange="handleProxy" data-eventid="{{'11'}}" data-comkey="{{$k}}"></view>
+              <view class="_div data-v-1868f18b icon1 icon on" bindchange="handleProxy" data-eventid="{{'11'}}" data-comkey="{{$k}}"></view>
+              <view class="_div data-v-1868f18b icon2 icon on" bindchange="handleProxy" data-eventid="{{'12'}}" data-comkey="{{$k}}"></view>
             </view>
           </view>
           <view class="_div data-v-1868f18b box-content">
@@ -191,8 +191,8 @@
               <view class="_p data-v-1868f18b">完</view>
             </view>
             <view class="_div data-v-1868f18b right">
-              <view class="_div data-v-1868f18b icon1 icon on" bindchange="handleProxy" data-eventid="{{'12'}}" data-comkey="{{$k}}"></view>
-              <view class="_div data-v-1868f18b icon2 icon on" bindchange="handleProxy" data-eventid="{{'13'}}" data-comkey="{{$k}}"></view>
+              <view class="_div data-v-1868f18b icon1 icon on" bindchange="handleProxy" data-eventid="{{'13'}}" data-comkey="{{$k}}"></view>
+              <view class="_div data-v-1868f18b icon2 icon on" bindchange="handleProxy" data-eventid="{{'14'}}" data-comkey="{{$k}}"></view>
             </view>
           </view>
           <view class="_div data-v-1868f18b box-content">
@@ -221,8 +221,8 @@
               <view class="_p data-v-1868f18b">未开</view>
             </view>
             <view class="_div data-v-1868f18b right">
-              <view class="_div data-v-1868f18b icon1 icon on" bindchange="handleProxy" data-eventid="{{'14'}}" data-comkey="{{$k}}"></view>
-              <view class="_div data-v-1868f18b icon2 icon on" bindchange="handleProxy" data-eventid="{{'15'}}" data-comkey="{{$k}}"></view>
+              <view class="_div data-v-1868f18b icon1 icon on" bindchange="handleProxy" data-eventid="{{'15'}}" data-comkey="{{$k}}"></view>
+              <view class="_div data-v-1868f18b icon2 icon on" bindchange="handleProxy" data-eventid="{{'16'}}" data-comkey="{{$k}}"></view>
             </view>
           </view>
           <view class="_div data-v-1868f18b box-content">

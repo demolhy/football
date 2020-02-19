@@ -6,7 +6,7 @@
       </block>
     </wux-tabs>
 
-    <div class="screen">
+    <div class="screen" @click="toScreen">
       <img src="../../../static/images/index/screen_img.png" alt />
     </div>
 
@@ -384,6 +384,18 @@ export default {
         }
       });
       console.log(123);
+    },
+    toScreen(){
+      wx.navigateTo({
+        url: "../screen/main",
+        success: function(res) {
+          // 通过eventChannel向被打开页面传送数据
+          console.log("success")
+        },
+        fail: function(e){
+          console.log(e)
+        }
+      });
     }
   },
 

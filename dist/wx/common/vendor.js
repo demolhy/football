@@ -6239,9 +6239,6 @@ module.exports = g;
 //
 //
 //
-//
-//
-//
 
 
 
@@ -6998,19 +6995,7 @@ var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._sel
       "touchend": _vm.touchEnd,
       "error": _vm.error
     }
-  }, [_c('cover-view', {
-    staticStyle: {
-      "z-index": "9999",
-      "left": "0",
-      "right": "0",
-      "top": "0",
-      "bottom": "0",
-      "height": "100%"
-    },
-    attrs: {
-      "mpcomid": '0'
-    }
-  })], 1) : _vm._e()
+  }) : _vm._e()
 }
 var staticRenderFns = []
 render._withStripped = true

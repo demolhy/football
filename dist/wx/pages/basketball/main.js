@@ -465,6 +465,18 @@ if (false) {(function () {
         }
       });
       console.log(123);
+    },
+    toScreen: function toScreen() {
+      wx.navigateTo({
+        url: "../screen/main",
+        success: function success(res) {
+          // 通过eventChannel向被打开页面传送数据
+          console.log("success");
+        },
+        fail: function fail(e) {
+          console.log(e);
+        }
+      });
     }
   },
 
@@ -501,27 +513,40 @@ var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._sel
         "mpcomid": '0_' + index
       }
     })], 1)
-  })), _vm._v(" "), _vm._m(0), _vm._v(" "), _c('div', {
+  })), _vm._v(" "), _c('div', {
+    staticClass: "screen",
+    attrs: {
+      "eventid": '1'
+    },
+    on: {
+      "click": _vm.toScreen
+    }
+  }, [_c('img', {
+    attrs: {
+      "src": "../../../static/images/index/screen_img.png",
+      "alt": ""
+    }
+  })]), _vm._v(" "), _c('div', {
     staticClass: "content1 content",
     class: _vm.index == 0 ? 'on' : ''
   }, [_c('div', {
     staticClass: "list",
     attrs: {
-      "eventid": '3'
+      "eventid": '4'
     },
     on: {
       "click": _vm.toDetail
     }
   }, [_c('div', {
     staticClass: "header"
-  }, [_vm._m(1), _vm._v(" "), _c('div', {
+  }, [_vm._m(0), _vm._v(" "), _c('div', {
     staticClass: "center"
   }, [_c('p', [_vm._v("第4节 05:44′")])], 1), _vm._v(" "), _c('div', {
     staticClass: "right"
   }, [_c('div', {
     staticClass: "icon1 icon on",
     attrs: {
-      "eventid": '1'
+      "eventid": '2'
     },
     on: {
       "change": _vm.top
@@ -529,7 +554,45 @@ var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._sel
   }), _vm._v(" "), _c('div', {
     staticClass: "icon2 icon on",
     attrs: {
-      "eventid": '2'
+      "eventid": '3'
+    },
+    on: {
+      "change": _vm.coll
+    }
+  })])]), _vm._v(" "), _c('div', {
+    staticClass: "box-content"
+  }, [_c('div', {
+    staticClass: "main item"
+  }, [_c('p', {
+    staticClass: "left"
+  }, [_c('span', {
+    staticClass: "zk"
+  }, [_vm._v("[主]")]), _vm._v(" 哈迪拉\n          ")]), _vm._v(" "), _c('p', {
+    staticClass: "center"
+  }, [_vm._v("1:2")]), _vm._v(" "), _c('p', {
+    staticClass: "right"
+  }, [_vm._v("\n            内斯兹奥纳\n            "), _c('span', {
+    staticClass: "zk"
+  }, [_vm._v("[客]")])])], 1)])]), _vm._v(" "), _c('div', {
+    staticClass: "list"
+  }, [_c('div', {
+    staticClass: "header"
+  }, [_vm._m(1), _vm._v(" "), _c('div', {
+    staticClass: "center ed"
+  }, [_c('p', [_vm._v("完")])], 1), _vm._v(" "), _c('div', {
+    staticClass: "right"
+  }, [_c('div', {
+    staticClass: "icon1 icon",
+    attrs: {
+      "eventid": '5'
+    },
+    on: {
+      "change": _vm.top
+    }
+  }), _vm._v(" "), _c('div', {
+    staticClass: "icon2 icon",
+    attrs: {
+      "eventid": '6'
     },
     on: {
       "change": _vm.coll
@@ -553,51 +616,13 @@ var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._sel
   }, [_c('div', {
     staticClass: "header"
   }, [_vm._m(2), _vm._v(" "), _c('div', {
-    staticClass: "center ed"
-  }, [_c('p', [_vm._v("完")])], 1), _vm._v(" "), _c('div', {
-    staticClass: "right"
-  }, [_c('div', {
-    staticClass: "icon1 icon",
-    attrs: {
-      "eventid": '4'
-    },
-    on: {
-      "change": _vm.top
-    }
-  }), _vm._v(" "), _c('div', {
-    staticClass: "icon2 icon",
-    attrs: {
-      "eventid": '5'
-    },
-    on: {
-      "change": _vm.coll
-    }
-  })])]), _vm._v(" "), _c('div', {
-    staticClass: "box-content"
-  }, [_c('div', {
-    staticClass: "main item"
-  }, [_c('p', {
-    staticClass: "left"
-  }, [_c('span', {
-    staticClass: "zk"
-  }, [_vm._v("[主]")]), _vm._v(" 哈迪拉\n          ")]), _vm._v(" "), _c('p', {
-    staticClass: "center"
-  }, [_vm._v("1:2")]), _vm._v(" "), _c('p', {
-    staticClass: "right"
-  }, [_vm._v("\n            内斯兹奥纳\n            "), _c('span', {
-    staticClass: "zk"
-  }, [_vm._v("[客]")])])], 1)])]), _vm._v(" "), _c('div', {
-    staticClass: "list"
-  }, [_c('div', {
-    staticClass: "header"
-  }, [_vm._m(3), _vm._v(" "), _c('div', {
     staticClass: "center"
   }, [_c('p', [_vm._v("第4节 05:44′")])], 1), _vm._v(" "), _c('div', {
     staticClass: "right"
   }, [_c('div', {
     staticClass: "icon1 icon",
     attrs: {
-      "eventid": '6'
+      "eventid": '7'
     },
     on: {
       "change": _vm.top
@@ -605,7 +630,7 @@ var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._sel
   }), _vm._v(" "), _c('div', {
     staticClass: "icon2 icon",
     attrs: {
-      "eventid": '7'
+      "eventid": '8'
     },
     on: {
       "change": _vm.coll
@@ -646,14 +671,14 @@ var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._sel
     staticClass: "list"
   }, [_c('div', {
     staticClass: "header"
-  }, [_vm._m(4), _vm._v(" "), _c('div', {
+  }, [_vm._m(3), _vm._v(" "), _c('div', {
     staticClass: "center"
   }, [_c('p', [_vm._v("完")])], 1), _vm._v(" "), _c('div', {
     staticClass: "right"
   }, [_c('div', {
     staticClass: "icon1 icon on",
     attrs: {
-      "eventid": '8'
+      "eventid": '9'
     },
     on: {
       "change": _vm.top
@@ -661,7 +686,7 @@ var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._sel
   }), _vm._v(" "), _c('div', {
     staticClass: "icon2 icon on",
     attrs: {
-      "eventid": '9'
+      "eventid": '10'
     },
     on: {
       "change": _vm.coll
@@ -702,14 +727,14 @@ var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._sel
     staticClass: "list"
   }, [_c('div', {
     staticClass: "header"
-  }, [_vm._m(5), _vm._v(" "), _c('div', {
+  }, [_vm._m(4), _vm._v(" "), _c('div', {
     staticClass: "center"
   }, [_c('p', [_vm._v("未开")])], 1), _vm._v(" "), _c('div', {
     staticClass: "right"
   }, [_c('div', {
     staticClass: "icon1 icon on",
     attrs: {
-      "eventid": '10'
+      "eventid": '11'
     },
     on: {
       "change": _vm.top
@@ -717,7 +742,7 @@ var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._sel
   }), _vm._v(" "), _c('div', {
     staticClass: "icon2 icon on",
     attrs: {
-      "eventid": '11'
+      "eventid": '12'
     },
     on: {
       "change": _vm.coll
@@ -747,14 +772,14 @@ var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._sel
     staticClass: "list1 list"
   }, [_c('div', {
     staticClass: "header"
-  }, [_vm._m(6), _vm._v(" "), _c('div', {
+  }, [_vm._m(5), _vm._v(" "), _c('div', {
     staticClass: "center"
   }, [_c('p', [_vm._v("第4节 05:44′")])], 1), _vm._v(" "), _c('div', {
     staticClass: "right"
   }, [_c('div', {
     staticClass: "icon1 icon on",
     attrs: {
-      "eventid": '12'
+      "eventid": '13'
     },
     on: {
       "change": _vm.top
@@ -762,7 +787,7 @@ var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._sel
   }), _vm._v(" "), _c('div', {
     staticClass: "icon2 icon on",
     attrs: {
-      "eventid": '13'
+      "eventid": '14'
     },
     on: {
       "change": _vm.coll
@@ -785,14 +810,14 @@ var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._sel
     staticClass: "list2 list"
   }, [_c('div', {
     staticClass: "header"
-  }, [_vm._m(7), _vm._v(" "), _c('div', {
+  }, [_vm._m(6), _vm._v(" "), _c('div', {
     staticClass: "center"
   }, [_c('p', [_vm._v("完")])], 1), _vm._v(" "), _c('div', {
     staticClass: "right"
   }, [_c('div', {
     staticClass: "icon1 icon on",
     attrs: {
-      "eventid": '14'
+      "eventid": '15'
     },
     on: {
       "change": _vm.top
@@ -800,7 +825,7 @@ var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._sel
   }), _vm._v(" "), _c('div', {
     staticClass: "icon2 icon on",
     attrs: {
-      "eventid": '15'
+      "eventid": '16'
     },
     on: {
       "change": _vm.coll
@@ -823,14 +848,14 @@ var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._sel
     staticClass: "list3 list"
   }, [_c('div', {
     staticClass: "header"
-  }, [_vm._m(8), _vm._v(" "), _c('div', {
+  }, [_vm._m(7), _vm._v(" "), _c('div', {
     staticClass: "center"
   }, [_c('p', [_vm._v("未开")])], 1), _vm._v(" "), _c('div', {
     staticClass: "right"
   }, [_c('div', {
     staticClass: "icon1 icon on",
     attrs: {
-      "eventid": '16'
+      "eventid": '17'
     },
     on: {
       "change": _vm.top
@@ -838,7 +863,7 @@ var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._sel
   }), _vm._v(" "), _c('div', {
     staticClass: "icon2 icon on",
     attrs: {
-      "eventid": '17'
+      "eventid": '18'
     },
     on: {
       "change": _vm.coll
@@ -860,15 +885,6 @@ var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._sel
   }, [_vm._v("[客]")])])], 1)])])])])], 1)
 }
 var staticRenderFns = [function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "screen"
-  }, [_c('img', {
-    attrs: {
-      "src": "../../../static/images/index/screen_img.png",
-      "alt": ""
-    }
-  })])
-},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
     staticClass: "left"
   }, [_c('img', {

@@ -4,7 +4,6 @@
     <div id="headerHeight" class="header">
       <div class="time">第四节 07:22</div>
       <div class="item">
-        
         <div class="left">
           <img src="https://fb.hxweixin.top/images/index_details/header1.png" alt />
           <p>比利时</p>
@@ -51,7 +50,7 @@
           <div class="item_list" :class="{on : isActive3}">
             <div class="list1">
               <div class="list_title">
-                <img src="https://fb.hxweixin.top/images/index_details/index_fx3.png" alt="">
+                <img src="https://fb.hxweixin.top/images/index_details/index_fx3.png" alt />
                 华盛顿奇才
               </div>
               <div class="table">
@@ -92,7 +91,7 @@
             </div>
             <div class="list1">
               <div class="list_title">
-                <img src="https://fb.hxweixin.top/images/index_details/index_fx4.png" alt="">
+                <img src="https://fb.hxweixin.top/images/index_details/index_fx4.png" alt />
                 芝加哥公牛
               </div>
               <div class="table">
@@ -176,14 +175,21 @@
                 src="https://fb.hxweixin.top/images/index_details/index_fx2.png"
                 alt
               />
-              
             </div>
           </div>
-          
+
           <div class="item_content" :class="{on : isActive1}">
             <div class="item_record">
-              <img src="https://fb.hxweixin.top/images/index_details/index_fx3.png" alt="">
-              <p>近3场，华盛顿奇才 胜<span class="red">0</span>平<span class="green">1</span>输<span class="blue">2</span>,胜率<span class="red">0%</span>赢盘率<span class="red">70%</span>大分率<span class="red">40%</span></p>
+              <img src="https://fb.hxweixin.top/images/index_details/index_fx3.png" alt />
+              <p>
+                近3场，华盛顿奇才 胜
+                <span class="red">0</span>平
+                <span class="green">1</span>输
+                <span class="blue">2</span>,胜率
+                <span class="red">0%</span>赢盘率
+                <span class="red">70%</span>大分率
+                <span class="red">40%</span>
+              </p>
             </div>
             <div class="title table">
               <div class="t1">日期/赛事</div>
@@ -196,25 +202,81 @@
             </div>
             <div>
               <div class="table1 table">
-                <div class="t1"><div> 2019/12/17 <p>中北美联</p></div></div>
-                <div class="t3"><div>华盛顿奇才</div> </div>
-                <div class="t4"><div>2-2 <p>(1-1)</p></div> </div>
-                <div class="t5"><div>华盛顿奇才</div> </div>
-                <div class="t6"><div>0.9 <span class="green">赢</span></div></div>
-                <div class="t6"><div>0.9 <span class="red">大</span></div></div>
+                <div class="t1">
+                  <div>
+                    2019/12/17
+                    <p>中北美联</p>
+                  </div>
+                </div>
+                <div class="t3">
+                  <div>华盛顿奇才</div>
+                </div>
+                <div class="t4">
+                  <div>
+                    2-2
+                    <p>(1-1)</p>
+                  </div>
+                </div>
+                <div class="t5">
+                  <div>华盛顿奇才</div>
+                </div>
+                <div class="t6">
+                  <div>
+                    0.9
+                    <span class="green">赢</span>
+                  </div>
+                </div>
+                <div class="t6">
+                  <div>
+                    0.9
+                    <span class="red">大</span>
+                  </div>
+                </div>
               </div>
               <div class="table1 table">
-                <div class="t1"><div> 2019/12/17 <p>中北美联</p></div></div>
-                <div class="t3"><div>华盛顿奇才</div> </div>
-                <div class="t4"><div>2-2 <p>(1-1)</p></div> </div>
-                <div class="t5"><div>华盛顿奇才</div> </div>
-                <div class="t6"><div>0.9 <span class="green">赢</span></div></div>
-                <div class="t6"><div>0.9 <span class="red">大</span></div></div>
+                <div class="t1">
+                  <div>
+                    2019/12/17
+                    <p>中北美联</p>
+                  </div>
+                </div>
+                <div class="t3">
+                  <div>华盛顿奇才</div>
+                </div>
+                <div class="t4">
+                  <div>
+                    2-2
+                    <p>(1-1)</p>
+                  </div>
+                </div>
+                <div class="t5">
+                  <div>华盛顿奇才</div>
+                </div>
+                <div class="t6">
+                  <div>
+                    0.9
+                    <span class="green">赢</span>
+                  </div>
+                </div>
+                <div class="t6">
+                  <div>
+                    0.9
+                    <span class="red">大</span>
+                  </div>
+                </div>
               </div>
             </div>
             <div class="item_record">
-              <img src="https://fb.hxweixin.top/images/index_details/index_fx3.png" alt="">
-              <p>近3场，华盛顿奇才 胜<span class="red">0</span>平<span class="green">1</span>输<span class="blue">2</span>,胜率<span class="red">0%</span>赢盘率<span class="red">70%</span>大分率<span class="red">40%</span></p>
+              <img src="https://fb.hxweixin.top/images/index_details/index_fx3.png" alt />
+              <p>
+                近3场，华盛顿奇才 胜
+                <span class="red">0</span>平
+                <span class="green">1</span>输
+                <span class="blue">2</span>,胜率
+                <span class="red">0%</span>赢盘率
+                <span class="red">70%</span>大分率
+                <span class="red">40%</span>
+              </p>
             </div>
             <div class="title table">
               <div class="t1">日期/赛事</div>
@@ -227,25 +289,73 @@
             </div>
             <div>
               <div class="table1 table">
-                <div class="t1"><div> 2019/12/17 <p>中北美联</p></div></div>
-                <div class="t3"><div>华盛顿奇才</div> </div>
-                <div class="t4"><div>2-2 <p>(1-1)</p></div> </div>
-                <div class="t5"><div>华盛顿奇才</div> </div>
-                <div class="t6"><div>0.9 <span class="green">赢</span></div></div>
-                <div class="t6"><div>0.9 <span class="red">大</span></div></div>
+                <div class="t1">
+                  <div>
+                    2019/12/17
+                    <p>中北美联</p>
+                  </div>
+                </div>
+                <div class="t3">
+                  <div>华盛顿奇才</div>
+                </div>
+                <div class="t4">
+                  <div>
+                    2-2
+                    <p>(1-1)</p>
+                  </div>
+                </div>
+                <div class="t5">
+                  <div>华盛顿奇才</div>
+                </div>
+                <div class="t6">
+                  <div>
+                    0.9
+                    <span class="green">赢</span>
+                  </div>
+                </div>
+                <div class="t6">
+                  <div>
+                    0.9
+                    <span class="red">大</span>
+                  </div>
+                </div>
               </div>
               <div class="table1 table">
-                <div class="t1"><div> 2019/12/17 <p>中北美联</p></div></div>
-                <div class="t3"><div>华盛顿奇才</div> </div>
-                <div class="t4"><div>2-2 <p>(1-1)</p></div> </div>
-                <div class="t5"><div>华盛顿奇才</div> </div>
-                <div class="t6"><div>0.9 <span class="green">赢</span></div></div>
-                <div class="t6"><div>0.9 <span class="red">大</span></div></div>
+                <div class="t1">
+                  <div>
+                    2019/12/17
+                    <p>中北美联</p>
+                  </div>
+                </div>
+                <div class="t3">
+                  <div>华盛顿奇才</div>
+                </div>
+                <div class="t4">
+                  <div>
+                    2-2
+                    <p>(1-1)</p>
+                  </div>
+                </div>
+                <div class="t5">
+                  <div>华盛顿奇才</div>
+                </div>
+                <div class="t6">
+                  <div>
+                    0.9
+                    <span class="green">赢</span>
+                  </div>
+                </div>
+                <div class="t6">
+                  <div>
+                    0.9
+                    <span class="red">大</span>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
-        
+
         <div class="item2">
           <div class="item_nav">
             <div class="left">
@@ -299,7 +409,6 @@
                 <div class="t1">0.9</div>
               </div>
             </div>
-            
           </div>
         </div>
       </div>
@@ -320,18 +429,8 @@
             <div class>
               <div class="echarts-wrap">
                 <div style="height: 182rpx;position:relative" v-if="onhide == 0 && key == 2">
-                  <mpvue-echarts
-                    
-                    :echarts="echarts"
-                    :onInit="onInit"
-                    canvasId="canvas2"
-                  />
-                  <!-- <img
-                    @click="onsrc"
-                    :dataSrc="radarImg"
-                    :src="handleCanvarToImg"
-                    style="width: 100%; height: 180px;position:absolute;left:0;right:0;top:0;"
-                  /> -->
+                  <mpvue-echarts :echarts="echarts" :onInit="onInit" canvasId="canvas2" />
+                  <img :dataSrc="imgsrc" :src="imgsrc" style="width: 100%;height: 100%" />
                 </div>
                 <div class="box_data">
                   <div class="seg_tab">
@@ -388,26 +487,9 @@
               </div>
               <div class="yz_list">
                 <div class="list">
-                  <div class="t1" @click="toData"><div>易胜博</div></div>
-                  <div class="t2">
-                    <div>0.8</div>
-                    <div>0.8</div>
-                    <div>0.8</div>
-                    <div>0.8</div>
-                    <div>0.8</div>
-                    <div>0.8</div>
+                  <div class="t1" @click="toData">
+                    <div>易胜博</div>
                   </div>
-                  <div class="t2">
-                    <div>0.8</div>
-                    <div>0.8</div>
-                    <div>0.8</div>
-                    <div>0.8</div>
-                    <div>0.8</div>
-                    <div>0.8</div>
-                  </div>
-                </div>
-                <div class="list">
-                  <div class="t1" @click="toData"><div>易胜博</div></div>
                   <div class="t2">
                     <div>0.8</div>
                     <div>0.8</div>
@@ -426,7 +508,30 @@
                   </div>
                 </div>
                 <div class="list">
-                  <div class="t1" @click="toData"><div>易胜博</div></div>
+                  <div class="t1" @click="toData">
+                    <div>易胜博</div>
+                  </div>
+                  <div class="t2">
+                    <div>0.8</div>
+                    <div>0.8</div>
+                    <div>0.8</div>
+                    <div>0.8</div>
+                    <div>0.8</div>
+                    <div>0.8</div>
+                  </div>
+                  <div class="t2">
+                    <div>0.8</div>
+                    <div>0.8</div>
+                    <div>0.8</div>
+                    <div>0.8</div>
+                    <div>0.8</div>
+                    <div>0.8</div>
+                  </div>
+                </div>
+                <div class="list">
+                  <div class="t1" @click="toData">
+                    <div>易胜博</div>
+                  </div>
                   <div class="t2">
                     <div>0.8</div>
                     <div>0.8</div>
@@ -692,17 +797,13 @@
             <div class>
               <div class="echarts-wrap">
                 <div style="height: 182rpx;position:relative" v-if="onhide == 2">
-                  <mpvue-echarts
-                    :echarts="echarts"
-                    :onInit="onInit2"
-                    canvasId="demo-canvas"
-                  />
+                  <mpvue-echarts :echarts="echarts" :onInit="onInit2" canvasId="demo-canvas" />
                   <!-- <img
                     @click="onsrc"
                     :dataSrc="radarImg"
                     :src="handleCanvarToImg"
-                    style="width: 100%; height: 180px;position:absolute;left:0;right:0;top:0;"
-                  /> -->
+                    style="width: 100%; height: 180px;position:absolute;left:0;right:0;top:0;z-index: 999"
+                  />-->
                 </div>
                 <div class="box_data">
                   <div class="seg_tab">
@@ -759,26 +860,9 @@
               </div>
               <div class="yz_list">
                 <div class="list">
-                  <div class="t1" @click="toData"><div>易胜博</div></div>
-                  <div class="t2">
-                    <div>0.8</div>
-                    <div>0.8</div>
-                    <div>0.8</div>
-                    <div>0.8</div>
-                    <div>0.8</div>
-                    <div>0.8</div>
+                  <div class="t1" @click="toData">
+                    <div>易胜博</div>
                   </div>
-                  <div class="t2">
-                    <div>0.8</div>
-                    <div>0.8</div>
-                    <div>0.8</div>
-                    <div>0.8</div>
-                    <div>0.8</div>
-                    <div>0.8</div>
-                  </div>
-                </div>
-                <div class="list">
-                  <div class="t1" @click="toData"><div>易胜博</div></div>
                   <div class="t2">
                     <div>0.8</div>
                     <div>0.8</div>
@@ -797,7 +881,30 @@
                   </div>
                 </div>
                 <div class="list">
-                  <div class="t1" @click="toData"><div>易胜博</div></div>
+                  <div class="t1" @click="toData">
+                    <div>易胜博</div>
+                  </div>
+                  <div class="t2">
+                    <div>0.8</div>
+                    <div>0.8</div>
+                    <div>0.8</div>
+                    <div>0.8</div>
+                    <div>0.8</div>
+                    <div>0.8</div>
+                  </div>
+                  <div class="t2">
+                    <div>0.8</div>
+                    <div>0.8</div>
+                    <div>0.8</div>
+                    <div>0.8</div>
+                    <div>0.8</div>
+                    <div>0.8</div>
+                  </div>
+                </div>
+                <div class="list">
+                  <div class="t1" @click="toData">
+                    <div>易胜博</div>
+                  </div>
                   <div class="t2">
                     <div>0.8</div>
                     <div>0.8</div>
@@ -906,7 +1013,7 @@
               </div>
             </div>
           </div>
-        </div> -->
+        </div>-->
       </div>
       <!-- 直播 -->
       <div class="content4 content" :class="key == 3 ? 'on':''">
@@ -1002,49 +1109,49 @@
           </div>
           <div class="live_data">
             <wux-segmented-control
-            :current="current1"
-            controlled
-            :values="['第一节', '第二节', '第三节','第四节']"
-            @change="onChange1"
+              :current="current1"
+              controlled
+              :values="['第一节', '第二节', '第三节','第四节']"
+              @change="onChange1"
             ></wux-segmented-control>
-          <div class="data_list">
-            <wux-timeline>
-            <wux-timeline-item dotStyle="border: 2rpx solid #A7A7A7; color: #A7A7A7">
-              <div class="box">
-                <div class="top">
-                  <div>第一节 00:00</div>
-                  <div>22-12</div>
-                </div>
-                <div class="con">
-                  <p>本节结束</p>
-                </div>
-              </div>
-            </wux-timeline-item>
-            <wux-timeline-item dotStyle="border: 2rpx solid #A7A7A7; color: #A7A7A7">
-              <div class="box">
-                <div class="top">
-                  <div>第一节 00:00</div>
-                  <div>22-12</div>
-                </div>
-                <div class="con">
-                  <p>本节结束</p>
-                </div>
-              </div>
-            </wux-timeline-item>
-            <wux-timeline-item dotStyle="border: 2rpx solid #A7A7A7; color: #A7A7A7">
-              <div class="box">
-                <div class="top">
-                  <div>第一节 00:00</div>
-                  <div>22-12</div>
-                </div>
-                <div class="con">
-                  <p>本节结束</p>
-                </div>
-              </div>
-            </wux-timeline-item>
-        </wux-timeline>
+            <div class="data_list">
+              <wux-timeline>
+                <wux-timeline-item dotStyle="border: 2rpx solid #A7A7A7; color: #A7A7A7">
+                  <div class="box">
+                    <div class="top">
+                      <div>第一节 00:00</div>
+                      <div>22-12</div>
+                    </div>
+                    <div class="con">
+                      <p>本节结束</p>
+                    </div>
+                  </div>
+                </wux-timeline-item>
+                <wux-timeline-item dotStyle="border: 2rpx solid #A7A7A7; color: #A7A7A7">
+                  <div class="box">
+                    <div class="top">
+                      <div>第一节 00:00</div>
+                      <div>22-12</div>
+                    </div>
+                    <div class="con">
+                      <p>本节结束</p>
+                    </div>
+                  </div>
+                </wux-timeline-item>
+                <wux-timeline-item dotStyle="border: 2rpx solid #A7A7A7; color: #A7A7A7">
+                  <div class="box">
+                    <div class="top">
+                      <div>第一节 00:00</div>
+                      <div>22-12</div>
+                    </div>
+                    <div class="con">
+                      <p>本节结束</p>
+                    </div>
+                  </div>
+                </wux-timeline-item>
+              </wux-timeline>
+            </div>
           </div>
-        </div>
         </div>
       </div>
       <!-- 聊天 -->
@@ -1064,383 +1171,9 @@ import mpvueEcharts from "mpvue-echarts";
 let chart = null;
 let chart1 = null;
 
-function initChart(canvas, width, height) {
-  chart = echarts.init(canvas, null, {
-    width: width,
-    height: height
-  });
-  canvas.setChart(chart);
-
-  var option = {
-    tooltip: {
-      trigger: "item",
-      formatter: ""
-    },
-    legend: {
-      orient: "vertical",
-      itemWidth: 5,
-      top: "middle",
-      textStyle: {
-        color: "#666666",
-        fontSize: "10"
-      },
-      left: 150,
-      data: ["盘口上升公司 1家", "盘口不变公司 4家", "盘口下降公司 1家"],
-      icon: "circle",
-      selectedMode: false
-    },
-    series: [
-      {
-        left: 0,
-        bottom: 0,
-        top: 0,
-        right: 0,
-        type: "pie",
-        radius: ["60%", "50%"],
-        center: ['20%', '50%'],
-        avoidLabelOverlap: false,
-        label: {
-          normal: {
-            show: false,
-            position: "outside"
-          },
-          emphasis: {
-            show: false
-          }
-        },
-        labelLine: {
-          normal: {
-            show: false
-          }
-        },
-        data: [
-          { value: 1, name: "盘口上升公司 1家", selected: false },
-          { value: 4, name: "盘口不变公司 4家", selected: false },
-          { value: 1, name: "盘口下降公司 1家", selected: false }
-        ],
-        color: ["#FF5858", "#FFD058", "#64C4ED"],
-        hoverAnimation: false,
-        legendHoverLink: false
-      }
-    ]
-  }; // ECharts 配置项
-
-  chart.setOption(option);
-  console.log('initChart');
-  return chart; // 返回 chart 后可以自动绑定触摸操作
-}
-
-
-function initChart2(canvas, width, height) {
-  chart = echarts.init(canvas, null, {
-    width: width,
-    height: height
-  });
-  canvas.setChart(chart);
-
-  var option = {
-    tooltip: {
-      trigger: "item",
-      formatter: ""
-    },
-    legend: {
-      orient: "vertical",
-      itemWidth: 5,
-      top: "middle",
-      textStyle: {
-        color: "#666666",
-        fontSize: "10"
-      },
-      left: 150,
-      data: ["盘口上升公司 1家", "盘口不变公司 4家", "盘口下降公司 1家"],
-      icon: "circle",
-      selectedMode: false
-    },
-    series: [
-      {
-        left: 0,
-        bottom: 0,
-        top: 0,
-        right: 0,
-        type: "pie",
-        radius: ["60%", "50%"],
-        center: ['20%', '50%'],
-        avoidLabelOverlap: false,
-        label: {
-          normal: {
-            show: false,
-            position: "outside"
-          },
-          emphasis: {
-            show: false
-          }
-        },
-        labelLine: {
-          normal: {
-            show: false
-          }
-        },
-        data: [
-          { value: 1, name: "盘口上升公司 1家", selected: false },
-          { value: 4, name: "盘口不变公司 4家", selected: false },
-          { value: 1, name: "盘口下降公司 1家", selected: false }
-        ],
-        color: ["#FF5858", "#FFD058", "#64C4ED"],
-        hoverAnimation: false,
-        legendHoverLink: false
-      }
-    ]
-  }; // ECharts 配置项
-
-  chart.setOption(option);
-  console.log('initChart2');
-  return chart; // 返回 chart 后可以自动绑定触摸操作
-}
-
-
-function initChart3(canvas, width, height) {
-  chart = echarts.init(canvas, null, {
-    width: width,
-    height: height
-  });
-  canvas.setChart(chart);
-
-  var option = {
-    tooltip: {
-      trigger: "item",
-      formatter: ""
-    },
-    legend: [
-      {
-        orient: "vertical",
-        itemWidth: 5,
-        top: "95",
-        textStyle: {
-          color: "#666666",
-          fontSize: "10"
-        },
-        left: "17%",
-        data: ["上升 1家", "不变 1家", "下降 1家"],
-        icon: "circle",
-        selectedMode: false
-      },
-      {
-        orient: "vertical",
-        itemWidth: 5,
-        top: "95",
-        textStyle: {
-          color: "#666666",
-          fontSize: "10"
-        },
-        left: "67%",
-        data: ["上升 1家", "不变 1家", "下降 1家"],
-        icon: "circle",
-        selectedMode: false
-      }
-    ],
-    series: [
-      {
-        left: "0%",
-        right: '0%',
-        top: 0,
-        bottom: 0,
-        type: "pie",
-        center: ['25%', '30%'],
-        radius: ["40%", "30%"],
-        avoidLabelOverlap: false,
-
-        label: {
-          normal: {
-            show: true,
-            position: "center",
-            formatter: function() {
-              return "主胜";
-            },
-            textStyle: {
-              color: "#666666",
-              fontSize: 10
-            }
-          },
-          emphasis: {
-            show: false
-          }
-        },
-        data: [
-          { value: 1, name: "上升 1家", selected: false },
-          { value: 4, name: "不变 1家", selected: false },
-          { value: 1, name: "下降 1家", selected: false }
-        ],
-        color: ["#FF5858", "#FFD058", "#64C4ED"],
-        hoverAnimation: false,
-        legendHoverLink: false
-      },
-      {
-        left: '0%',
-        right: "0%",
-        top: 0,
-        bottom: 0,
-        type: "pie",
-        center: ['75%', '30%'],
-        radius: ["40%", "30%"],
-        avoidLabelOverlap: false,
-        label: {
-          normal: {
-            show: true,
-            position: "center",
-            formatter: function() {
-              return "客胜";
-            },
-            textStyle: {
-              color: "#666666",
-              fontSize: 10
-            }
-          },
-          emphasis: {
-            show: false
-          }
-        },
-        data: [
-          { value: 1, name: "上升 1家", selected: false },
-          { value: 4, name: "不变 1家", selected: false },
-          { value: 1, name: "下降 1家", selected: false }
-        ],
-        color: ["#FF5858", "#FFD058", "#64C4ED"],
-        hoverAnimation: false,
-        legendHoverLink: false
-      }
-    ]
-  }; // ECharts 配置项
-
-  chart.setOption(option);
-  console.log('initChart3');
-
-  return chart; // 返回 chart 后可以自动绑定触摸操作
-}
-
-function initChart4(canvas, width, height) {
-  var pp = this;
-  chart = echarts.init(canvas, null, {
-    width: width,
-    height: height
-  });
-  canvas.setChart(chart);
-
-  var option = {
-    title: [{
-        subtext: '犯规数',
-        left: '47%',
-        top: '21%',
-        textAlign: 'center',
-        textStyle:{
-          color: '#333'
-        }
-    }, {
-        subtext: '剩余\n暂停',
-        left: '47%',
-        top: '58%',
-        textAlign: 'center',
-        textStyle:{
-          color: '#333'
-        }
-    }],
-    tooltip: {
-      trigger: "item",
-      formatter: ""
-    },
-    series: [
-      {
-        left: 0,
-        top: "0",
-        type: "pie",
-        center: ['50%', '30%'],
-        radius: ["40%", "30%"],
-        avoidLabelOverlap: false,
-        label: {
-          normal:{
-            position: 'outer',
-            alignTo: 'labelLine',
-            bleedMargin: 5,
-            formatter:"{c}",
-            },
-          emphasis: {
-            show: false
-          }
-        },
-        labelLine: {
-          normal: {
-            show: false
-          }
-        },
-        data: [{ value: 1, selected: false }, { value: 4, selected: false }],
-        color: ["#FF5858", "#64C4ED"],
-        hoverAnimation: false,
-        legendHoverLink: false
-      },
-      {
-        left: 0,
-        top: "0",
-        type: "pie",
-        center: ['50%', '70%'],
-        radius: ["40%", "30%"],
-        avoidLabelOverlap: false,
-        label: {
-          normal:{
-            position: 'outer',
-            alignTo: 'labelLine',
-            bleedMargin: 5,
-            formatter:"{c}",
-            },
-          emphasis: {
-            show: false
-          }
-        },
-        labelLine: {
-          normal: {
-            show: false
-          }
-        },
-        data: [{ value: 1, selected: false }, { value: 4, selected: false }],
-        color: ["#FF5858", "#64C4ED"],
-        hoverAnimation: false,
-        legendHoverLink: false
-      }
-    ]
-  }; // ECharts 配置项
-
-  chart.setOption(option);
-
-  console.log('initChart4');
-
-  return chart; // 返回 chart 后可以自动绑定触摸操作
-}
-
-function handleCanvarToImg(e) {
-  
-  // wx.canvasToTempFilePath(
-  //   {
-  //     x: 0,
-  //     y: 0,
-  //     // width: 260,
-  //     // height: 180,
-  //     canvasId: "demo-canvas",
-  //     success: function(res) {
-  //       console.log("666" + res.tempFilePath);
-  //       e.radarImg = res.tempFilePath;
-  //       console.log(e.radarImg)
-  //       // that.setData({ radarImg: res.tempFilePath });
-  //       // then.radarImg = res.tempFilePath;
-  //       // return res.tempFilePath;
-  //     }
-  //   },
-  //   this
-  // );
-}
-
 export default {
   mounted() {},
-  onShow() {
-    
-  },
+  onShow() {},
   computed: {},
   components: {
     mpvueEcharts
@@ -1476,23 +1209,402 @@ export default {
       isActive2: false,
       isActive3: false,
       echarts,
-      onInit: initChart,
-      onInit2: initChart2,
-      onInit3: initChart3,
-      onInit4: initChart4,
-      src: handleCanvarToImg,
+      onInit: this.initChart,
+      onInit2: this.initChart2,
+      onInit3: this.initChart3,
+      onInit4: this.initChart4,
+      // src: handleCanvarToImg,
       current: 0,
       current1: 0,
       onhide: 0,
       radarImg: "",
-      prog1: '60',
-      prog2: '40',
+      prog1: "60",
+      prog2: "40",
+      imgsrc: ''
       // opts: {
       //   onInit: initChart("column", 400, 300, F2)
       // }
     };
   },
   methods: {
+    initChart(canvas, width, height) {
+      let then = this;
+      chart = echarts.init(canvas, null, {
+        width: width,
+        height: height
+      });
+      console.log(canvas);
+      canvas.setChart(chart);
+
+      var option = {
+        tooltip: {
+          trigger: "item",
+          formatter: ""
+        },
+        legend: {
+          orient: "vertical",
+          itemWidth: 5,
+          top: "middle",
+          textStyle: {
+            color: "#666666",
+            fontSize: "10"
+          },
+          left: 150,
+          data: ["盘口上升公司 1家", "盘口不变公司 4家", "盘口下降公司 1家"],
+          icon: "circle",
+          selectedMode: false
+        },
+        series: [
+          {
+            left: 0,
+            bottom: 0,
+            top: 0,
+            right: 0,
+            type: "pie",
+            radius: ["60%", "50%"],
+            center: ["20%", "50%"],
+            avoidLabelOverlap: false,
+            label: {
+              normal: {
+                show: false,
+                position: "outside"
+              },
+              emphasis: {
+                show: false
+              }
+            },
+            labelLine: {
+              normal: {
+                show: false
+              }
+            },
+            data: [
+              { value: 1, name: "盘口上升公司 1家", selected: false },
+              { value: 4, name: "盘口不变公司 4家", selected: false },
+              { value: 1, name: "盘口下降公司 1家", selected: false }
+            ],
+            color: ["#FF5858", "#FFD058", "#64C4ED"],
+            hoverAnimation: false,
+            legendHoverLink: false
+          }
+        ]
+      }; // ECharts 配置项
+
+      chart.setOption(option);
+      console.log("initChart");
+      // setTimeout(function() {
+        then.handleCanvarToImg(canvas.canvasId,width,height);
+      // },1000);
+      return chart; // 返回 chart 后可以自动绑定触摸操作
+    },
+    initChart2(canvas, width, height) {
+      chart = echarts.init(canvas, null, {
+        width: width,
+        height: height
+      });
+      canvas.setChart(chart);
+
+      var option = {
+        tooltip: {
+          trigger: "item",
+          formatter: ""
+        },
+        legend: {
+          orient: "vertical",
+          itemWidth: 5,
+          top: "middle",
+          textStyle: {
+            color: "#666666",
+            fontSize: "10"
+          },
+          left: 150,
+          data: ["盘口上升公司 1家", "盘口不变公司 4家", "盘口下降公司 1家"],
+          icon: "circle",
+          selectedMode: false
+        },
+        series: [
+          {
+            left: 0,
+            bottom: 0,
+            top: 0,
+            right: 0,
+            type: "pie",
+            radius: ["60%", "50%"],
+            center: ["20%", "50%"],
+            avoidLabelOverlap: false,
+            label: {
+              normal: {
+                show: false,
+                position: "outside"
+              },
+              emphasis: {
+                show: false
+              }
+            },
+            labelLine: {
+              normal: {
+                show: false
+              }
+            },
+            data: [
+              { value: 1, name: "盘口上升公司 1家", selected: false },
+              { value: 4, name: "盘口不变公司 4家", selected: false },
+              { value: 1, name: "盘口下降公司 1家", selected: false }
+            ],
+            color: ["#FF5858", "#FFD058", "#64C4ED"],
+            hoverAnimation: false,
+            legendHoverLink: false
+          }
+        ]
+      }; // ECharts 配置项
+
+      chart.setOption(option);
+      console.log("initChart2");
+      return chart; // 返回 chart 后可以自动绑定触摸操作
+    },
+    initChart3(canvas, width, height) {
+      chart = echarts.init(canvas, null, {
+        width: width,
+        height: height
+      });
+      canvas.setChart(chart);
+
+      var option = {
+        tooltip: {
+          trigger: "item",
+          formatter: ""
+        },
+        legend: [
+          {
+            orient: "vertical",
+            itemWidth: 5,
+            top: "95",
+            textStyle: {
+              color: "#666666",
+              fontSize: "10"
+            },
+            left: "17%",
+            data: ["上升 1家", "不变 1家", "下降 1家"],
+            icon: "circle",
+            selectedMode: false
+          },
+          {
+            orient: "vertical",
+            itemWidth: 5,
+            top: "95",
+            textStyle: {
+              color: "#666666",
+              fontSize: "10"
+            },
+            left: "67%",
+            data: ["上升 1家", "不变 1家", "下降 1家"],
+            icon: "circle",
+            selectedMode: false
+          }
+        ],
+        series: [
+          {
+            left: "0%",
+            right: "0%",
+            top: 0,
+            bottom: 0,
+            type: "pie",
+            center: ["25%", "30%"],
+            radius: ["40%", "30%"],
+            avoidLabelOverlap: false,
+
+            label: {
+              normal: {
+                show: true,
+                position: "center",
+                formatter: function() {
+                  return "主胜";
+                },
+                textStyle: {
+                  color: "#666666",
+                  fontSize: 10
+                }
+              },
+              emphasis: {
+                show: false
+              }
+            },
+            data: [
+              { value: 1, name: "上升 1家", selected: false },
+              { value: 4, name: "不变 1家", selected: false },
+              { value: 1, name: "下降 1家", selected: false }
+            ],
+            color: ["#FF5858", "#FFD058", "#64C4ED"],
+            hoverAnimation: false,
+            legendHoverLink: false
+          },
+          {
+            left: "0%",
+            right: "0%",
+            top: 0,
+            bottom: 0,
+            type: "pie",
+            center: ["75%", "30%"],
+            radius: ["40%", "30%"],
+            avoidLabelOverlap: false,
+            label: {
+              normal: {
+                show: true,
+                position: "center",
+                formatter: function() {
+                  return "客胜";
+                },
+                textStyle: {
+                  color: "#666666",
+                  fontSize: 10
+                }
+              },
+              emphasis: {
+                show: false
+              }
+            },
+            data: [
+              { value: 1, name: "上升 1家", selected: false },
+              { value: 4, name: "不变 1家", selected: false },
+              { value: 1, name: "下降 1家", selected: false }
+            ],
+            color: ["#FF5858", "#FFD058", "#64C4ED"],
+            hoverAnimation: false,
+            legendHoverLink: false
+          }
+        ]
+      }; // ECharts 配置项
+
+      chart.setOption(option);
+      console.log("initChart3");
+
+      return chart; // 返回 chart 后可以自动绑定触摸操作
+    },
+    initChart4(canvas, width, height) {
+      var pp = this;
+      chart = echarts.init(canvas, null, {
+        width: width,
+        height: height
+      });
+      canvas.setChart(chart);
+
+      var option = {
+        title: [
+          {
+            subtext: "犯规数",
+            left: "47%",
+            top: "21%",
+            textAlign: "center",
+            textStyle: {
+              color: "#333"
+            }
+          },
+          {
+            subtext: "剩余\n暂停",
+            left: "47%",
+            top: "58%",
+            textAlign: "center",
+            textStyle: {
+              color: "#333"
+            }
+          }
+        ],
+        tooltip: {
+          trigger: "item",
+          formatter: ""
+        },
+        series: [
+          {
+            left: 0,
+            top: "0",
+            type: "pie",
+            center: ["50%", "30%"],
+            radius: ["40%", "30%"],
+            avoidLabelOverlap: false,
+            label: {
+              normal: {
+                position: "outer",
+                alignTo: "labelLine",
+                bleedMargin: 5,
+                formatter: "{c}"
+              },
+              emphasis: {
+                show: false
+              }
+            },
+            labelLine: {
+              normal: {
+                show: false
+              }
+            },
+            data: [
+              { value: 1, selected: false },
+              { value: 4, selected: false }
+            ],
+            color: ["#FF5858", "#64C4ED"],
+            hoverAnimation: false,
+            legendHoverLink: false
+          },
+          {
+            left: 0,
+            top: "0",
+            type: "pie",
+            center: ["50%", "70%"],
+            radius: ["40%", "30%"],
+            avoidLabelOverlap: false,
+            label: {
+              normal: {
+                position: "outer",
+                alignTo: "labelLine",
+                bleedMargin: 5,
+                formatter: "{c}"
+              },
+              emphasis: {
+                show: false
+              }
+            },
+            labelLine: {
+              normal: {
+                show: false
+              }
+            },
+            data: [
+              { value: 1, selected: false },
+              { value: 4, selected: false }
+            ],
+            color: ["#FF5858", "#64C4ED"],
+            hoverAnimation: false,
+            legendHoverLink: false
+          }
+        ]
+      }; // ECharts 配置项
+
+      chart.setOption(option);
+
+      console.log("initChart4");
+
+      return chart; // 返回 chart 后可以自动绑定触摸操作
+    },
+    handleCanvarToImg(id, width, height) {
+      let then = this;
+      wx.canvasToTempFilePath({
+        x: 0,
+        y: 0,
+        width: width,
+        height: height,
+        canvasId: id,
+        success: function (res) {
+          console.log("666" + res.tempFilePath);
+          then.imgsrc = res.tempFilePath;
+          console.log(then.imgsrc)
+          // e.radarImg = res.tempFilePath;
+          // console.log(e.radarImg);
+          // that.setData({ radarImg: res.tempFilePath });
+          // then.radarImg = res.tempFilePath;
+          // return res.tempFilePath;
+        }
+      });
+    },
     onBtn(e) {
       // console.log(e)
       this.key = e.currentTarget.dataset.key;
@@ -1538,33 +1650,28 @@ export default {
     onsrc(e) {
       var then = this;
       console.log(then.radarImg);
-      
     },
-    toData(){
+    toData() {
       wx.navigateTo({
-        url: '../basketball_details_data/yz_data/main'
-      })
+        url: "../basketball_details_data/yz_data/main"
+      });
     },
-    toData1(){
+    toData1() {
       wx.navigateTo({
-        url: '../basketball_details_data/oz_data/main'
-      })
+        url: "../basketball_details_data/oz_data/main"
+      });
     },
-    toData2(){
+    toData2() {
       wx.navigateTo({
-        url: '../basketball_details_data/size_data/main'
-      })
+        url: "../basketball_details_data/size_data/main"
+      });
     }
   }
 };
-
-
-
 </script>
 
 
 <style scoped>
-
 .header {
   background: url("https://fb.hxweixin.top/images/header_background.png")
     no-repeat;
@@ -1576,12 +1683,12 @@ export default {
   right: 0;
   z-index: 99999;
 }
-.header .time{
+.header .time {
   position: absolute;
   top: 50rpx;
   left: 50%;
   transform: translateX(-50%);
-  background: rgba(255, 255, 255, .1);
+  background: rgba(255, 255, 255, 0.1);
   color: #fff;
   font-size: 20rpx;
   padding: 15rpx;
@@ -1738,7 +1845,7 @@ export default {
   align-items: center;
   position: relative;
   border-bottom: 2rpx solid #f2f2f2;
-  margin-top: 30rpx
+  margin-top: 30rpx;
 }
 .content2 .item_nav .left p {
   font-size: 26rpx;
@@ -1759,7 +1866,6 @@ export default {
   font-size: 22rpx;
   display: flex;
   align-items: center;
-  
 }
 .content2 .item_nav .right img {
   width: 22rpx;
@@ -1867,16 +1973,16 @@ export default {
 .content2 .item1 .item_content .table .t7 {
   width: 15%;
 }
-.content2 .item1 .item_content .table.title>div{
-  border: none
+.content2 .item1 .item_content .table.title > div {
+  border: none;
 }
-.content2 .item1 .item_content .table>div{
+.content2 .item1 .item_content .table > div {
   display: flex;
   align-items: center;
-  justify-content: center
+  justify-content: center;
 }
-.content2 .item1 .item_content .table .t1 .text{
-  display: block
+.content2 .item1 .item_content .table .t1 .text {
+  display: block;
 }
 .content2 .item_content .btm {
   text-align: center;
@@ -2030,12 +2136,12 @@ export default {
 .yz_content .yz_title .t2 {
   display: flex;
 }
-.yz_content .yz_title .t2>p{
+.yz_content .yz_title .t2 > p {
   flex: 1;
-  white-space: nowrap
+  white-space: nowrap;
 }
-.yz_content .yz_title .t2.bor{
-  border-right: 2rpx solid #f2f2f2
+.yz_content .yz_title .t2.bor {
+  border-right: 2rpx solid #f2f2f2;
 }
 .yz_content .yz_list .list {
   display: flex;
@@ -2057,7 +2163,7 @@ export default {
   position: relative;
   display: flex;
   align-items: center;
-  justify-content: center
+  justify-content: center;
 }
 .yz_content .yz_list .list .t1::before {
   content: "";
@@ -2071,14 +2177,14 @@ export default {
   border-color: transparent transparent transparent #4cb13b;
   border-style: solid;
 }
-.yz_content .yz_list .list .t2{
+.yz_content .yz_list .list .t2 {
   display: flex;
   text-align: center;
   flex-wrap: wrap;
   width: 40%;
   position: relative;
 }
-.yz_content .yz_list .list .t2::after{
+.yz_content .yz_list .list .t2::after {
   content: "";
   position: absolute;
   background: #f2f2f2;
@@ -2088,7 +2194,7 @@ export default {
   top: 50%;
   transform: translateY(-50%);
 }
-.yz_content .yz_list .list .t2>div{
+.yz_content .yz_list .list .t2 > div {
   width: 33.33%;
   padding: 10rpx 0;
 }
@@ -2245,10 +2351,10 @@ export default {
   height: 88rpx;
   vertical-align: middle;
 }
-.content2 .item_list.on{
-  display: none
+.content2 .item_list.on {
+  display: none;
 }
-.content2 .item_list .list1 .list_title{
+.content2 .item_list .list1 .list_title {
   text-align: center;
   display: flex;
   justify-content: center;
@@ -2256,201 +2362,204 @@ export default {
   font-size: 24rpx;
   color: #333;
   padding: 15rpx 0;
-  background: rgba(153,218,255,.1)
+  background: rgba(153, 218, 255, 0.1);
 }
-.content2 .item_list .list1 .list_title img{
+.content2 .item_list .list1 .list_title img {
   width: 34rpx;
   height: 34rpx;
   margin-right: 10rpx;
 }
-.content2 .item_list .list1 .table .tr{
+.content2 .item_list .list1 .table .tr {
   display: flex;
   border-bottom: 2rpx solid #f2f2f2;
 }
-.content2 .item_list .list1 .table .tr>div{
+.content2 .item_list .list1 .table .tr > div {
   padding: 15rpx 0;
   font-size: 20rpx;
   color: #333;
   text-align: center;
   width: 10%;
   border-left: 2rpx solid #f2f2f2;
-  font-weight: 400
+  font-weight: 400;
 }
-.content2 .item_list .list1 .table .tr>div:first-child{
+.content2 .item_list .list1 .table .tr > div:first-child {
   width: 20%;
-  border: none
+  border: none;
 }
-.content2 .item_list .list1 .table .tr.table_head>div{
+.content2 .item_list .list1 .table .tr.table_head > div {
   border: none;
   font-weight: 500;
-  font-size: 22rpx
+  font-size: 22rpx;
 }
-.ball_box .box_head{
-  margin-bottom: 30rpx
+.ball_box .box_head {
+  margin-bottom: 30rpx;
 }
-.ball_box .box_head .title{
+.ball_box .box_head .title {
   position: relative;
   margin-bottom: 33rpx;
 }
-.ball_box .box_head .title::after{
+.ball_box .box_head .title::after {
   content: "";
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
   left: 30rpx;
-  width:6rpx;
-  height:30rpx;
-  background:rgba(76,177,59,1);
+  width: 6rpx;
+  height: 30rpx;
+  background: rgba(76, 177, 59, 1);
 }
-.ball_box .box_head .title p{
+.ball_box .box_head .title p {
   margin-left: 55rpx;
   font-size: 26rpx;
   color: #333;
-  font-weight: bold
+  font-weight: bold;
 }
-.ball_box .box_head .item{
+.ball_box .box_head .item {
   display: flex;
   justify-content: space-between;
   padding: 30rpx;
 }
-.ball_box .box_head .item .left,.ball_box .box_head .item .right{
+.ball_box .box_head .item .left,
+.ball_box .box_head .item .right {
   display: flex;
-  align-items: center
+  align-items: center;
 }
-.ball_box .box_head .item .left p,.ball_box .box_head .item .right p{
+.ball_box .box_head .item .left p,
+.ball_box .box_head .item .right p {
   font-size: 28rpx;
   color: #333;
   margin-bottom: 0rpx;
 }
-.ball_box .box_head .item .left span,.ball_box .box_head .item .right span{
+.ball_box .box_head .item .left span,
+.ball_box .box_head .item .right span {
   font-size: 24rpx;
-  color: #999
+  color: #999;
 }
-.ball_box .box_head .item img{
+.ball_box .box_head .item img {
   width: 108rpx;
   height: 108rpx;
 }
-.ball_box .box_head .item .left_p{
-  margin-left: 20rpx
+.ball_box .box_head .item .left_p {
+  margin-left: 20rpx;
 }
-.ball_box .box_head .item .right_p{
-  margin-right: 20rpx
+.ball_box .box_head .item .right_p {
+  margin-right: 20rpx;
 }
-.ball_box .box_head .record{
+.ball_box .box_head .record {
   background: #fff;
   padding: 20rpx 60rpx;
   display: flex;
   justify-content: space-between;
-  border-top: 2rpx solid #f2f2f2
+  border-top: 2rpx solid #f2f2f2;
 }
-.ball_box .box_head .record div{
+.ball_box .box_head .record div {
   font-size: 24rpx;
   color: #999;
 }
-.ball_box .box_head .record div:last-child{
-  color: #333
+.ball_box .box_head .record div:last-child {
+  color: #333;
 }
-.ball_box .item1 .item_record{
+.ball_box .item1 .item_record {
   padding: 10rpx 30rpx;
-  background: rgba(153,218,255,.1);
+  background: rgba(153, 218, 255, 0.1);
   display: flex;
   align-items: center;
 }
-.ball_box .item1 .item_record img{
+.ball_box .item1 .item_record img {
   width: 34rpx;
   height: 34rpx;
 }
-.ball_box .item1 .item_record p{
+.ball_box .item1 .item_record p {
   font-size: 22rpx;
   color: #333;
-  margin-left: 20rpx
+  margin-left: 20rpx;
 }
-.content4 .head_table .title{
+.content4 .head_table .title {
   display: flex;
   text-align: center;
-  border-bottom: 2rpx solid #f2f2f2
+  border-bottom: 2rpx solid #f2f2f2;
 }
-.content4 .head_table .title>div{
+.content4 .head_table .title > div {
   width: 14.28%;
   font-size: 24rpx;
   color: #333;
-  padding: 10rpx 0
+  padding: 10rpx 0;
 }
-.content4 .head_table .title.bor>div{
+.content4 .head_table .title.bor > div {
   border-right: 2rpx solid #f2f2f2;
   font-size: 22rpx;
 }
-.content4 .head_table .title.bor>div:last-child{
-  border-right: none
+.content4 .head_table .title.bor > div:last-child {
+  border-right: none;
 }
-.content4 .head_table .title>div:first-child{
-  width: 28.57%
+.content4 .head_table .title > div:first-child {
+  width: 28.57%;
 }
-.content4 .canv{
+.content4 .canv {
   display: flex;
   padding-bottom: 20rpx;
 }
-.content4 .canv .left{
+.content4 .canv .left {
   width: 60%;
   box-sizing: border-box;
-  padding: 0 30rpx
+  padding: 0 30rpx;
 }
-.content4 .canv .right{
-  width: 40%
+.content4 .canv .right {
+  width: 40%;
 }
-.content4 .canv .left .canv_list{
+.content4 .canv .left .canv_list {
   margin-bottom: 10rpx;
 }
-.content4 .canv .left .canv_list .title{
+.content4 .canv .left .canv_list .title {
   text-align: center;
   font-size: 22rpx;
   color: #666;
-  margin-bottom: 10rpx
+  margin-bottom: 10rpx;
 }
-.content4 .canv .left .canv_list .list_text{
+.content4 .canv .left .canv_list .list_text {
   display: flex;
   justify-content: space-between;
 }
-.content4 .canv .left .canv_list .list_text p{
+.content4 .canv .left .canv_list .list_text p {
   font-size: 22rpx;
   color: #333;
-  margin-top: 10rpx
+  margin-top: 10rpx;
 }
-.content4 .canv .left .canv_list .list_prog{
+.content4 .canv .left .canv_list .list_prog {
   display: flex;
 }
-.content4 .canv .left .canv_list .list_prog .prog1{
-  background: #FB5A51;
+.content4 .canv .left .canv_list .list_prog .prog1 {
+  background: #fb5a51;
   height: 16rpx;
 }
-.content4 .canv .left .canv_list .list_prog .prog2{
-  background: #64C5EE;
+.content4 .canv .left .canv_list .list_prog .prog2 {
+  background: #64c5ee;
   height: 16rpx;
 }
-.content4 .live_data{
-  margin-top: 30rpx
+.content4 .live_data {
+  margin-top: 30rpx;
 }
-.content4 .data_list{
+.content4 .data_list {
   background: #fff;
-  padding: 40rpx 30rpx
+  padding: 40rpx 30rpx;
 }
-.content4 .data_list .box{
-  margin-left: 35rpx
+.content4 .data_list .box {
+  margin-left: 35rpx;
 }
-.content4 .data_list .box .top{
+.content4 .data_list .box .top {
   display: flex;
   justify-content: space-between;
   font-size: 24rpx;
   color: #333;
 }
-.content4 .data_list .box .con{
-  background: #F2F2F2;
+.content4 .data_list .box .con {
+  background: #f2f2f2;
   margin-top: 20rpx;
   padding: 15rpx 10rpx;
-  position: re
+  position: re;
 }
-.content4 .data_list .box .con p{
+.content4 .data_list .box .con p {
   font-size: 24rpx;
-  color: #333
+  color: #333;
 }
 </style>

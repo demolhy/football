@@ -89,6 +89,31 @@ if (false) {(function () {
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 /* harmony default export */ __webpack_exports__["a"] = ({
@@ -97,9 +122,70 @@ if (false) {(function () {
   },
 
   data: function data() {
-    return {};
+    return {
+      current: 0,
+      length: 0,
+      checkeds: false,
+      screen_list: [{
+        key: 0,
+        checked: false,
+        title: "英格兰"
+      }, {
+        key: 1,
+        checked: false,
+        title: "阿尔巴利亚"
+      }, {
+        key: 2,
+        checked: false,
+        title: "西班牙"
+      }, {
+        key: 3,
+        checked: false,
+        title: "德国"
+      }, {
+        key: 4,
+        checked: false,
+        title: "阿尔巴利亚"
+      }]
+
+    };
   },
-  created: function created() {}
+  created: function created() {},
+
+  methods: {
+    onChange: function onChange(e) {
+      console.log('onChange', e.target.key);
+      this.current = e.target.key;
+    },
+    onChecked: function onChecked(e) {
+      // console.log(e);
+      // console.log(e.mp.detail.value);
+      var values = e.mp.detail.value;
+      this.screen_list.map(function (item, index) {
+        item.checked = values.indexOf("" + index) > -1;
+        console.log(item);
+        // console.log('123'+values.indexOf(""+index))
+        // if(values.indexOf(""+index) > -1){
+        //   console.log(index)
+        //   item.checked = true;
+        // }else{
+        //   item.checked = false;
+        // }
+      });
+      console.log(values);
+      this.length = values.length;
+    },
+    onAll: function onAll() {
+      this.screen_list.map(function (item, index) {
+        item.checked = true;
+      });
+    },
+    onReverse: function onReverse() {
+      this.screen_list.map(function (item, index) {
+        item.checked = !item.checked;
+      });
+    }
+  }
 });
 
 /***/ }),
@@ -109,9 +195,103 @@ if (false) {(function () {
 
 "use strict";
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div')
+  return _c('div', [_c('wux-tabs', {
+    attrs: {
+      "current": _vm.current,
+      "defaultCurrent": "tab1",
+      "eventid": '0',
+      "mpcomid": '5'
+    },
+    on: {
+      "change": _vm.onChange
+    }
+  }, [_c('wux-tab', {
+    key: "0",
+    attrs: {
+      "title": "全部",
+      "wux-class": "nav",
+      "mpcomid": '0'
+    }
+  }), _vm._v(" "), _c('wux-tab', {
+    key: "1",
+    attrs: {
+      "title": "一级",
+      "wux-class": "nav",
+      "mpcomid": '1'
+    }
+  }), _vm._v(" "), _c('wux-tab', {
+    key: "2",
+    attrs: {
+      "title": "竞彩",
+      "wux-class": "nav",
+      "mpcomid": '2'
+    }
+  }), _vm._v(" "), _c('wux-tab', {
+    key: "3",
+    attrs: {
+      "title": "足彩",
+      "wux-class": "nav",
+      "mpcomid": '3'
+    }
+  }), _vm._v(" "), _c('wux-tab', {
+    key: "4",
+    attrs: {
+      "title": "单彩",
+      "wux-class": "nav",
+      "mpcomid": '4'
+    }
+  })], 1), _vm._v(" "), _c('div', {
+    staticClass: "footer"
+  }, [_c('div', {
+    staticClass: "lf"
+  }, [_c('div', {
+    attrs: {
+      "eventid": '1'
+    },
+    on: {
+      "click": _vm.onAll
+    }
+  }, [_vm._v("全选")]), _vm._v(" "), _c('div', {
+    attrs: {
+      "eventid": '2'
+    },
+    on: {
+      "click": _vm.onReverse
+    }
+  }, [_vm._v("反选")]), _vm._v(" "), _c('div', {
+    staticClass: "text"
+  }, [_vm._v("已选" + _vm._s(_vm.length) + "场")])]), _vm._v(" "), _vm._m(0)]), _vm._v(" "), _c('div', {
+    staticClass: "content"
+  }, [_c('checkbox-group', {
+    staticClass: "item",
+    attrs: {
+      "value": 1,
+      "eventid": '3',
+      "mpcomid": '6'
+    },
+    on: {
+      "change": _vm.onChecked
+    }
+  }, _vm._l((_vm.screen_list), function(item, index) {
+    return _c('label', {
+      key: item.key,
+      staticClass: "list",
+      class: item.checked == true ? 'on' : ''
+    }, [_c('checkbox', {
+      staticClass: "input",
+      attrs: {
+        "id": item.key,
+        "value": item.key,
+        "checked": item.checked
+      }
+    }), _vm._v("\n          " + _vm._s(item.title) + "\n        ")], 1)
+  }))], 1)], 1)
 }
-var staticRenderFns = []
+var staticRenderFns = [function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "rh"
+  }, [_c('div', [_vm._v("确定")])])
+}]
 render._withStripped = true
 var esExports = { render: render, staticRenderFns: staticRenderFns }
 /* harmony default export */ __webpack_exports__["a"] = (esExports);

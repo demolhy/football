@@ -1,1 +1,90 @@
 @import "../../common/vendor.wxss";
+
+.nav.wux-tabs__tab--current {
+  border-bottom: 2rpx solid #4CB13B;
+}
+.nav::after {
+  content: none;
+  display: none;
+}
+.nav::before {
+  content: none;
+  display: none;
+}
+.footer {
+  position: fixed;
+  z-index: 999;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer .lf {
+  display: flex;
+  align-items: center;
+}
+.footer .lf>._div {
+  color: #333;
+  font-size: 32rpx;
+  padding: 0 20rpx;
+}
+.footer .lf>._div:first-child {
+  position: relative;
+  padding: 0 20rpx 0 30rpx;
+}
+.footer .lf>._div:first-child::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 2rpx;
+  height: 18rpx;
+  background: rgba(0, 0, 0, .1);
+}
+.footer .lf .text {
+  color: #999;
+  font-size: 24rpx;
+  margin-left: 0rpx;
+}
+.footer .rh {
+  background: #4CB13B;
+  color: #fff;
+  font-size: 32rpx;
+  padding: 30rpx 45rpx;
+}
+.content {
+  margin-top: 74rpx;
+  padding: 20rpx 10rpx;
+  box-sizing: content-box;
+  margin-right: -10rpx;
+}
+.content .item {
+  display: flex;
+  flex-wrap: wrap;
+}
+.content .list {
+  width: 21.6%;
+  margin: 10rpx;
+}
+.content ._label {
+  background: #fff;
+  font-size: 24rpx;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  padding: 20rpx 0;
+  display: block;
+  border: 2rpx solid #fff;
+}
+.content .list.on {
+  border: 2rpx dashed #4CB13B;
+  background: #E6F0EA;
+}
+.content .list .input {
+  position: absolute;
+  left: -9999999rpx;
+}

@@ -1152,353 +1152,119 @@ if (false) {(function () {
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 
 
 var chart = null;
 var chart1 = null;
-
-function initChart(canvas, width, height) {
-  chart = __WEBPACK_IMPORTED_MODULE_0_echarts_dist_echarts_min__["init"](canvas, null, {
-    width: width,
-    height: height
-  });
-  canvas.setChart(chart);
-
-  var option = {
-    tooltip: {
-      trigger: "item",
-      formatter: ""
-    },
-    legend: {
-      orient: "vertical",
-      itemWidth: 5,
-      top: "middle",
-      textStyle: {
-        color: "#666666",
-        fontSize: "10"
-      },
-      left: 150,
-      data: ["盘口上升公司 1家", "盘口不变公司 4家", "盘口下降公司 1家"],
-      icon: "circle",
-      selectedMode: false
-    },
-    series: [{
-      left: 0,
-      bottom: 0,
-      top: 0,
-      right: 0,
-      type: "pie",
-      radius: ["60%", "50%"],
-      center: ['20%', '50%'],
-      avoidLabelOverlap: false,
-      label: {
-        normal: {
-          show: false,
-          position: "outside"
-        },
-        emphasis: {
-          show: false
-        }
-      },
-      labelLine: {
-        normal: {
-          show: false
-        }
-      },
-      data: [{ value: 1, name: "盘口上升公司 1家", selected: false }, { value: 4, name: "盘口不变公司 4家", selected: false }, { value: 1, name: "盘口下降公司 1家", selected: false }],
-      color: ["#FF5858", "#FFD058", "#64C4ED"],
-      hoverAnimation: false,
-      legendHoverLink: false
-    }]
-  }; // ECharts 配置项
-
-  chart.setOption(option);
-  console.log('initChart');
-  return chart; // 返回 chart 后可以自动绑定触摸操作
-}
-
-function initChart2(canvas, width, height) {
-  chart = __WEBPACK_IMPORTED_MODULE_0_echarts_dist_echarts_min__["init"](canvas, null, {
-    width: width,
-    height: height
-  });
-  canvas.setChart(chart);
-
-  var option = {
-    tooltip: {
-      trigger: "item",
-      formatter: ""
-    },
-    legend: {
-      orient: "vertical",
-      itemWidth: 5,
-      top: "middle",
-      textStyle: {
-        color: "#666666",
-        fontSize: "10"
-      },
-      left: 150,
-      data: ["盘口上升公司 1家", "盘口不变公司 4家", "盘口下降公司 1家"],
-      icon: "circle",
-      selectedMode: false
-    },
-    series: [{
-      left: 0,
-      bottom: 0,
-      top: 0,
-      right: 0,
-      type: "pie",
-      radius: ["60%", "50%"],
-      center: ['20%', '50%'],
-      avoidLabelOverlap: false,
-      label: {
-        normal: {
-          show: false,
-          position: "outside"
-        },
-        emphasis: {
-          show: false
-        }
-      },
-      labelLine: {
-        normal: {
-          show: false
-        }
-      },
-      data: [{ value: 1, name: "盘口上升公司 1家", selected: false }, { value: 4, name: "盘口不变公司 4家", selected: false }, { value: 1, name: "盘口下降公司 1家", selected: false }],
-      color: ["#FF5858", "#FFD058", "#64C4ED"],
-      hoverAnimation: false,
-      legendHoverLink: false
-    }]
-  }; // ECharts 配置项
-
-  chart.setOption(option);
-  console.log('initChart2');
-  return chart; // 返回 chart 后可以自动绑定触摸操作
-}
-
-function initChart3(canvas, width, height) {
-  chart = __WEBPACK_IMPORTED_MODULE_0_echarts_dist_echarts_min__["init"](canvas, null, {
-    width: width,
-    height: height
-  });
-  canvas.setChart(chart);
-
-  var option = {
-    tooltip: {
-      trigger: "item",
-      formatter: ""
-    },
-    legend: [{
-      orient: "vertical",
-      itemWidth: 5,
-      top: "95",
-      textStyle: {
-        color: "#666666",
-        fontSize: "10"
-      },
-      left: "17%",
-      data: ["上升 1家", "不变 1家", "下降 1家"],
-      icon: "circle",
-      selectedMode: false
-    }, {
-      orient: "vertical",
-      itemWidth: 5,
-      top: "95",
-      textStyle: {
-        color: "#666666",
-        fontSize: "10"
-      },
-      left: "67%",
-      data: ["上升 1家", "不变 1家", "下降 1家"],
-      icon: "circle",
-      selectedMode: false
-    }],
-    series: [{
-      left: "0%",
-      right: '0%',
-      top: 0,
-      bottom: 0,
-      type: "pie",
-      center: ['25%', '30%'],
-      radius: ["40%", "30%"],
-      avoidLabelOverlap: false,
-
-      label: {
-        normal: {
-          show: true,
-          position: "center",
-          formatter: function formatter() {
-            return "主胜";
-          },
-          textStyle: {
-            color: "#666666",
-            fontSize: 10
-          }
-        },
-        emphasis: {
-          show: false
-        }
-      },
-      data: [{ value: 1, name: "上升 1家", selected: false }, { value: 4, name: "不变 1家", selected: false }, { value: 1, name: "下降 1家", selected: false }],
-      color: ["#FF5858", "#FFD058", "#64C4ED"],
-      hoverAnimation: false,
-      legendHoverLink: false
-    }, {
-      left: '0%',
-      right: "0%",
-      top: 0,
-      bottom: 0,
-      type: "pie",
-      center: ['75%', '30%'],
-      radius: ["40%", "30%"],
-      avoidLabelOverlap: false,
-      label: {
-        normal: {
-          show: true,
-          position: "center",
-          formatter: function formatter() {
-            return "客胜";
-          },
-          textStyle: {
-            color: "#666666",
-            fontSize: 10
-          }
-        },
-        emphasis: {
-          show: false
-        }
-      },
-      data: [{ value: 1, name: "上升 1家", selected: false }, { value: 4, name: "不变 1家", selected: false }, { value: 1, name: "下降 1家", selected: false }],
-      color: ["#FF5858", "#FFD058", "#64C4ED"],
-      hoverAnimation: false,
-      legendHoverLink: false
-    }]
-  }; // ECharts 配置项
-
-  chart.setOption(option);
-  console.log('initChart3');
-
-  return chart; // 返回 chart 后可以自动绑定触摸操作
-}
-
-function initChart4(canvas, width, height) {
-  var pp = this;
-  chart = __WEBPACK_IMPORTED_MODULE_0_echarts_dist_echarts_min__["init"](canvas, null, {
-    width: width,
-    height: height
-  });
-  canvas.setChart(chart);
-
-  var option = {
-    title: [{
-      subtext: '犯规数',
-      left: '47%',
-      top: '21%',
-      textAlign: 'center',
-      textStyle: {
-        color: '#333'
-      }
-    }, {
-      subtext: '剩余\n暂停',
-      left: '47%',
-      top: '58%',
-      textAlign: 'center',
-      textStyle: {
-        color: '#333'
-      }
-    }],
-    tooltip: {
-      trigger: "item",
-      formatter: ""
-    },
-    series: [{
-      left: 0,
-      top: "0",
-      type: "pie",
-      center: ['50%', '30%'],
-      radius: ["40%", "30%"],
-      avoidLabelOverlap: false,
-      label: {
-        normal: {
-          position: 'outer',
-          alignTo: 'labelLine',
-          bleedMargin: 5,
-          formatter: "{c}"
-        },
-        emphasis: {
-          show: false
-        }
-      },
-      labelLine: {
-        normal: {
-          show: false
-        }
-      },
-      data: [{ value: 1, selected: false }, { value: 4, selected: false }],
-      color: ["#FF5858", "#64C4ED"],
-      hoverAnimation: false,
-      legendHoverLink: false
-    }, {
-      left: 0,
-      top: "0",
-      type: "pie",
-      center: ['50%', '70%'],
-      radius: ["40%", "30%"],
-      avoidLabelOverlap: false,
-      label: {
-        normal: {
-          position: 'outer',
-          alignTo: 'labelLine',
-          bleedMargin: 5,
-          formatter: "{c}"
-        },
-        emphasis: {
-          show: false
-        }
-      },
-      labelLine: {
-        normal: {
-          show: false
-        }
-      },
-      data: [{ value: 1, selected: false }, { value: 4, selected: false }],
-      color: ["#FF5858", "#64C4ED"],
-      hoverAnimation: false,
-      legendHoverLink: false
-    }]
-  }; // ECharts 配置项
-
-  chart.setOption(option);
-
-  console.log('initChart4');
-
-  return chart; // 返回 chart 后可以自动绑定触摸操作
-}
-
-function handleCanvarToImg(e) {
-
-  // wx.canvasToTempFilePath(
-  //   {
-  //     x: 0,
-  //     y: 0,
-  //     // width: 260,
-  //     // height: 180,
-  //     canvasId: "demo-canvas",
-  //     success: function(res) {
-  //       console.log("666" + res.tempFilePath);
-  //       e.radarImg = res.tempFilePath;
-  //       console.log(e.radarImg)
-  //       // that.setData({ radarImg: res.tempFilePath });
-  //       // then.radarImg = res.tempFilePath;
-  //       // return res.tempFilePath;
-  //     }
-  //   },
-  //   this
-  // );
-}
 
 /* harmony default export */ __webpack_exports__["a"] = ({
   mounted: function mounted() {},
@@ -1533,17 +1299,18 @@ function handleCanvarToImg(e) {
       isActive2: false,
       isActive3: false,
       echarts: __WEBPACK_IMPORTED_MODULE_0_echarts_dist_echarts_min__,
-      onInit: initChart,
-      onInit2: initChart2,
-      onInit3: initChart3,
-      onInit4: initChart4,
-      src: handleCanvarToImg,
+      onInit: this.initChart,
+      onInit2: this.initChart2,
+      onInit3: this.initChart3,
+      onInit4: this.initChart4,
+      // src: handleCanvarToImg,
       current: 0,
       current1: 0,
       onhide: 0,
       radarImg: "",
-      prog1: '60',
-      prog2: '40'
+      prog1: "60",
+      prog2: "40",
+      imgsrc: ''
       // opts: {
       //   onInit: initChart("column", 400, 300, F2)
       // }
@@ -1551,6 +1318,346 @@ function handleCanvarToImg(e) {
   },
 
   methods: {
+    initChart: function initChart(canvas, width, height) {
+      var then = this;
+      chart = __WEBPACK_IMPORTED_MODULE_0_echarts_dist_echarts_min__["init"](canvas, null, {
+        width: width,
+        height: height
+      });
+      console.log(canvas);
+      canvas.setChart(chart);
+
+      var option = {
+        tooltip: {
+          trigger: "item",
+          formatter: ""
+        },
+        legend: {
+          orient: "vertical",
+          itemWidth: 5,
+          top: "middle",
+          textStyle: {
+            color: "#666666",
+            fontSize: "10"
+          },
+          left: 150,
+          data: ["盘口上升公司 1家", "盘口不变公司 4家", "盘口下降公司 1家"],
+          icon: "circle",
+          selectedMode: false
+        },
+        series: [{
+          left: 0,
+          bottom: 0,
+          top: 0,
+          right: 0,
+          type: "pie",
+          radius: ["60%", "50%"],
+          center: ["20%", "50%"],
+          avoidLabelOverlap: false,
+          label: {
+            normal: {
+              show: false,
+              position: "outside"
+            },
+            emphasis: {
+              show: false
+            }
+          },
+          labelLine: {
+            normal: {
+              show: false
+            }
+          },
+          data: [{ value: 1, name: "盘口上升公司 1家", selected: false }, { value: 4, name: "盘口不变公司 4家", selected: false }, { value: 1, name: "盘口下降公司 1家", selected: false }],
+          color: ["#FF5858", "#FFD058", "#64C4ED"],
+          hoverAnimation: false,
+          legendHoverLink: false
+        }]
+      }; // ECharts 配置项
+
+      chart.setOption(option);
+      console.log("initChart");
+      // setTimeout(function() {
+      then.handleCanvarToImg(canvas.canvasId, width, height);
+      // },1000);
+      return chart; // 返回 chart 后可以自动绑定触摸操作
+    },
+    initChart2: function initChart2(canvas, width, height) {
+      chart = __WEBPACK_IMPORTED_MODULE_0_echarts_dist_echarts_min__["init"](canvas, null, {
+        width: width,
+        height: height
+      });
+      canvas.setChart(chart);
+
+      var option = {
+        tooltip: {
+          trigger: "item",
+          formatter: ""
+        },
+        legend: {
+          orient: "vertical",
+          itemWidth: 5,
+          top: "middle",
+          textStyle: {
+            color: "#666666",
+            fontSize: "10"
+          },
+          left: 150,
+          data: ["盘口上升公司 1家", "盘口不变公司 4家", "盘口下降公司 1家"],
+          icon: "circle",
+          selectedMode: false
+        },
+        series: [{
+          left: 0,
+          bottom: 0,
+          top: 0,
+          right: 0,
+          type: "pie",
+          radius: ["60%", "50%"],
+          center: ["20%", "50%"],
+          avoidLabelOverlap: false,
+          label: {
+            normal: {
+              show: false,
+              position: "outside"
+            },
+            emphasis: {
+              show: false
+            }
+          },
+          labelLine: {
+            normal: {
+              show: false
+            }
+          },
+          data: [{ value: 1, name: "盘口上升公司 1家", selected: false }, { value: 4, name: "盘口不变公司 4家", selected: false }, { value: 1, name: "盘口下降公司 1家", selected: false }],
+          color: ["#FF5858", "#FFD058", "#64C4ED"],
+          hoverAnimation: false,
+          legendHoverLink: false
+        }]
+      }; // ECharts 配置项
+
+      chart.setOption(option);
+      console.log("initChart2");
+      return chart; // 返回 chart 后可以自动绑定触摸操作
+    },
+    initChart3: function initChart3(canvas, width, height) {
+      chart = __WEBPACK_IMPORTED_MODULE_0_echarts_dist_echarts_min__["init"](canvas, null, {
+        width: width,
+        height: height
+      });
+      canvas.setChart(chart);
+
+      var option = {
+        tooltip: {
+          trigger: "item",
+          formatter: ""
+        },
+        legend: [{
+          orient: "vertical",
+          itemWidth: 5,
+          top: "95",
+          textStyle: {
+            color: "#666666",
+            fontSize: "10"
+          },
+          left: "17%",
+          data: ["上升 1家", "不变 1家", "下降 1家"],
+          icon: "circle",
+          selectedMode: false
+        }, {
+          orient: "vertical",
+          itemWidth: 5,
+          top: "95",
+          textStyle: {
+            color: "#666666",
+            fontSize: "10"
+          },
+          left: "67%",
+          data: ["上升 1家", "不变 1家", "下降 1家"],
+          icon: "circle",
+          selectedMode: false
+        }],
+        series: [{
+          left: "0%",
+          right: "0%",
+          top: 0,
+          bottom: 0,
+          type: "pie",
+          center: ["25%", "30%"],
+          radius: ["40%", "30%"],
+          avoidLabelOverlap: false,
+
+          label: {
+            normal: {
+              show: true,
+              position: "center",
+              formatter: function formatter() {
+                return "主胜";
+              },
+              textStyle: {
+                color: "#666666",
+                fontSize: 10
+              }
+            },
+            emphasis: {
+              show: false
+            }
+          },
+          data: [{ value: 1, name: "上升 1家", selected: false }, { value: 4, name: "不变 1家", selected: false }, { value: 1, name: "下降 1家", selected: false }],
+          color: ["#FF5858", "#FFD058", "#64C4ED"],
+          hoverAnimation: false,
+          legendHoverLink: false
+        }, {
+          left: "0%",
+          right: "0%",
+          top: 0,
+          bottom: 0,
+          type: "pie",
+          center: ["75%", "30%"],
+          radius: ["40%", "30%"],
+          avoidLabelOverlap: false,
+          label: {
+            normal: {
+              show: true,
+              position: "center",
+              formatter: function formatter() {
+                return "客胜";
+              },
+              textStyle: {
+                color: "#666666",
+                fontSize: 10
+              }
+            },
+            emphasis: {
+              show: false
+            }
+          },
+          data: [{ value: 1, name: "上升 1家", selected: false }, { value: 4, name: "不变 1家", selected: false }, { value: 1, name: "下降 1家", selected: false }],
+          color: ["#FF5858", "#FFD058", "#64C4ED"],
+          hoverAnimation: false,
+          legendHoverLink: false
+        }]
+      }; // ECharts 配置项
+
+      chart.setOption(option);
+      console.log("initChart3");
+
+      return chart; // 返回 chart 后可以自动绑定触摸操作
+    },
+    initChart4: function initChart4(canvas, width, height) {
+      var pp = this;
+      chart = __WEBPACK_IMPORTED_MODULE_0_echarts_dist_echarts_min__["init"](canvas, null, {
+        width: width,
+        height: height
+      });
+      canvas.setChart(chart);
+
+      var option = {
+        title: [{
+          subtext: "犯规数",
+          left: "47%",
+          top: "21%",
+          textAlign: "center",
+          textStyle: {
+            color: "#333"
+          }
+        }, {
+          subtext: "剩余\n暂停",
+          left: "47%",
+          top: "58%",
+          textAlign: "center",
+          textStyle: {
+            color: "#333"
+          }
+        }],
+        tooltip: {
+          trigger: "item",
+          formatter: ""
+        },
+        series: [{
+          left: 0,
+          top: "0",
+          type: "pie",
+          center: ["50%", "30%"],
+          radius: ["40%", "30%"],
+          avoidLabelOverlap: false,
+          label: {
+            normal: {
+              position: "outer",
+              alignTo: "labelLine",
+              bleedMargin: 5,
+              formatter: "{c}"
+            },
+            emphasis: {
+              show: false
+            }
+          },
+          labelLine: {
+            normal: {
+              show: false
+            }
+          },
+          data: [{ value: 1, selected: false }, { value: 4, selected: false }],
+          color: ["#FF5858", "#64C4ED"],
+          hoverAnimation: false,
+          legendHoverLink: false
+        }, {
+          left: 0,
+          top: "0",
+          type: "pie",
+          center: ["50%", "70%"],
+          radius: ["40%", "30%"],
+          avoidLabelOverlap: false,
+          label: {
+            normal: {
+              position: "outer",
+              alignTo: "labelLine",
+              bleedMargin: 5,
+              formatter: "{c}"
+            },
+            emphasis: {
+              show: false
+            }
+          },
+          labelLine: {
+            normal: {
+              show: false
+            }
+          },
+          data: [{ value: 1, selected: false }, { value: 4, selected: false }],
+          color: ["#FF5858", "#64C4ED"],
+          hoverAnimation: false,
+          legendHoverLink: false
+        }]
+      }; // ECharts 配置项
+
+      chart.setOption(option);
+
+      console.log("initChart4");
+
+      return chart; // 返回 chart 后可以自动绑定触摸操作
+    },
+    handleCanvarToImg: function handleCanvarToImg(id, width, height) {
+      var then = this;
+      wx.canvasToTempFilePath({
+        x: 0,
+        y: 0,
+        width: width,
+        height: height,
+        canvasId: id,
+        success: function success(res) {
+          console.log("666" + res.tempFilePath);
+          then.imgsrc = res.tempFilePath;
+          console.log(then.imgsrc);
+          // e.radarImg = res.tempFilePath;
+          // console.log(e.radarImg);
+          // that.setData({ radarImg: res.tempFilePath });
+          // then.radarImg = res.tempFilePath;
+          // return res.tempFilePath;
+        }
+      });
+    },
     onBtn: function onBtn(e) {
       // console.log(e)
       this.key = e.currentTarget.dataset.key;
@@ -1599,17 +1706,17 @@ function handleCanvarToImg(e) {
     },
     toData: function toData() {
       wx.navigateTo({
-        url: '../basketball_details_data/yz_data/main'
+        url: "../basketball_details_data/yz_data/main"
       });
     },
     toData1: function toData1() {
       wx.navigateTo({
-        url: '../basketball_details_data/oz_data/main'
+        url: "../basketball_details_data/oz_data/main"
       });
     },
     toData2: function toData2() {
       wx.navigateTo({
-        url: '../basketball_details_data/size_data/main'
+        url: "../basketball_details_data/size_data/main"
       });
     }
   }
@@ -1766,62 +1873,62 @@ var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._sel
       "src": "https://fb.hxweixin.top/images/index_details/index_fx3.png",
       "alt": ""
     }
-  }), _vm._v(" "), _c('p', [_vm._v("近3场，华盛顿奇才 胜"), _c('span', {
+  }), _vm._v(" "), _c('p', [_vm._v("\n              近3场，华盛顿奇才 胜\n              "), _c('span', {
     staticClass: "red"
-  }, [_vm._v("0")]), _vm._v("平"), _c('span', {
+  }, [_vm._v("0")]), _vm._v("平\n              "), _c('span', {
     staticClass: "green"
-  }, [_vm._v("1")]), _vm._v("输"), _c('span', {
+  }, [_vm._v("1")]), _vm._v("输\n              "), _c('span', {
     staticClass: "blue"
-  }, [_vm._v("2")]), _vm._v(",胜率"), _c('span', {
+  }, [_vm._v("2")]), _vm._v(",胜率\n              "), _c('span', {
     staticClass: "red"
-  }, [_vm._v("0%")]), _vm._v("赢盘率"), _c('span', {
+  }, [_vm._v("0%")]), _vm._v("赢盘率\n              "), _c('span', {
     staticClass: "red"
-  }, [_vm._v("70%")]), _vm._v("大分率"), _c('span', {
+  }, [_vm._v("70%")]), _vm._v("大分率\n              "), _c('span', {
     staticClass: "red"
   }, [_vm._v("40%")])])], 1), _vm._v(" "), _vm._m(3), _vm._v(" "), _c('div', [_c('div', {
     staticClass: "table1 table"
   }, [_c('div', {
     staticClass: "t1"
-  }, [_c('div', [_vm._v(" 2019/12/17 "), _c('p', [_vm._v("中北美联")])], 1)]), _vm._v(" "), _vm._m(4), _vm._v(" "), _c('div', {
+  }, [_c('div', [_vm._v("\n                  2019/12/17\n                  "), _c('p', [_vm._v("中北美联")])], 1)]), _vm._v(" "), _vm._m(4), _vm._v(" "), _c('div', {
     staticClass: "t4"
-  }, [_c('div', [_vm._v("2-2 "), _c('p', [_vm._v("(1-1)")])], 1)]), _vm._v(" "), _vm._m(5), _vm._v(" "), _vm._m(6), _vm._v(" "), _vm._m(7)]), _vm._v(" "), _c('div', {
+  }, [_c('div', [_vm._v("\n                  2-2\n                  "), _c('p', [_vm._v("(1-1)")])], 1)]), _vm._v(" "), _vm._m(5), _vm._v(" "), _vm._m(6), _vm._v(" "), _vm._m(7)]), _vm._v(" "), _c('div', {
     staticClass: "table1 table"
   }, [_c('div', {
     staticClass: "t1"
-  }, [_c('div', [_vm._v(" 2019/12/17 "), _c('p', [_vm._v("中北美联")])], 1)]), _vm._v(" "), _vm._m(8), _vm._v(" "), _c('div', {
+  }, [_c('div', [_vm._v("\n                  2019/12/17\n                  "), _c('p', [_vm._v("中北美联")])], 1)]), _vm._v(" "), _vm._m(8), _vm._v(" "), _c('div', {
     staticClass: "t4"
-  }, [_c('div', [_vm._v("2-2 "), _c('p', [_vm._v("(1-1)")])], 1)]), _vm._v(" "), _vm._m(9), _vm._v(" "), _vm._m(10), _vm._v(" "), _vm._m(11)])]), _vm._v(" "), _c('div', {
+  }, [_c('div', [_vm._v("\n                  2-2\n                  "), _c('p', [_vm._v("(1-1)")])], 1)]), _vm._v(" "), _vm._m(9), _vm._v(" "), _vm._m(10), _vm._v(" "), _vm._m(11)])]), _vm._v(" "), _c('div', {
     staticClass: "item_record"
   }, [_c('img', {
     attrs: {
       "src": "https://fb.hxweixin.top/images/index_details/index_fx3.png",
       "alt": ""
     }
-  }), _vm._v(" "), _c('p', [_vm._v("近3场，华盛顿奇才 胜"), _c('span', {
+  }), _vm._v(" "), _c('p', [_vm._v("\n              近3场，华盛顿奇才 胜\n              "), _c('span', {
     staticClass: "red"
-  }, [_vm._v("0")]), _vm._v("平"), _c('span', {
+  }, [_vm._v("0")]), _vm._v("平\n              "), _c('span', {
     staticClass: "green"
-  }, [_vm._v("1")]), _vm._v("输"), _c('span', {
+  }, [_vm._v("1")]), _vm._v("输\n              "), _c('span', {
     staticClass: "blue"
-  }, [_vm._v("2")]), _vm._v(",胜率"), _c('span', {
+  }, [_vm._v("2")]), _vm._v(",胜率\n              "), _c('span', {
     staticClass: "red"
-  }, [_vm._v("0%")]), _vm._v("赢盘率"), _c('span', {
+  }, [_vm._v("0%")]), _vm._v("赢盘率\n              "), _c('span', {
     staticClass: "red"
-  }, [_vm._v("70%")]), _vm._v("大分率"), _c('span', {
+  }, [_vm._v("70%")]), _vm._v("大分率\n              "), _c('span', {
     staticClass: "red"
   }, [_vm._v("40%")])])], 1), _vm._v(" "), _vm._m(12), _vm._v(" "), _c('div', [_c('div', {
     staticClass: "table1 table"
   }, [_c('div', {
     staticClass: "t1"
-  }, [_c('div', [_vm._v(" 2019/12/17 "), _c('p', [_vm._v("中北美联")])], 1)]), _vm._v(" "), _vm._m(13), _vm._v(" "), _c('div', {
+  }, [_c('div', [_vm._v("\n                  2019/12/17\n                  "), _c('p', [_vm._v("中北美联")])], 1)]), _vm._v(" "), _vm._m(13), _vm._v(" "), _c('div', {
     staticClass: "t4"
-  }, [_c('div', [_vm._v("2-2 "), _c('p', [_vm._v("(1-1)")])], 1)]), _vm._v(" "), _vm._m(14), _vm._v(" "), _vm._m(15), _vm._v(" "), _vm._m(16)]), _vm._v(" "), _c('div', {
+  }, [_c('div', [_vm._v("\n                  2-2\n                  "), _c('p', [_vm._v("(1-1)")])], 1)]), _vm._v(" "), _vm._m(14), _vm._v(" "), _vm._m(15), _vm._v(" "), _vm._m(16)]), _vm._v(" "), _c('div', {
     staticClass: "table1 table"
   }, [_c('div', {
     staticClass: "t1"
-  }, [_c('div', [_vm._v(" 2019/12/17 "), _c('p', [_vm._v("中北美联")])], 1)]), _vm._v(" "), _vm._m(17), _vm._v(" "), _c('div', {
+  }, [_c('div', [_vm._v("\n                  2019/12/17\n                  "), _c('p', [_vm._v("中北美联")])], 1)]), _vm._v(" "), _vm._m(17), _vm._v(" "), _c('div', {
     staticClass: "t4"
-  }, [_c('div', [_vm._v("2-2 "), _c('p', [_vm._v("(1-1)")])], 1)]), _vm._v(" "), _vm._m(18), _vm._v(" "), _vm._m(19), _vm._v(" "), _vm._m(20)])])])]), _vm._v(" "), _c('div', {
+  }, [_c('div', [_vm._v("\n                  2-2\n                  "), _c('p', [_vm._v("(1-1)")])], 1)]), _vm._v(" "), _vm._m(18), _vm._v(" "), _vm._m(19), _vm._v(" "), _vm._m(20)])])])]), _vm._v(" "), _c('div', {
     staticClass: "item2"
   }, [_c('div', {
     staticClass: "item_nav"
@@ -1885,6 +1992,15 @@ var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._sel
       "onInit": _vm.onInit,
       "canvasId": "canvas2",
       "mpcomid": '3'
+    }
+  }), _vm._v(" "), _c('img', {
+    staticStyle: {
+      "width": "100%",
+      "height": "100%"
+    },
+    attrs: {
+      "dataSrc": _vm.imgsrc,
+      "src": _vm.imgsrc
     }
   })], 1) : _vm._e(), _vm._v(" "), _vm._m(24)])])]), _vm._v(" "), _c('div', {
     staticClass: "yz_data"
@@ -2265,13 +2381,13 @@ var staticRenderFns = [function () {var _vm=this;var _h=_vm.$createElement;var _
 },function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
     staticClass: "t6"
-  }, [_c('div', [_vm._v("0.9 "), _c('span', {
+  }, [_c('div', [_vm._v("\n                  0.9\n                  "), _c('span', {
     staticClass: "green"
   }, [_vm._v("赢")])])])
 },function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
     staticClass: "t6"
-  }, [_c('div', [_vm._v("0.9 "), _c('span', {
+  }, [_c('div', [_vm._v("\n                  0.9\n                  "), _c('span', {
     staticClass: "red"
   }, [_vm._v("大")])])])
 },function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -2285,13 +2401,13 @@ var staticRenderFns = [function () {var _vm=this;var _h=_vm.$createElement;var _
 },function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
     staticClass: "t6"
-  }, [_c('div', [_vm._v("0.9 "), _c('span', {
+  }, [_c('div', [_vm._v("\n                  0.9\n                  "), _c('span', {
     staticClass: "green"
   }, [_vm._v("赢")])])])
 },function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
     staticClass: "t6"
-  }, [_c('div', [_vm._v("0.9 "), _c('span', {
+  }, [_c('div', [_vm._v("\n                  0.9\n                  "), _c('span', {
     staticClass: "red"
   }, [_vm._v("大")])])])
 },function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -2321,13 +2437,13 @@ var staticRenderFns = [function () {var _vm=this;var _h=_vm.$createElement;var _
 },function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
     staticClass: "t6"
-  }, [_c('div', [_vm._v("0.9 "), _c('span', {
+  }, [_c('div', [_vm._v("\n                  0.9\n                  "), _c('span', {
     staticClass: "green"
   }, [_vm._v("赢")])])])
 },function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
     staticClass: "t6"
-  }, [_c('div', [_vm._v("0.9 "), _c('span', {
+  }, [_c('div', [_vm._v("\n                  0.9\n                  "), _c('span', {
     staticClass: "red"
   }, [_vm._v("大")])])])
 },function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -2341,13 +2457,13 @@ var staticRenderFns = [function () {var _vm=this;var _h=_vm.$createElement;var _
 },function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
     staticClass: "t6"
-  }, [_c('div', [_vm._v("0.9 "), _c('span', {
+  }, [_c('div', [_vm._v("\n                  0.9\n                  "), _c('span', {
     staticClass: "green"
   }, [_vm._v("赢")])])])
 },function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
     staticClass: "t6"
-  }, [_c('div', [_vm._v("0.9 "), _c('span', {
+  }, [_c('div', [_vm._v("\n                  0.9\n                  "), _c('span', {
     staticClass: "red"
   }, [_vm._v("大")])])])
 },function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;

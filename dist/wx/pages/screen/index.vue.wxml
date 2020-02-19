@@ -1,3 +1,27 @@
 <template name="5322c748">
-  <view class="_div data-v-58b457ae"></view>
+  <view class="_div data-v-58b457ae">
+    <wux-tabs current="{{current}}" defaultCurrent="tab1" bindchange="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}" class="_wux-tabs data-v-58b457ae">
+      <wux-tab key="0" title="全部" wux-class="nav" class="_wux-tab data-v-58b457ae"></wux-tab>
+      <wux-tab key="1" title="一级" wux-class="nav" class="_wux-tab data-v-58b457ae"></wux-tab>
+      <wux-tab key="2" title="竞彩" wux-class="nav" class="_wux-tab data-v-58b457ae"></wux-tab>
+      <wux-tab key="3" title="足彩" wux-class="nav" class="_wux-tab data-v-58b457ae"></wux-tab>
+      <wux-tab key="4" title="单彩" wux-class="nav" class="_wux-tab data-v-58b457ae"></wux-tab>
+    </wux-tabs>
+    <view class="_div data-v-58b457ae footer">
+      <view class="_div data-v-58b457ae lf">
+        <view bindtap="handleProxy" data-eventid="{{'1'}}" data-comkey="{{$k}}" class="_div data-v-58b457ae">全选</view>
+        <view bindtap="handleProxy" data-eventid="{{'2'}}" data-comkey="{{$k}}" class="_div data-v-58b457ae">反选</view>
+        <view class="_div data-v-58b457ae text">已选{{length}}场</view>
+      </view>
+      <view class="_div data-v-58b457ae rh">
+        <view class="_div data-v-58b457ae">确定</view>
+      </view>
+    </view>
+    <view class="_div data-v-58b457ae content">
+      <checkbox-group bindchange="handleProxy" class="_checkbox-group data-v-58b457ae item" value="{{1}}" data-eventid="{{'3'}}" data-comkey="{{$k}}"><label class="_label data-v-58b457ae list {{item.checked == true ? 'on' : ''}}" wx:key="item.key" key="{{item.key}}" wx:for="{{screen_list}}" wx:for-index="index" wx:for-item="item">
+          <checkbox class="_checkbox data-v-58b457ae input" id="{{item.key}}" value="{{item.key}}" checked="{{item.checked}}" />
+          {{item.title}}
+        </label></checkbox-group>
+    </view>
+  </view>
 </template>
