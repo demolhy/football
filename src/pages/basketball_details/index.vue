@@ -429,7 +429,9 @@
             <div class>
               <div class="echarts-wrap">
                 <div style="height: 182rpx;position:relative" v-if="onhide == 0 && key == 2">
-                  <mpvue-echarts :echarts="echarts" :onInit="onInit" canvasId="canvas2" />
+                  <div v-if="isShow" style="height: 100%" :class="isShow == false ? 'canvas-hide':''">
+                    <mpvue-echarts  :echarts="echarts" :onInit="onInit" canvasId="canvas2" />
+                  </div>
                   <img :dataSrc="imgsrc" :src="imgsrc" style="width: 100%;height: 100%" />
                 </div>
                 <div class="box_data">
@@ -486,6 +488,69 @@
                 </div>
               </div>
               <div class="yz_list">
+                <div class="list">
+                  <div class="t1" @click="toData">
+                    <div>易胜博</div>
+                  </div>
+                  <div class="t2">
+                    <div>0.8</div>
+                    <div>0.8</div>
+                    <div>0.8</div>
+                    <div>0.8</div>
+                    <div>0.8</div>
+                    <div>0.8</div>
+                  </div>
+                  <div class="t2">
+                    <div>0.8</div>
+                    <div>0.8</div>
+                    <div>0.8</div>
+                    <div>0.8</div>
+                    <div>0.8</div>
+                    <div>0.8</div>
+                  </div>
+                </div>
+                <div class="list">
+                  <div class="t1" @click="toData">
+                    <div>易胜博</div>
+                  </div>
+                  <div class="t2">
+                    <div>0.8</div>
+                    <div>0.8</div>
+                    <div>0.8</div>
+                    <div>0.8</div>
+                    <div>0.8</div>
+                    <div>0.8</div>
+                  </div>
+                  <div class="t2">
+                    <div>0.8</div>
+                    <div>0.8</div>
+                    <div>0.8</div>
+                    <div>0.8</div>
+                    <div>0.8</div>
+                    <div>0.8</div>
+                  </div>
+                </div>
+                <div class="list">
+                  <div class="t1" @click="toData">
+                    <div>易胜博</div>
+                  </div>
+                  <div class="t2">
+                    <div>0.8</div>
+                    <div>0.8</div>
+                    <div>0.8</div>
+                    <div>0.8</div>
+                    <div>0.8</div>
+                    <div>0.8</div>
+                  </div>
+                  <div class="t2">
+                    <div>0.8</div>
+                    <div>0.8</div>
+                    <div>0.8</div>
+                    <div>0.8</div>
+                    <div>0.8</div>
+                    <div>0.8</div>
+                  </div>
+                </div>
                 <div class="list">
                   <div class="t1" @click="toData">
                     <div>易胜博</div>
@@ -1220,7 +1285,8 @@ export default {
       radarImg: "",
       prog1: "60",
       prog2: "40",
-      imgsrc: ''
+      imgsrc: '',
+      isShow: true
       // opts: {
       //   onInit: initChart("column", 400, 300, F2)
       // }
@@ -1292,9 +1358,13 @@ export default {
 
       chart.setOption(option);
       console.log("initChart");
-      // setTimeout(function() {
+      setTimeout(function() {
+        
         then.handleCanvarToImg(canvas.canvasId,width,height);
-      // },1000);
+        
+        
+      },1000);
+      
       return chart; // 返回 chart 后可以自动绑定触摸操作
     },
     initChart2(canvas, width, height) {
@@ -1595,7 +1665,9 @@ export default {
         canvasId: id,
         success: function (res) {
           console.log("666" + res.tempFilePath);
+          then.isShow = false;
           then.imgsrc = res.tempFilePath;
+          console.log(this.isShow)
           console.log(then.imgsrc)
           // e.radarImg = res.tempFilePath;
           // console.log(e.radarImg);
@@ -2561,5 +2633,8 @@ export default {
 .content4 .data_list .box .con p {
   font-size: 24rpx;
   color: #333;
+}
+.canvas-hide{
+  display: none
 }
 </style>

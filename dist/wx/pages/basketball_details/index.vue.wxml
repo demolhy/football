@@ -326,7 +326,8 @@
             <view class="_div data-v-5faf5e85 seg_nav"><label class="_span data-v-5faf5e85 p1">指数统计</label> <label class="_span data-v-5faf5e85 p2">(共3家)</label></view>
             <view class="_div data-v-5faf5e85">
               <view class="_div data-v-5faf5e85 echarts-wrap">
-                <view style="height: 182rpx;position:relative" wx:if="{{onhide == 0 && key == 2}}" class="_div data-v-5faf5e85"><template canvasId="canvas2" data="{{...$root[$kk+'3'], $root}}" is="1f826fa4"></template>
+                <view style="height: 182rpx;position:relative" wx:if="{{onhide == 0 && key == 2}}" class="_div data-v-5faf5e85">
+                  <view wx:if="{{isShow}}" style="height: 100%" class="_div data-v-5faf5e85 {{isShow == false ? 'canvas-hide' : ''}}"><template canvasId="canvas2" data="{{...$root[$kk+'3'], $root}}" is="1f826fa4"></template></view>
                   <image dataSrc="{{imgsrc}}" src="{{imgsrc}}" style="width: 100%;height: 100%" class="_img data-v-5faf5e85"></image>
                 </view>
                 <view class="_div data-v-5faf5e85 box_data">
@@ -442,6 +443,69 @@
                     <view class="_div data-v-5faf5e85">0.8</view>
                   </view>
                 </view>
+                <view class="_div data-v-5faf5e85 list">
+                  <view class="_div data-v-5faf5e85 t1" bindtap="handleProxy" data-eventid="{{'8'}}" data-comkey="{{$k}}">
+                    <view class="_div data-v-5faf5e85">易胜博</view>
+                  </view>
+                  <view class="_div data-v-5faf5e85 t2">
+                    <view class="_div data-v-5faf5e85">0.8</view>
+                    <view class="_div data-v-5faf5e85">0.8</view>
+                    <view class="_div data-v-5faf5e85">0.8</view>
+                    <view class="_div data-v-5faf5e85">0.8</view>
+                    <view class="_div data-v-5faf5e85">0.8</view>
+                    <view class="_div data-v-5faf5e85">0.8</view>
+                  </view>
+                  <view class="_div data-v-5faf5e85 t2">
+                    <view class="_div data-v-5faf5e85">0.8</view>
+                    <view class="_div data-v-5faf5e85">0.8</view>
+                    <view class="_div data-v-5faf5e85">0.8</view>
+                    <view class="_div data-v-5faf5e85">0.8</view>
+                    <view class="_div data-v-5faf5e85">0.8</view>
+                    <view class="_div data-v-5faf5e85">0.8</view>
+                  </view>
+                </view>
+                <view class="_div data-v-5faf5e85 list">
+                  <view class="_div data-v-5faf5e85 t1" bindtap="handleProxy" data-eventid="{{'9'}}" data-comkey="{{$k}}">
+                    <view class="_div data-v-5faf5e85">易胜博</view>
+                  </view>
+                  <view class="_div data-v-5faf5e85 t2">
+                    <view class="_div data-v-5faf5e85">0.8</view>
+                    <view class="_div data-v-5faf5e85">0.8</view>
+                    <view class="_div data-v-5faf5e85">0.8</view>
+                    <view class="_div data-v-5faf5e85">0.8</view>
+                    <view class="_div data-v-5faf5e85">0.8</view>
+                    <view class="_div data-v-5faf5e85">0.8</view>
+                  </view>
+                  <view class="_div data-v-5faf5e85 t2">
+                    <view class="_div data-v-5faf5e85">0.8</view>
+                    <view class="_div data-v-5faf5e85">0.8</view>
+                    <view class="_div data-v-5faf5e85">0.8</view>
+                    <view class="_div data-v-5faf5e85">0.8</view>
+                    <view class="_div data-v-5faf5e85">0.8</view>
+                    <view class="_div data-v-5faf5e85">0.8</view>
+                  </view>
+                </view>
+                <view class="_div data-v-5faf5e85 list">
+                  <view class="_div data-v-5faf5e85 t1" bindtap="handleProxy" data-eventid="{{'10'}}" data-comkey="{{$k}}">
+                    <view class="_div data-v-5faf5e85">易胜博</view>
+                  </view>
+                  <view class="_div data-v-5faf5e85 t2">
+                    <view class="_div data-v-5faf5e85">0.8</view>
+                    <view class="_div data-v-5faf5e85">0.8</view>
+                    <view class="_div data-v-5faf5e85">0.8</view>
+                    <view class="_div data-v-5faf5e85">0.8</view>
+                    <view class="_div data-v-5faf5e85">0.8</view>
+                    <view class="_div data-v-5faf5e85">0.8</view>
+                  </view>
+                  <view class="_div data-v-5faf5e85 t2">
+                    <view class="_div data-v-5faf5e85">0.8</view>
+                    <view class="_div data-v-5faf5e85">0.8</view>
+                    <view class="_div data-v-5faf5e85">0.8</view>
+                    <view class="_div data-v-5faf5e85">0.8</view>
+                    <view class="_div data-v-5faf5e85">0.8</view>
+                    <view class="_div data-v-5faf5e85">0.8</view>
+                  </view>
+                </view>
               </view>
             </view>
           </view>
@@ -538,7 +602,7 @@
                 </view>
               </view>
               <view class="_div data-v-5faf5e85 list">
-                <view class="_div data-v-5faf5e85 t2 t1 green" bindtap="handleProxy" data-eventid="{{'8'}}" data-comkey="{{$k}}">易胜博</view>
+                <view class="_div data-v-5faf5e85 t2 t1 green" bindtap="handleProxy" data-eventid="{{'11'}}" data-comkey="{{$k}}">易胜博</view>
                 <view class="_div data-v-5faf5e85 right">
                   <view class="_div data-v-5faf5e85 table">
                     <view class="_div data-v-5faf5e85">初</view>
@@ -730,7 +794,7 @@
               </view>
               <view class="_div data-v-5faf5e85 yz_list">
                 <view class="_div data-v-5faf5e85 list">
-                  <view class="_div data-v-5faf5e85 t1" bindtap="handleProxy" data-eventid="{{'9'}}" data-comkey="{{$k}}">
+                  <view class="_div data-v-5faf5e85 t1" bindtap="handleProxy" data-eventid="{{'12'}}" data-comkey="{{$k}}">
                     <view class="_div data-v-5faf5e85">易胜博</view>
                   </view>
                   <view class="_div data-v-5faf5e85 t2">
@@ -751,7 +815,7 @@
                   </view>
                 </view>
                 <view class="_div data-v-5faf5e85 list">
-                  <view class="_div data-v-5faf5e85 t1" bindtap="handleProxy" data-eventid="{{'10'}}" data-comkey="{{$k}}">
+                  <view class="_div data-v-5faf5e85 t1" bindtap="handleProxy" data-eventid="{{'13'}}" data-comkey="{{$k}}">
                     <view class="_div data-v-5faf5e85">易胜博</view>
                   </view>
                   <view class="_div data-v-5faf5e85 t2">
@@ -772,7 +836,7 @@
                   </view>
                 </view>
                 <view class="_div data-v-5faf5e85 list">
-                  <view class="_div data-v-5faf5e85 t1" bindtap="handleProxy" data-eventid="{{'11'}}" data-comkey="{{$k}}">
+                  <view class="_div data-v-5faf5e85 t1" bindtap="handleProxy" data-eventid="{{'14'}}" data-comkey="{{$k}}">
                     <view class="_div data-v-5faf5e85">易胜博</view>
                   </view>
                   <view class="_div data-v-5faf5e85 t2">
@@ -887,7 +951,7 @@
             </view>
           </view>
           <view class="_div data-v-5faf5e85 live_data">
-            <wux-segmented-control current="{{current1}}" controlled values="{{['第一节', '第二节', '第三节','第四节']}}" bindchange="handleProxy" data-eventid="{{'12'}}" data-comkey="{{$k}}" class="_wux-segmented-control data-v-5faf5e85"></wux-segmented-control>
+            <wux-segmented-control current="{{current1}}" controlled values="{{['第一节', '第二节', '第三节','第四节']}}" bindchange="handleProxy" data-eventid="{{'15'}}" data-comkey="{{$k}}" class="_wux-segmented-control data-v-5faf5e85"></wux-segmented-control>
             <view class="_div data-v-5faf5e85 data_list">
               <wux-timeline class="_wux-timeline data-v-5faf5e85">
                 <wux-timeline-item dotStyle="border: 2rpx solid #A7A7A7; color: #A7A7A7" class="_wux-timeline-item data-v-5faf5e85">

@@ -6239,6 +6239,8 @@ module.exports = g;
 //
 //
 //
+//
+//
 
 
 
@@ -6279,6 +6281,9 @@ function wrapTouch(e) {
     throttleTouch: {
       type: Boolean,
       default: false
+    },
+    isShow: {
+      type: String
     }
   },
   onReady: function onReady() {
@@ -6984,6 +6989,7 @@ class WxCanvas {
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return (_vm.canvasId) ? _c('canvas', {
     staticClass: "ec-canvas",
+    class: _vm.isShow,
     attrs: {
       "id": _vm.canvasId,
       "canvasId": _vm.canvasId,

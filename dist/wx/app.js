@@ -13,6 +13,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
 
+__WEBPACK_IMPORTED_MODULE_0_vue___default.a.config._mpTrace = true;
 __WEBPACK_IMPORTED_MODULE_0_vue___default.a.config.productionTip = false;
 __WEBPACK_IMPORTED_MODULE_1__App__["a" /* default */].mpType = 'app';
 

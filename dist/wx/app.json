@@ -9,6 +9,7 @@
     "pages/details_data/oz_data/main",
     "pages/basketball/main",
     "pages/mine/main"
+    
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -22,47 +23,40 @@
     "backgroundColor": "#ffffff",
     "selectedColor": "#4CB13B",
     "borderStyle": "white",
-    "list": [
-      {
-        "text": "足球",
-        "pagePath": "pages/index/main",
-        "iconPath": "static/tabs/index.png",
-        "selectedIconPath": "static/tabs/index_active.png"
-      },
-      {
-        "text": "篮球",
-        "pagePath": "pages/basketball/main",
-        "iconPath": "static/tabs/basketball.png",
-        "selectedIconPath": "static/tabs/basketball_active.png"
-      },
-      {
-        "text": "我的",
-        "pagePath": "pages/mine/main",
-        "iconPath": "static/tabs/mine.png",
-        "selectedIconPath": "static/tabs/mine_active.png"
-      }
-    ],
-    "items": [
-      {
-        "name": "足球",
-        "pagePath": "pages/index/main",
-        "icon": "static/tabs/index.png",
-        "activeIcon": "static/tabs/index_active.png"
-      },
-      {
-        "name": "篮球",
-        "pagePath": "pages/basketball/main",
-        "icon": "static/tabs/basketball.png",
-        "activeIcon": "static/tabs/basketball_active.png"
-      },
-      {
-        "name": "我的",
-        "pagePath": "pages/mine/main",
-        "icon": "static/tabs/mine.png",
-        "activeIcon": "static/tabs/mine_active.png"
-      }
-    ],
+
+    "list": [{
+      "text": "足球",
+      "pagePath": "pages/index/main",
+      "iconPath": "static/tabs/index.png",
+      "selectedIconPath": "static/tabs/index_active.png"
+    }, {
+      "text": "篮球",
+      "pagePath": "pages/basketball/main",
+      "iconPath": "static/tabs/basketball.png",
+      "selectedIconPath": "static/tabs/basketball_active.png"
+    }, {
+      "text": "我的",
+      "pagePath": "pages/mine/main",
+      "iconPath": "static/tabs/mine.png",
+      "selectedIconPath": "static/tabs/mine_active.png"
+    }],
+
+    "items": [{
+      "name": "足球",
+      "pagePath": "pages/index/main",
+      "icon": "static/tabs/index.png",
+      "activeIcon": "static/tabs/index_active.png"
+    }, {
+      "name": "篮球",
+      "pagePath": "pages/basketball/main",
+      "icon": "static/tabs/basketball.png",
+      "activeIcon": "static/tabs/basketball_active.png"
+    }, {
+      "name": "我的",
+      "pagePath": "pages/mine/main",
+      "icon": "static/tabs/mine.png",
+      "activeIcon": "static/tabs/mine_active.png"
+    }],
     "position": "bottom"
-  },
-  "sitemapLocation": "sitemap56.json"
+  }
 }

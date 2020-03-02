@@ -1259,6 +1259,71 @@ if (false) {(function () {
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 
@@ -1310,7 +1375,8 @@ var chart1 = null;
       radarImg: "",
       prog1: "60",
       prog2: "40",
-      imgsrc: ''
+      imgsrc: '',
+      isShow: true
       // opts: {
       //   onInit: initChart("column", 400, 300, F2)
       // }
@@ -1377,9 +1443,11 @@ var chart1 = null;
 
       chart.setOption(option);
       console.log("initChart");
-      // setTimeout(function() {
-      then.handleCanvarToImg(canvas.canvasId, width, height);
-      // },1000);
+      setTimeout(function () {
+
+        then.handleCanvarToImg(canvas.canvasId, width, height);
+      }, 1000);
+
       return chart; // 返回 chart 后可以自动绑定触摸操作
     },
     initChart2: function initChart2(canvas, width, height) {
@@ -1648,7 +1716,9 @@ var chart1 = null;
         canvasId: id,
         success: function success(res) {
           console.log("666" + res.tempFilePath);
+          then.isShow = false;
           then.imgsrc = res.tempFilePath;
+          console.log(this.isShow);
           console.log(then.imgsrc);
           // e.radarImg = res.tempFilePath;
           // console.log(e.radarImg);
@@ -1986,6 +2056,11 @@ var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._sel
       "height": "182rpx",
       "position": "relative"
     }
+  }, [(_vm.isShow) ? _c('div', {
+    class: _vm.isShow == false ? 'canvas-hide' : '',
+    staticStyle: {
+      "height": "100%"
+    }
   }, [_c('mpvue-echarts', {
     attrs: {
       "echarts": _vm.echarts,
@@ -1993,7 +2068,7 @@ var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._sel
       "canvasId": "canvas2",
       "mpcomid": '3'
     }
-  }), _vm._v(" "), _c('img', {
+  })], 1) : _vm._e(), _vm._v(" "), _c('img', {
     staticStyle: {
       "width": "100%",
       "height": "100%"
@@ -2002,7 +2077,7 @@ var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._sel
       "dataSrc": _vm.imgsrc,
       "src": _vm.imgsrc
     }
-  })], 1) : _vm._e(), _vm._v(" "), _vm._m(24)])])]), _vm._v(" "), _c('div', {
+  })]) : _vm._e(), _vm._v(" "), _vm._m(24)])])]), _vm._v(" "), _c('div', {
     staticClass: "yz_data"
   }, [_vm._m(25), _vm._v(" "), _c('div', {
     staticClass: "yz_content"
@@ -2046,12 +2121,42 @@ var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._sel
     on: {
       "click": _vm.toData
     }
-  }, [_c('div', [_vm._v("易胜博")])]), _vm._v(" "), _vm._m(30), _vm._v(" "), _vm._m(31)])])])])]), _vm._v(" "), _c('div', {
+  }, [_c('div', [_vm._v("易胜博")])]), _vm._v(" "), _vm._m(30), _vm._v(" "), _vm._m(31)]), _vm._v(" "), _c('div', {
+    staticClass: "list"
+  }, [_c('div', {
+    staticClass: "t1",
+    attrs: {
+      "eventid": '8'
+    },
+    on: {
+      "click": _vm.toData
+    }
+  }, [_c('div', [_vm._v("易胜博")])]), _vm._v(" "), _vm._m(32), _vm._v(" "), _vm._m(33)]), _vm._v(" "), _c('div', {
+    staticClass: "list"
+  }, [_c('div', {
+    staticClass: "t1",
+    attrs: {
+      "eventid": '9'
+    },
+    on: {
+      "click": _vm.toData
+    }
+  }, [_c('div', [_vm._v("易胜博")])]), _vm._v(" "), _vm._m(34), _vm._v(" "), _vm._m(35)]), _vm._v(" "), _c('div', {
+    staticClass: "list"
+  }, [_c('div', {
+    staticClass: "t1",
+    attrs: {
+      "eventid": '10'
+    },
+    on: {
+      "click": _vm.toData
+    }
+  }, [_c('div', [_vm._v("易胜博")])]), _vm._v(" "), _vm._m(36), _vm._v(" "), _vm._m(37)])])])])]), _vm._v(" "), _c('div', {
     staticClass: "seg",
     class: _vm.onhide == 1 ? 'on' : ''
   }, [_c('div', {
     staticClass: "oz_content"
-  }, [_vm._m(32), _vm._v(" "), _c('div', {
+  }, [_vm._m(38), _vm._v(" "), _c('div', {
     staticClass: "oz_data"
   }, [(_vm.onhide == 1) ? _c('div', {
     staticStyle: {
@@ -2068,26 +2173,26 @@ var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._sel
     staticClass: "box"
   }, [_c('p', {
     staticClass: "title"
-  }, [_vm._v("当前最大指数公司及数值")]), _vm._v(" "), _vm._m(33)], 1)])]), _vm._v(" "), _c('div', {
+  }, [_vm._v("当前最大指数公司及数值")]), _vm._v(" "), _vm._m(39)], 1)])]), _vm._v(" "), _c('div', {
     staticClass: "oz_list"
-  }, [_vm._m(34), _vm._v(" "), _vm._m(35), _vm._v(" "), _c('div', {
+  }, [_vm._m(40), _vm._v(" "), _vm._m(41), _vm._v(" "), _c('div', {
     staticClass: "list_box"
-  }, [_vm._m(36), _vm._v(" "), _vm._m(37), _vm._v(" "), _vm._m(38), _vm._v(" "), _c('div', {
+  }, [_vm._m(42), _vm._v(" "), _vm._m(43), _vm._v(" "), _vm._m(44), _vm._v(" "), _c('div', {
     staticClass: "list"
   }, [_c('div', {
     staticClass: "t2 t1 green",
     attrs: {
-      "eventid": '8'
+      "eventid": '11'
     },
     on: {
       "click": _vm.toData1
     }
-  }, [_vm._v("易胜博")]), _vm._v(" "), _vm._m(39)]), _vm._v(" "), _vm._m(40), _vm._v(" "), _vm._m(41), _vm._v(" "), _vm._m(42), _vm._v(" "), _vm._m(43), _vm._v(" "), _vm._m(44), _vm._v(" "), _vm._m(45)])])]), _vm._v(" "), _c('div', {
+  }, [_vm._v("易胜博")]), _vm._v(" "), _vm._m(45)]), _vm._v(" "), _vm._m(46), _vm._v(" "), _vm._m(47), _vm._v(" "), _vm._m(48), _vm._v(" "), _vm._m(49), _vm._v(" "), _vm._m(50), _vm._v(" "), _vm._m(51)])])]), _vm._v(" "), _c('div', {
     staticClass: "seg",
     class: _vm.onhide == 2 ? 'on' : ''
   }, [_c('div', {
     staticClass: "seg_content"
-  }, [_vm._m(46), _vm._v(" "), _c('div', {}, [_c('div', {
+  }, [_vm._m(52), _vm._v(" "), _c('div', {}, [_c('div', {
     staticClass: "echarts-wrap"
   }, [(_vm.onhide == 2) ? _c('div', {
     staticStyle: {
@@ -2101,9 +2206,9 @@ var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._sel
       "canvasId": "demo-canvas",
       "mpcomid": '5'
     }
-  })], 1) : _vm._e(), _vm._v(" "), _vm._m(47)])])]), _vm._v(" "), _c('div', {
+  })], 1) : _vm._e(), _vm._v(" "), _vm._m(53)])])]), _vm._v(" "), _c('div', {
     staticClass: "yz_data"
-  }, [_vm._m(48), _vm._v(" "), _c('div', {
+  }, [_vm._m(54), _vm._v(" "), _c('div', {
     staticClass: "yz_content"
   }, [_c('div', {
     staticClass: "yz_title"
@@ -2120,39 +2225,39 @@ var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._sel
   }, [_c('div', {
     staticClass: "t1",
     attrs: {
-      "eventid": '9'
+      "eventid": '12'
     },
     on: {
       "click": _vm.toData
     }
-  }, [_c('div', [_vm._v("易胜博")])]), _vm._v(" "), _vm._m(49), _vm._v(" "), _vm._m(50)]), _vm._v(" "), _c('div', {
+  }, [_c('div', [_vm._v("易胜博")])]), _vm._v(" "), _vm._m(55), _vm._v(" "), _vm._m(56)]), _vm._v(" "), _c('div', {
     staticClass: "list"
   }, [_c('div', {
     staticClass: "t1",
     attrs: {
-      "eventid": '10'
+      "eventid": '13'
     },
     on: {
       "click": _vm.toData
     }
-  }, [_c('div', [_vm._v("易胜博")])]), _vm._v(" "), _vm._m(51), _vm._v(" "), _vm._m(52)]), _vm._v(" "), _c('div', {
+  }, [_c('div', [_vm._v("易胜博")])]), _vm._v(" "), _vm._m(57), _vm._v(" "), _vm._m(58)]), _vm._v(" "), _c('div', {
     staticClass: "list"
   }, [_c('div', {
     staticClass: "t1",
     attrs: {
-      "eventid": '11'
+      "eventid": '14'
     },
     on: {
       "click": _vm.toData
     }
-  }, [_c('div', [_vm._v("易胜博")])]), _vm._v(" "), _vm._m(53), _vm._v(" "), _vm._m(54)])])])])])], 1), _vm._v(" "), _c('div', {
+  }, [_c('div', [_vm._v("易胜博")])]), _vm._v(" "), _vm._m(59), _vm._v(" "), _vm._m(60)])])])])])], 1), _vm._v(" "), _c('div', {
     staticClass: "content4 content",
     class: _vm.key == 3 ? 'on' : ''
   }, [_c('div', {
     staticClass: "live_content"
   }, [_c('div', {
     staticClass: "live_header"
-  }, [_vm._m(55), _vm._v(" "), _c('div', {
+  }, [_vm._m(61), _vm._v(" "), _c('div', {
     staticClass: "head"
   }, [_c('div', {
     staticClass: "left"
@@ -2260,7 +2365,7 @@ var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._sel
       "current": _vm.current1,
       "controlled": "",
       "values": ['第一节', '第二节', '第三节', '第四节'],
-      "eventid": '12',
+      "eventid": '15',
       "mpcomid": '7'
     },
     on: {
@@ -2308,7 +2413,7 @@ var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._sel
   }, [_c('p', [_vm._v("本节结束")])], 1)])])], 1)], 1)], 1)])]), _vm._v(" "), _c('div', {
     staticClass: "content5 content",
     class: _vm.key == 4 ? 'on' : ''
-  }, [_vm._m(56)])])])
+  }, [_vm._m(62)])])])
 }
 var staticRenderFns = [function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
@@ -2558,6 +2663,30 @@ var staticRenderFns = [function () {var _vm=this;var _h=_vm.$createElement;var _
   }, [_vm._v("定制公司")]), _vm._v(" "), _c('span', {
     staticClass: "p2"
   }, [_vm._v("(共3家)")])])
+},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "t2"
+  }, [_c('div', [_vm._v("0.8")]), _vm._v(" "), _c('div', [_vm._v("0.8")]), _vm._v(" "), _c('div', [_vm._v("0.8")]), _vm._v(" "), _c('div', [_vm._v("0.8")]), _vm._v(" "), _c('div', [_vm._v("0.8")]), _vm._v(" "), _c('div', [_vm._v("0.8")])])
+},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "t2"
+  }, [_c('div', [_vm._v("0.8")]), _vm._v(" "), _c('div', [_vm._v("0.8")]), _vm._v(" "), _c('div', [_vm._v("0.8")]), _vm._v(" "), _c('div', [_vm._v("0.8")]), _vm._v(" "), _c('div', [_vm._v("0.8")]), _vm._v(" "), _c('div', [_vm._v("0.8")])])
+},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "t2"
+  }, [_c('div', [_vm._v("0.8")]), _vm._v(" "), _c('div', [_vm._v("0.8")]), _vm._v(" "), _c('div', [_vm._v("0.8")]), _vm._v(" "), _c('div', [_vm._v("0.8")]), _vm._v(" "), _c('div', [_vm._v("0.8")]), _vm._v(" "), _c('div', [_vm._v("0.8")])])
+},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "t2"
+  }, [_c('div', [_vm._v("0.8")]), _vm._v(" "), _c('div', [_vm._v("0.8")]), _vm._v(" "), _c('div', [_vm._v("0.8")]), _vm._v(" "), _c('div', [_vm._v("0.8")]), _vm._v(" "), _c('div', [_vm._v("0.8")]), _vm._v(" "), _c('div', [_vm._v("0.8")])])
+},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "t2"
+  }, [_c('div', [_vm._v("0.8")]), _vm._v(" "), _c('div', [_vm._v("0.8")]), _vm._v(" "), _c('div', [_vm._v("0.8")]), _vm._v(" "), _c('div', [_vm._v("0.8")]), _vm._v(" "), _c('div', [_vm._v("0.8")]), _vm._v(" "), _c('div', [_vm._v("0.8")])])
+},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "t2"
+  }, [_c('div', [_vm._v("0.8")]), _vm._v(" "), _c('div', [_vm._v("0.8")]), _vm._v(" "), _c('div', [_vm._v("0.8")]), _vm._v(" "), _c('div', [_vm._v("0.8")]), _vm._v(" "), _c('div', [_vm._v("0.8")]), _vm._v(" "), _c('div', [_vm._v("0.8")])])
 },function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
     staticClass: "t2"

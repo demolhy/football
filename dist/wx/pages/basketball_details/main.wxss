@@ -870,3 +870,6 @@ to {
   font-size: 24rpx;
   color: #333;
 }
+.canvas-hide.data-v-5faf5e85 {
+  display: none;
+}

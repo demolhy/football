@@ -2,6 +2,8 @@
 .ec-canvas.data-v-5e41a82f {
   width: 100%;
   height: 100%;
+}
+.ec-canvas.on.data-v-5e41a82f {
   position: absolute;
   left: -999em;
 }
