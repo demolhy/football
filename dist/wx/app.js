@@ -2,16 +2,20 @@ require("./common/manifest.js")
 require("./common/vendor.js")
 global.webpackJsonpMpvue([13],{
 
-/***/ 14:
+/***/ 42:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__App__ = __webpack_require__(16);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__App__ = __webpack_require__(44);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__utils_httpRequest__ = __webpack_require__(47);
 
 
+
+
+__WEBPACK_IMPORTED_MODULE_0_vue___default.a.prototype.$httpWX = __WEBPACK_IMPORTED_MODULE_2__utils_httpRequest__["a" /* default */];
 
 __WEBPACK_IMPORTED_MODULE_0_vue___default.a.config._mpTrace = true;
 __WEBPACK_IMPORTED_MODULE_0_vue___default.a.config.productionTip = false;
@@ -22,15 +26,15 @@ app.$mount();
 
 /***/ }),
 
-/***/ 16:
+/***/ 44:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_mpvue_loader_lib_selector_type_script_index_0_App_vue__ = __webpack_require__(18);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_mpvue_loader_lib_selector_type_script_index_0_App_vue__ = __webpack_require__(46);
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(17)
+  __webpack_require__(45)
 }
 var normalizeComponent = __webpack_require__(0)
 /* script */
@@ -74,14 +78,14 @@ if (false) {(function () {
 
 /***/ }),
 
-/***/ 17:
+/***/ 45:
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
 
-/***/ 18:
+/***/ 46:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -118,6 +122,61 @@ if (false) {(function () {
   }
 });
 
+/***/ }),
+
+/***/ 47:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_promise__ = __webpack_require__(48);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_promise___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_promise__);
+
+var host = 'https://sports.hxweixin.top/api/v1/'; //写自己的域名
+
+function request(url, method, data) {
+  var header = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : {};
+
+  wx.showLoading({
+    title: '加载中' // 数据请求前loading
+  });
+  return new __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_promise___default.a(function (resolve, reject) {
+    wx.request({
+      url: host + url, // 仅为示例，并非真实的接口地址
+      method: method,
+      data: data,
+      headers: {
+        'content-type': 'application/json' // 默认值
+      },
+      success: function success(res) {
+        wx.hideLoading();
+        resolve(res.data);
+      },
+      fail: function fail(res) {
+        wx.hideLoading();
+        // reject(false)
+      },
+      complete: function complete() {
+        wx.hideLoading();
+      }
+    });
+  });
+}
+
+function get(obj) {
+  return request(obj.url, 'GET', obj.data);
+}
+
+function post(obj) {
+  return request(obj.url, 'POST', obj.data);
+}
+
+/* harmony default export */ __webpack_exports__["a"] = ({
+  request: request,
+  get: get,
+  post: post,
+  host: host
+});
+
 /***/ })
 
-},[14]);
+},[42]);

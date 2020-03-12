@@ -24,7 +24,7 @@
 	},
 	"miniprogramRoot": "dist/wx/",
 	"compileType": "miniprogram",
-	"appid": "wx6d99d2521e984e25",
+	"appid": "wx724f11fd7a80ac59",
 	"projectname": "football",
 	"simulatorType": "wechat",
 	"simulatorPluginLibVersion": {},

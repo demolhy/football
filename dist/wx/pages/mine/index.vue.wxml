@@ -1,5 +1,28 @@
-<template name="f78f07fa">
+<template name="79c054ca">
   <view class="_div data-v-199d7860">
-    <image style="width: 100%;height: 100%" src="https://fb.hxweixin.top/images/mine/mine.png" alt class="_img data-v-199d7860"></image>
+    <view class="_div data-v-199d7860 logo">
+      <image src="https://fb.hxweixin.top/images/mine/mine_logo.png" alt class="_img data-v-199d7860"></image>
+    </view>
+    <view class="_div data-v-199d7860 box">
+      <view class="_div data-v-199d7860 login">
+        <view class="_h5 data-v-199d7860">登录</view>
+        <view class="_div data-v-199d7860 lg_list">
+          <view class="_div data-v-199d7860 list"><input type="text" placeholder="输入你的用户名/手机号" class="_input data-v-199d7860" />
+            <image src="https://fb.hxweixin.top/images/mine/mine_phone.png" alt class="_img data-v-199d7860"></image>
+          </view>
+          <view class="_div data-v-199d7860 list"><input type="password" placeholder="输入您的密码" class="_input data-v-199d7860" />
+            <image src="https://fb.hxweixin.top/images/mine/mine_pass.png" alt class="_img data-v-199d7860"></image>
+          </view>
+          <view class="_div data-v-199d7860 forget"><label class="_span data-v-199d7860">忘记密码?</label></view>
+        </view> <button class="_button data-v-199d7860">登 录</button>
+      </view>
+    </view>
+    <view class="_div data-v-199d7860 other">
+      <view class="_p data-v-199d7860">其他登录方式</view>
+    </view>
+    <view class="_div data-v-199d7860 wechat">
+      <image src="https://fb.hxweixin.top/images/mine/mine_wechat.png" alt class="_img data-v-199d7860"></image>
+      <view class="_p data-v-199d7860">微信登录</view>
+    </view>
   </view>
 </template>

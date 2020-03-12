@@ -25,6 +25,7 @@
   },
   "dependencies": {
     "@antv/wx-f2": "^2.0.1",
+    "axios": "^0.19.2",
     "echarts": "^4.6.0",
     "mpvue": "^2.0.0",
     "mpvue-echarts": "^0.3.2",

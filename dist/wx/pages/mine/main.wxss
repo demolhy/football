@@ -1,9 +1,104 @@
 @import "../../common/vendor.wxss";
 
-._img.data-v-199d7860 {
+.logo.data-v-199d7860 {
+  text-align: center;
+  margin: 70rpx;
+}
+.logo ._img.data-v-199d7860 {
+  width: 273rpx;
+  height: 92rpx;
+}
+.box.data-v-199d7860 {
+  padding: 0 42rpx;
+}
+.box .login.data-v-199d7860 {
+  background: #fff;
+  border-radius: 10rpx;
+  padding: 50rpx 45rpx;
+  padding-bottom: 0;
+  position: relative;
+}
+.box .login ._h5.data-v-199d7860 {
+  font-size: 48rpx;
+}
+.box .login .lg_list.data-v-199d7860 {
+  margin-top: 50rpx;
+}
+.box .login .lg_list .list.data-v-199d7860 {
+  position: relative;
+  margin-bottom: 20rpx;
+}
+.box .login .lg_list .list ._img.data-v-199d7860 {
   position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
+  left: 40rpx;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 28rpx;
+  height: 40rpx;
+}
+.box .login .lg_list .list ._input.data-v-199d7860 {
+  border-bottom: 2rpx solid #d3dfef;
+  font-size: 24rpx;
+  padding: 35rpx 100rpx;
+}
+.box .login .lg_list .forget.data-v-199d7860 {
+  text-align: right;
+  padding-right: 30rpx;
+}
+.box .login .lg_list .forget ._span.data-v-199d7860 {
+  color: #4cb13b;
+  font-size: 24rpx;
+}
+.box .login ._button.data-v-199d7860 {
+  margin-top: 10rpx;
+  background: #4cb13b;
+  color: #fff;
+  font-size: 30rpx;
+  border: none;
+  border-radius: 40rpx;
+  width: 70%;
+  height: 80rpx;
+  line-height: 80rpx;
+  bottom: -40rpx;
+}
+.other.data-v-199d7860 {
+  text-align: center;
+  position: relative;
+  margin-top: 80rpx;
+}
+.other ._p.data-v-199d7860 {
+  color: #999;
+  font-size: 22rpx;
+}
+.other.data-v-199d7860::after {
+  content: "";
+  width: 100rpx;
+  height: 1rpx;
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.1);
+}
+.other.data-v-199d7860::before {
+  content: "";
+  width: 100rpx;
+  height: 1rpx;
+  position: absolute;
+  top: 50%;
+  right: 25%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.1);
+}
+.wechat.data-v-199d7860 {
+  text-align: center;
+  margin-top: 30rpx;
+}
+.wechat ._img.data-v-199d7860 {
+  width: 90rpx;
+  height: 90rpx;
+}
+.wechat ._p.data-v-199d7860 {
+  color: #999999;
+  font-size: 22rpx;
 }

@@ -25,7 +25,6 @@
           </label>
       </checkbox-group>
     </div>
-    
   </div>
 </template>
 

@@ -1,4 +1,4 @@
-<template name="5322c748">
+<template name="ed39413a">
   <view class="_div data-v-58b457ae">
     <wux-tabs current="{{current}}" defaultCurrent="tab1" bindchange="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}" class="_wux-tabs data-v-58b457ae">
       <wux-tab key="0" title="全部" wux-class="nav" class="_wux-tab data-v-58b457ae"></wux-tab>

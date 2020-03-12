@@ -10,6 +10,7 @@
 .content .list.data-v-1868f18b {
   margin-top: 10rpx;
   background-color: #fff;
+  position: relative;
 }
 .content .list .header.data-v-1868f18b {
   display: flex;
@@ -78,6 +79,9 @@
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+}
+.box-content .main.data-v-1868f18b {
+  position: relative;
 }
 .box-content .main .left.data-v-1868f18b {
   font-size: 28rpx;
@@ -192,8 +196,26 @@
   position: fixed;
   bottom: 220rpx;
   right: 30rpx;
+  z-index: 999;
 }
 .screen ._img.data-v-1868f18b {
   width: 74rpx;
   height: 74rpx;
+}
+.box-content .btm .left.time_on.data-v-1868f18b {
+  position: absolute;
+  top: -125rpx;
+  left: 210rpx;
+}
+.grey.data-v-1868f18b {
+  color: #666 !important;
+}
+.grey1.data-v-1868f18b {
+  color: #999 !important;
+}
+.red1.data-v-1868f18b {
+  color: #ff5353;
+}
+.green1.data-v-1868f18b {
+  color: #4cb13b;
 }
