@@ -139,17 +139,45 @@ if (false) {(function () {
       wx.login({
         success: function success(res) {
           console.log(res);
-          _this.$httpWX.get({
-            url: "https://api.weixin.qq.com/sns/oauth2/access_token",
+          var appid = "wx724f11fd7a80ac59";
+          var secret = "ab9039e11f2c99e9d093223c1be451a5";
+          var code = res.code;
+
+          _this.$httpWX.post({
+            url: "xwxlogin",
             data: {
-              appid: "wx724f11fd7a80ac59",
-              secret: "3430199e83173b36f5264453d94520ad",
-              code: res.code,
-              grant_type: 'authorization_code'
+              // openid: e.data.openid,
+              // access_token: e.data.session_key
+              code: code
             }
           }).then(function (res) {
             console.log(res);
           });
+          // wx.request({
+          //   url:
+          //     "https://api.weixin.qq.com/sns/jscode2session?appid=" +
+          //     appid +
+          //     "&secret=" +
+          //     secret +
+          //     "&js_code=" +
+          //     code +
+          //     "&grant_type=authorization_code", // 仅为示例，并非真实的接口地址
+          //   method: "get",
+          //   data: {},
+          //   headers: {
+          //     "content-type": "application/json" // 默认值
+          //   },
+          //   success: (e) => {
+          //     console.log(e);
+
+          //   },
+          //   fail: function(e) {
+          //     // console.log('fail:'+e)
+          //   },
+          //   complete: function(e) {
+          //     // console.log(e)
+          //   }
+          // });
         },
         fail: function fail() {},
         complete: function complete() {}
