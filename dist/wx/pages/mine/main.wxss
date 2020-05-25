@@ -94,6 +94,17 @@
   text-align: center;
   margin-top: 30rpx;
 }
+.but_img.data-v-199d7860 {
+  width: 90rpx;
+  height: 90rpx;
+  border: none;
+  border-radius: 50%;
+  background: none;
+  background-image: url("https://fb.hxweixin.top/images/mine/mine_wechat.png");
+  background-size: 100% 100%;
+  padding: 0;
+  position: initial;
+}
 .wechat ._img.data-v-199d7860 {
   width: 90rpx;
   height: 90rpx;

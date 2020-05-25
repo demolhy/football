@@ -540,6 +540,13 @@ function handleCanvarToImg(e) {
   components: {
     mpvueEcharts: __WEBPACK_IMPORTED_MODULE_1_mpvue_echarts__["a" /* default */]
   },
+  onLoad: function onLoad(e) {
+
+    this.urlid = e.id;
+    var url = 'https://fb.hxweixin.top/images/distH5/football/index.html?id=' + e.id;
+    this.url = url;
+    // console.log(this.urlid)
+  },
   created: function created() {},
   data: function data() {
     return {
@@ -573,7 +580,9 @@ function handleCanvarToImg(e) {
       onhide: '',
       radarImg: "",
       prog1: '60',
-      prog2: '40'
+      prog2: '40',
+      urlid: '',
+      url: ''
       // opts: {
       //   onInit: initChart("column", 400, 300, F2)
       // }
@@ -634,7 +643,7 @@ function handleCanvarToImg(e) {
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', [_c('web-view', {
     attrs: {
-      "src": "https://fb.hxweixin.top/images/distH5/football/index.html",
+      "src": _vm.url,
       "mpcomid": '0'
     }
   })], 1)

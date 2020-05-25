@@ -26,7 +26,14 @@
       <p>其他登录方式</p>
     </div>
     <div class="wechat">
-      <img src="https://fb.hxweixin.top/images/mine/mine_wechat.png" alt />
+      <button
+        @click="getChecking"
+        type="primary"
+        @getuserinfo="onGotUserInfo"
+        open-type="getUserInfo"
+        class="but_img"
+      ></button>
+      <!-- <img src="https://fb.hxweixin.top/images/mine/mine_wechat.png" alt /> -->
       <p>微信登录</p>
     </div>
   </div>
@@ -39,19 +46,30 @@ export default {
   computed: {},
   components: {},
   created() {},
-  onLoad() {
-    this.getLogin();
-  },
+  onLoad() {},
   data() {
     return {};
   },
   methods: {
+    getChecking() {
+      wx.checkSession({
+        success: res => {
+          console.log(res);
+          //session_key 未过期，并且在本生命周期一直有效
+        },
+        fail: res => {
+          // session_key 已经失效，需要重新执行登录流程
+          this.getLogin(); //重新登录
+        }
+      });
+    },
+
     getLogin() {
       wx.login({
         success: res => {
           console.log(res);
-          let appid = "wx724f11fd7a80ac59";
-          let secret = "ab9039e11f2c99e9d093223c1be451a5";
+          // let appid = "wx724f11fd7a80ac59";
+          // let secret = "ab9039e11f2c99e9d093223c1be451a5";
           let code = res.code;
 
           this.$httpWX
@@ -66,35 +84,14 @@ export default {
             .then(res => {
               console.log(res);
             });
-          // wx.request({
-          //   url:
-          //     "https://api.weixin.qq.com/sns/jscode2session?appid=" +
-          //     appid +
-          //     "&secret=" +
-          //     secret +
-          //     "&js_code=" +
-          //     code +
-          //     "&grant_type=authorization_code", // 仅为示例，并非真实的接口地址
-          //   method: "get",
-          //   data: {},
-          //   headers: {
-          //     "content-type": "application/json" // 默认值
-          //   },
-          //   success: (e) => {
-          //     console.log(e);
-
-          //   },
-          //   fail: function(e) {
-          //     // console.log('fail:'+e)
-          //   },
-          //   complete: function(e) {
-          //     // console.log(e)
-          //   }
-          // });
         },
         fail: () => {},
         complete: () => {}
       });
+    },
+    onGotUserInfo(res) {
+      console.log(res)
+      
     }
   }
 };
@@ -194,6 +191,17 @@ export default {
 .wechat {
   text-align: center;
   margin-top: 30rpx;
+}
+.but_img {
+  width: 90rpx;
+  height: 90rpx;
+  border: none;
+  border-radius: 50%;
+  background: none;
+  background-image: url("https://fb.hxweixin.top/images/mine/mine_wechat.png");
+  background-size: 100% 100%;
+  padding: 0;
+  position: initial;
 }
 .wechat img {
   width: 90rpx;

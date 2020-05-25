@@ -416,7 +416,8 @@ if (false) {(function () {
       conList_all: [],
       conList_coll: [],
       changeKey: 0,
-      timesend: []
+      timesend: [],
+      idArr: []
     };
   },
 
@@ -425,13 +426,20 @@ if (false) {(function () {
 
   created: function created() {
     console.log(321);
+    console.log("repeat", this);
   },
-  onLoad: function onLoad() {
+  onLoad: function onLoad(e) {
     // console.log("page index onLoad", this);
 
     this.getDataList("fbdata/jishiList", "");
     this.getTimes();
     this.getTimesEnd();
+
+    // console.log(e.model)
+    if (e.model != null) {
+      var arr = e.model.split(",");
+      this.idArr = arr;
+    }
   },
   updated: function updated() {
     if (this.index == 1) {
@@ -461,7 +469,23 @@ if (false) {(function () {
 
         _this.conList = res.data;
 
+        console.log(_this.idArr);
         _this.conList.map(function (item, index) {
+
+          if (_this.idArr != null) {
+            _this.idArr.map(function (setItem) {
+              if (item["1"] == setItem) {
+                item["22"] = true;
+              } else {}
+              // item["22"] = false
+
+              // item['22'] = setItem
+              // console.log(setItem)
+            });
+          } else {}
+          if (_this.idArr == '') {
+            item["22"] = true;
+          }
           var ctime = __WEBPACK_IMPORTED_MODULE_0__utils_index__["a" /* default */].formatTime(item["10"]);
           var starting = void 0;
           item["10"] = ctime;
@@ -530,6 +554,7 @@ if (false) {(function () {
             // console.log("未知");
           }
         });
+        // console.log(this.conList)
       });
     },
     btn: function btn(e) {
@@ -549,10 +574,9 @@ if (false) {(function () {
       var year = date.getFullYear();
       var month = date.getMonth() + 1;
       var day = date.getDate();
-      var years = year + '-' + month + '-' + day + '';
+      var years = year + "-" + month + "-" + day + "";
 
       // console.log(years)
-
 
       var listArr = [{
         data: "",
@@ -581,13 +605,13 @@ if (false) {(function () {
       var month = date.getMonth() + 1;
       var day = date.getDate();
       var week = date.getDay();
-      console.log('week' + week);
+      console.log("week" + week);
       var timearr = ["周日", "周一", "周二", "周三", "周四", "周五", "周六"];
       // console.log(timestr);
       for (var i = 0; i < 7; i++) {
         var days = day + i;
-        var timestr = month + '-' + days;
-        var years = year + '-' + month + '-' + days;
+        var timestr = month + "-" + days;
+        var years = year + "-" + month + "-" + days;
         if (week + i >= 7) {
           week = week - 7;
         }
@@ -620,8 +644,8 @@ if (false) {(function () {
       // console.log(timestr);
       for (var i = 0; i < 7; i++) {
         var days = day - i;
-        var timestr = month + '-' + days;
-        var years = year + '-' + month + '-' + days;
+        var timestr = month + "-" + days;
+        var years = year + "-" + month + "-" + days;
         if (week - i <= -1) {
           week = week + 7;
         }
@@ -640,10 +664,10 @@ if (false) {(function () {
       // let num = e.mp.currentTarget.id
       var date = this.timesend[e.mp.currentTarget.id].year;
       var dateArr = [{
-        'date': date
+        date: date
       }];
       console.log(dateArr);
-      this.getDataList('fbdata/saiguoList', dateArr[0]);
+      this.getDataList("fbdata/saiguoList", dateArr[0]);
     },
     onChangetimeAll: function onChangetimeAll(e) {
       this.changeKey = e.mp.currentTarget.id;
@@ -651,14 +675,17 @@ if (false) {(function () {
       // let num = e.mp.currentTarget.id
       var date = this.times[e.mp.currentTarget.id].year;
       var dateArr = [{
-        'date': date
+        date: date
       }];
       console.log(dateArr);
-      this.getDataList('fbdata/saichengList', dateArr[0]);
+      this.getDataList("fbdata/saichengList", dateArr[0]);
     },
-    toDetail: function toDetail() {
+    toDetail: function toDetail(e) {
+      console.log(e.currentTarget.dataset.id);
+      var id = e.currentTarget.dataset.id;
+      var url = "../index_details/main?id=" + id;
       wx.navigateTo({
-        url: "../index_details/main",
+        url: url,
         success: function success(res) {
           // 通过eventChannel向被打开页面传送数据
           console.log("success");
@@ -764,9 +791,10 @@ var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._sel
   }, _vm._l((_vm.conList), function(item, index) {
     return _c('block', {
       key: item.key
-    }, [_c('div', {
+    }, [(item['22']) ? _c('div', {
       staticClass: "list",
       attrs: {
+        "data-id": item['0'],
         "eventid": '4_' + index
       },
       on: {
@@ -850,7 +878,7 @@ var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._sel
         value: (item[16]),
         expression: "item[16]"
       }]
-    }, [_vm._v("角 " + _vm._s(item["16"]))])], 1)], 1)])])])
+    }, [_vm._v("角 " + _vm._s(item["16"]))])], 1)], 1)])]) : _vm._e()])
   })) : _vm._e(), _vm._v(" "), (_vm.index == 1) ? _c('div', {
     staticClass: "content1 content",
     class: _vm.index == 1 ? 'on' : ''
@@ -881,6 +909,7 @@ var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._sel
     }, [_c('div', {
       staticClass: "list",
       attrs: {
+        "data-id": item['0'],
         "eventid": '8_' + index
       },
       on: {
@@ -997,6 +1026,7 @@ var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._sel
     }, [_c('div', {
       staticClass: "list",
       attrs: {
+        "data-id": item['0'],
         "eventid": '12_' + index
       },
       on: {
@@ -1083,159 +1113,10 @@ var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._sel
     staticClass: "content4 content",
     class: _vm.index == 3 ? 'on' : ''
   }, [_c('div', {
-    staticClass: "info"
-  }, [_vm._v("2019-12-17 星期二(共6场)")]), _vm._v(" "), _c('div', {
     staticClass: "content-list"
-  }, [_c('div', {
-    staticClass: "list1 list"
-  }, [_c('div', {
-    staticClass: "header"
-  }, [_vm._m(0), _vm._v(" "), _c('div', {
-    staticClass: "center"
-  }, [_c('p', [_vm._v("第4节 05:44′")])], 1), _vm._v(" "), _c('div', {
-    staticClass: "right"
-  }, [_c('div', {
-    staticClass: "icon1 icon on",
-    attrs: {
-      "eventid": '13'
-    },
-    on: {
-      "change": _vm.top
-    }
-  }), _vm._v(" "), _c('div', {
-    staticClass: "icon2 icon on",
-    attrs: {
-      "eventid": '14'
-    },
-    on: {
-      "change": _vm.coll
-    }
-  })])]), _vm._v(" "), _c('div', {
-    staticClass: "box-content"
-  }, [_c('div', {
-    staticClass: "main item"
-  }, [_c('p', {
-    staticClass: "left"
-  }, [_vm._v("哈迪拉")]), _vm._v(" "), _c('p', {
-    staticClass: "center"
-  }, [_vm._v("1:2")]), _vm._v(" "), _c('p', {
-    staticClass: "right"
-  }, [_vm._v("内斯兹奥纳")])], 1), _vm._v(" "), _c('div', {
-    staticClass: "btm item"
-  }, [_c('p', {
-    staticClass: "left"
-  }, [_vm._v("11:00")]), _vm._v(" "), _c('p', {
-    staticClass: "center"
-  }, [_vm._v("半 0:0")]), _vm._v(" "), _c('div', {
-    staticClass: "right"
-  }, [_c('p', [_vm._v("红 0:0")]), _vm._v(" "), _c('p', [_vm._v("黄 0:0")]), _vm._v(" "), _c('p', [_vm._v("角 0:0")])], 1)], 1)])]), _vm._v(" "), _c('div', {
-    staticClass: "list2 list"
-  }, [_c('div', {
-    staticClass: "header"
-  }, [_vm._m(1), _vm._v(" "), _c('div', {
-    staticClass: "center"
-  }, [_c('p', [_vm._v("完")])], 1), _vm._v(" "), _c('div', {
-    staticClass: "right"
-  }, [_c('div', {
-    staticClass: "icon1 icon on",
-    attrs: {
-      "eventid": '15'
-    },
-    on: {
-      "change": _vm.top
-    }
-  }), _vm._v(" "), _c('div', {
-    staticClass: "icon2 icon on",
-    attrs: {
-      "eventid": '16'
-    },
-    on: {
-      "change": _vm.coll
-    }
-  })])]), _vm._v(" "), _c('div', {
-    staticClass: "box-content"
-  }, [_c('div', {
-    staticClass: "main item"
-  }, [_c('p', {
-    staticClass: "left"
-  }, [_vm._v("哈迪拉")]), _vm._v(" "), _c('p', {
-    staticClass: "center"
-  }, [_vm._v("1:2")]), _vm._v(" "), _c('p', {
-    staticClass: "right"
-  }, [_vm._v("内斯兹奥纳")])], 1), _vm._v(" "), _c('div', {
-    staticClass: "btm item"
-  }, [_c('p', {
-    staticClass: "left"
-  }, [_vm._v("11:00")]), _vm._v(" "), _c('p', {
-    staticClass: "center"
-  }, [_vm._v("半 0:0")]), _vm._v(" "), _c('div', {
-    staticClass: "right"
-  }, [_c('p', [_vm._v("红 0:0")]), _vm._v(" "), _c('p', [_vm._v("黄 0:0")]), _vm._v(" "), _c('p', [_vm._v("角 0:0")])], 1)], 1)])]), _vm._v(" "), _c('div', {
-    staticClass: "list3 list"
-  }, [_c('div', {
-    staticClass: "header"
-  }, [_vm._m(2), _vm._v(" "), _c('div', {
-    staticClass: "center"
-  }, [_c('p', [_vm._v("未开")])], 1), _vm._v(" "), _c('div', {
-    staticClass: "right"
-  }, [_c('div', {
-    staticClass: "icon1 icon on",
-    attrs: {
-      "eventid": '17'
-    },
-    on: {
-      "change": _vm.top
-    }
-  }), _vm._v(" "), _c('div', {
-    staticClass: "icon2 icon on",
-    attrs: {
-      "eventid": '18'
-    },
-    on: {
-      "change": _vm.coll
-    }
-  })])]), _vm._v(" "), _c('div', {
-    staticClass: "box-content"
-  }, [_c('div', {
-    staticClass: "main item"
-  }, [_c('p', {
-    staticClass: "left"
-  }, [_vm._v("哈迪拉")]), _vm._v(" "), _c('p', {
-    staticClass: "center"
-  }, [_vm._v("VS")]), _vm._v(" "), _c('p', {
-    staticClass: "right"
-  }, [_vm._v("内斯兹奥纳")])], 1)])])])]) : _vm._e()], 1)
+  })]) : _vm._e()], 1)
 }
-var staticRenderFns = [function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "left"
-  }, [_c('img', {
-    attrs: {
-      "src": "../../../static/images/index/header_img1.png",
-      "alt": ""
-    }
-  }), _vm._v(" "), _c('span', [_vm._v("欧俱杯")])])
-},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "left"
-  }, [_c('img', {
-    attrs: {
-      "src": "../../../static/images/index/header_img1.png",
-      "alt": ""
-    }
-  }), _vm._v(" "), _c('span', [_vm._v("欧俱杯")])])
-},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "left"
-  }, [_c('img', {
-    attrs: {
-      "src": "../../../static/images/index/header_img1.png",
-      "alt": ""
-    }
-  }), _vm._v(" "), _c('span', [_vm._v("欧俱杯")]), _vm._v(" "), _c('span', {
-    staticClass: "time"
-  }, [_vm._v("11:00")])])
-}]
+var staticRenderFns = []
 render._withStripped = true
 var esExports = { render: render, staticRenderFns: staticRenderFns }
 /* harmony default export */ __webpack_exports__["a"] = (esExports);

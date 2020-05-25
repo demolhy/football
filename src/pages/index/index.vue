@@ -13,7 +13,7 @@
     <!-- 即时 -->
     <div class="content1 content" v-if="index == 0" :class="index == 0 ? 'on' : ''">
       <block v-for="item in conList" :key="item.key">
-        <div class="list" @click="toDetail">
+        <div class="list" v-if="item['22']" @click="toDetail" :data-id="item['0']">
           <div class="header">
             <div class="left">
               <img src="../../../static/images/index/header_img1.png" alt />
@@ -99,9 +99,9 @@
           </div>
         </block>
       </div>
-      <div class="">
+      <div class>
         <block v-for="item in conList" :key="item.key">
-          <div class="list" @click="toDetail">
+          <div class="list" @click="toDetail" :data-id="item['0']">
             <div class="header">
               <div class="left">
                 <img src="../../../static/images/index/header_img1.png" alt />
@@ -157,7 +157,7 @@
       </div>
       <div class="content_already">
         <block v-for="item in conList" :key="item.key">
-          <div class="list" @click="toDetail">
+          <div class="list" @click="toDetail" :data-id="item['0']">
             <div class="header">
               <div class="left">
                 <img src="../../../static/images/index/header_img1.png" alt />
@@ -195,9 +195,9 @@
     <!-- 关注 -->
 
     <div class="content4 content" v-if="index == 3" v-bind:class="index == 3 ? 'on' : ''">
-      <div class="info">2019-12-17 星期二(共6场)</div>
+      <!-- <div class="info">2019-12-17 星期二(共6场)</div> -->
       <div class="content-list">
-        <div class="list1 list">
+        <!-- <div class="list1 list">
           <div class="header">
             <div class="left">
               <img src="../../../static/images/index/header_img1.png" alt />
@@ -281,7 +281,7 @@
               <p class="right">内斯兹奥纳</p>
             </div>
           </div>
-        </div>
+        </div>-->
       </div>
     </div>
   </div>
@@ -328,7 +328,8 @@ export default {
       conList_all: [],
       conList_coll: [],
       changeKey: 0,
-      timesend:[]
+      timesend: [],
+      idArr: []
     };
   },
 
@@ -336,14 +337,21 @@ export default {
 
   created() {
     console.log(321);
+    console.log("repeat", this);
   },
 
-  onLoad() {
+  onLoad(e) {
     // console.log("page index onLoad", this);
 
     this.getDataList("fbdata/jishiList", "");
     this.getTimes();
-    this.getTimesEnd()
+    this.getTimesEnd();
+
+    // console.log(e.model)
+    if (e.model != null) {
+      let arr = e.model.split(",");
+      this.idArr = arr;
+    }
   },
   updated() {
     if (this.index == 1) {
@@ -372,7 +380,26 @@ export default {
 
           this.conList = res.data;
 
+          console.log(this.idArr);
           this.conList.map((item, index) => {
+            
+            
+            if(this.idArr != null){
+              this.idArr.map(setItem => {
+                if (item["1"] == setItem) {
+                  item["22"] = true;
+                }else{
+                  // item["22"] = false
+                }
+                // item['22'] = setItem
+                // console.log(setItem)
+              });
+            }else{
+              
+            }
+            if(this.idArr == ''){
+              item["22"] = true
+            }
             let ctime = timestamp.formatTime(item["10"]);
             let starting;
             item["10"] = ctime;
@@ -441,6 +468,7 @@ export default {
               // console.log("未知");
             }
           });
+          // console.log(this.conList)
         });
     },
 
@@ -460,11 +488,10 @@ export default {
       let year = date.getFullYear();
       let month = date.getMonth() + 1;
       let day = date.getDate();
-      let years = year +'-'+ month +'-'+ day +''
+      let years = year + "-" + month + "-" + day + "";
 
       // console.log(years)
 
-      
       let listArr = [
         {
           data: "",
@@ -497,36 +524,33 @@ export default {
       let month = date.getMonth() + 1;
       let day = date.getDate();
       let week = date.getDay();
-      console.log('week'+week)
-      let timearr = ["周日","周一", "周二", "周三", "周四", "周五", "周六"];
+      console.log("week" + week);
+      let timearr = ["周日", "周一", "周二", "周三", "周四", "周五", "周六"];
       // console.log(timestr);
-      for(var i = 0; i < 7; i++){
-        let days = day + i
-        let timestr = month + '-' +days;
-        let years = year + '-' + month + '-' +days
-        if(week+i >= 7){
-          week = week - 7
+      for (var i = 0; i < 7; i++) {
+        let days = day + i;
+        let timestr = month + "-" + days;
+        let years = year + "-" + month + "-" + days;
+        if (week + i >= 7) {
+          week = week - 7;
         }
-        this.times.push(
-          {
-            id: i,
-            date: timestr,
-            week: timearr[week+i],
-            year: years
-          }
-        )
+        this.times.push({
+          id: i,
+          date: timestr,
+          week: timearr[week + i],
+          year: years
+        });
       }
       // this.times.map((item, index) => {
       //   let days = day + index;
       //   let years = year + "-" + month + "-" + days;
-        
+
       //     item.id= day + index,
       //     item.date= month + "-" + days,
       //     item.week= timearr[day],
       //     item.years= years
       //   console.log(this.times);
       // });
-      
     },
     getTimesEnd() {
       let date = new Date();
@@ -535,52 +559,56 @@ export default {
       let day = date.getDate();
       let week = date.getDay();
       // console.log('week'+week)
-      let timearr = ["周日","周一", "周二", "周三", "周四", "周五", "周六"];
+      let timearr = ["周日", "周一", "周二", "周三", "周四", "周五", "周六"];
       // console.log(timestr);
-      for(var i = 0; i < 7; i++){
-        let days = day - i
-        let timestr = month + '-' +days;
-        let years = year + '-' + month + '-' +days
-        if(week-i <= -1){
-          week = week + 7
+      for (var i = 0; i < 7; i++) {
+        let days = day - i;
+        let timestr = month + "-" + days;
+        let years = year + "-" + month + "-" + days;
+        if (week - i <= -1) {
+          week = week + 7;
         }
-        this.timesend.push(
-          {
-            id: i,
-            date: timestr,
-            week: timearr[week-i],
-            year: years
-          }
-        )
+        this.timesend.push({
+          id: i,
+          date: timestr,
+          week: timearr[week - i],
+          year: years
+        });
       }
       // console.log(this.timesend);
-      
     },
     onChangetime(e) {
       this.changeKey = e.mp.currentTarget.id;
       // console.log(e);
       // let num = e.mp.currentTarget.id
-      let date = this.timesend[e.mp.currentTarget.id].year
-      let dateArr = [{
-        'date' : date
-      }]
-      console.log(dateArr)
-      this.getDataList('fbdata/saiguoList', dateArr[0])
+      let date = this.timesend[e.mp.currentTarget.id].year;
+      let dateArr = [
+        {
+          date: date
+        }
+      ];
+      console.log(dateArr);
+      this.getDataList("fbdata/saiguoList", dateArr[0]);
     },
-    onChangetimeAll(e){
+    onChangetimeAll(e) {
       this.changeKey = e.mp.currentTarget.id;
       // console.log(e);
       // let num = e.mp.currentTarget.id
-      let date = this.times[e.mp.currentTarget.id].year
-      let dateArr = [{
-        'date' : date
-      }]
-      console.log(dateArr)
-      this.getDataList('fbdata/saichengList', dateArr[0])
+      let date = this.times[e.mp.currentTarget.id].year;
+      let dateArr = [
+        {
+          date: date
+        }
+      ];
+      console.log(dateArr);
+      this.getDataList("fbdata/saichengList", dateArr[0]);
     },
-    toDetail() {
+    toDetail(e) {
+      console.log(e.currentTarget.dataset.id);
+      let id = e.currentTarget.dataset.id;
+      let url = "../index_details/main?id=" + id;
       wx.navigateTo({
-        url: "../index_details/main",
+        url: url,
         success: function(res) {
           // 通过eventChannel向被打开页面传送数据
           console.log("success");

@@ -1,4 +1,4 @@
-<template name="30b90ec5">
+<template name="28717657">
   <view class="_div data-v-1868f18b">
     <wux-tabs wux-class="bordered" controlled current="{{key}}" bindchange="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}" class="_wux-tabs data-v-1868f18b">
       <block wx:key="item.key" key="{{item.key}}" wx:for="{{tabs}}" wx:for-index="index" wx:for-item="item">
@@ -10,7 +10,7 @@
     </view>
     <view class="_div data-v-1868f18b content1 content {{index == 0 ? 'on' : ''}}" wx:if="{{index == 0}}">
       <block wx:key="item.key" key="{{item.key}}" wx:for="{{conList}}" wx:for-index="index" wx:for-item="item">
-        <view class="_div data-v-1868f18b list" bindtap="handleProxy" data-eventid="{{'4_'+index}}" data-comkey="{{$k}}">
+        <view class="_div data-v-1868f18b list" wx:if="{{item['22']}}" bindtap="handleProxy" data-id="{{item['0']}}" data-eventid="{{'4_'+index}}" data-comkey="{{$k}}">
           <view class="_div data-v-1868f18b header">
             <view class="_div data-v-1868f18b left">
               <image src="/static/images/index/header_img1.png" alt class="_img data-v-1868f18b"></image> <label class="_span data-v-1868f18b">{{item["2"][0]}}</label>
@@ -55,7 +55,7 @@
       </view>
       <view class="_div data-v-1868f18b">
         <block wx:key="item.key" key="{{item.key}}" wx:for="{{conList}}" wx:for-index="index" wx:for-item="item">
-          <view class="_div data-v-1868f18b list" bindtap="handleProxy" data-eventid="{{'8_'+index}}" data-comkey="{{$k}}">
+          <view class="_div data-v-1868f18b list" bindtap="handleProxy" data-id="{{item['0']}}" data-eventid="{{'8_'+index}}" data-comkey="{{$k}}">
             <view class="_div data-v-1868f18b header">
               <view class="_div data-v-1868f18b left">
                 <image src="/static/images/index/header_img1.png" alt class="_img data-v-1868f18b"></image> <label class="_span data-v-1868f18b">{{item["2"][0]}}</label>
@@ -101,7 +101,7 @@
       </view>
       <view class="_div data-v-1868f18b content_already">
         <block wx:key="item.key" key="{{item.key}}" wx:for="{{conList}}" wx:for-index="index" wx:for-item="item">
-          <view class="_div data-v-1868f18b list" bindtap="handleProxy" data-eventid="{{'12_'+index}}" data-comkey="{{$k}}">
+          <view class="_div data-v-1868f18b list" bindtap="handleProxy" data-id="{{item['0']}}" data-eventid="{{'12_'+index}}" data-comkey="{{$k}}">
             <view class="_div data-v-1868f18b header">
               <view class="_div data-v-1868f18b left">
                 <image src="/static/images/index/header_img1.png" alt class="_img data-v-1868f18b"></image> <label class="_span data-v-1868f18b">{{item["2"][0]}}</label>
@@ -135,90 +135,7 @@
       </view>
     </view>
     <view class="_div data-v-1868f18b content4 content {{index == 3 ? 'on' : ''}}" wx:if="{{index == 3}}">
-      <view class="_div data-v-1868f18b info">2019-12-17 星期二(共6场)</view>
-      <view class="_div data-v-1868f18b content-list">
-        <view class="_div data-v-1868f18b list1 list">
-          <view class="_div data-v-1868f18b header">
-            <view class="_div data-v-1868f18b left">
-              <image src="/static/images/index/header_img1.png" alt class="_img data-v-1868f18b"></image> <label class="_span data-v-1868f18b">欧俱杯</label>
-            </view>
-            <view class="_div data-v-1868f18b center">
-              <view class="_p data-v-1868f18b">第4节 05:44′</view>
-            </view>
-            <view class="_div data-v-1868f18b right">
-              <view class="_div data-v-1868f18b icon1 icon on" bindchange="handleProxy" data-eventid="{{'13'}}" data-comkey="{{$k}}"></view>
-              <view class="_div data-v-1868f18b icon2 icon on" bindchange="handleProxy" data-eventid="{{'14'}}" data-comkey="{{$k}}"></view>
-            </view>
-          </view>
-          <view class="_div data-v-1868f18b box-content">
-            <view class="_div data-v-1868f18b main item">
-              <view class="_p data-v-1868f18b left">哈迪拉</view>
-              <view class="_p data-v-1868f18b center">1:2</view>
-              <view class="_p data-v-1868f18b right">内斯兹奥纳</view>
-            </view>
-            <view class="_div data-v-1868f18b btm item">
-              <view class="_p data-v-1868f18b left">11:00</view>
-              <view class="_p data-v-1868f18b center">半 0:0</view>
-              <view class="_div data-v-1868f18b right">
-                <view class="_p data-v-1868f18b">红 0:0</view>
-                <view class="_p data-v-1868f18b">黄 0:0</view>
-                <view class="_p data-v-1868f18b">角 0:0</view>
-              </view>
-            </view>
-          </view>
-        </view>
-        <view class="_div data-v-1868f18b list2 list">
-          <view class="_div data-v-1868f18b header">
-            <view class="_div data-v-1868f18b left">
-              <image src="/static/images/index/header_img1.png" alt class="_img data-v-1868f18b"></image> <label class="_span data-v-1868f18b">欧俱杯</label>
-            </view>
-            <view class="_div data-v-1868f18b center">
-              <view class="_p data-v-1868f18b">完</view>
-            </view>
-            <view class="_div data-v-1868f18b right">
-              <view class="_div data-v-1868f18b icon1 icon on" bindchange="handleProxy" data-eventid="{{'15'}}" data-comkey="{{$k}}"></view>
-              <view class="_div data-v-1868f18b icon2 icon on" bindchange="handleProxy" data-eventid="{{'16'}}" data-comkey="{{$k}}"></view>
-            </view>
-          </view>
-          <view class="_div data-v-1868f18b box-content">
-            <view class="_div data-v-1868f18b main item">
-              <view class="_p data-v-1868f18b left">哈迪拉</view>
-              <view class="_p data-v-1868f18b center">1:2</view>
-              <view class="_p data-v-1868f18b right">内斯兹奥纳</view>
-            </view>
-            <view class="_div data-v-1868f18b btm item">
-              <view class="_p data-v-1868f18b left">11:00</view>
-              <view class="_p data-v-1868f18b center">半 0:0</view>
-              <view class="_div data-v-1868f18b right">
-                <view class="_p data-v-1868f18b">红 0:0</view>
-                <view class="_p data-v-1868f18b">黄 0:0</view>
-                <view class="_p data-v-1868f18b">角 0:0</view>
-              </view>
-            </view>
-          </view>
-        </view>
-        <view class="_div data-v-1868f18b list3 list">
-          <view class="_div data-v-1868f18b header">
-            <view class="_div data-v-1868f18b left">
-              <image src="/static/images/index/header_img1.png" alt class="_img data-v-1868f18b"></image> <label class="_span data-v-1868f18b">欧俱杯</label> <label class="_span data-v-1868f18b time">11:00</label>
-            </view>
-            <view class="_div data-v-1868f18b center">
-              <view class="_p data-v-1868f18b">未开</view>
-            </view>
-            <view class="_div data-v-1868f18b right">
-              <view class="_div data-v-1868f18b icon1 icon on" bindchange="handleProxy" data-eventid="{{'17'}}" data-comkey="{{$k}}"></view>
-              <view class="_div data-v-1868f18b icon2 icon on" bindchange="handleProxy" data-eventid="{{'18'}}" data-comkey="{{$k}}"></view>
-            </view>
-          </view>
-          <view class="_div data-v-1868f18b box-content">
-            <view class="_div data-v-1868f18b main item">
-              <view class="_p data-v-1868f18b left">哈迪拉</view>
-              <view class="_p data-v-1868f18b center">VS</view>
-              <view class="_p data-v-1868f18b right">内斯兹奥纳</view>
-            </view>
-          </view>
-        </view>
-      </view>
+      <view class="_div data-v-1868f18b content-list"></view>
     </view>
   </view>
 </template>

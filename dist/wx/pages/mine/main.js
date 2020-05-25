@@ -117,6 +117,13 @@ if (false) {(function () {
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["a"] = ({
   mounted: function mounted() {},
@@ -125,25 +132,37 @@ if (false) {(function () {
   computed: {},
   components: {},
   created: function created() {},
-  onLoad: function onLoad() {
-    this.getLogin();
-  },
+  onLoad: function onLoad() {},
   data: function data() {
     return {};
   },
 
   methods: {
-    getLogin: function getLogin() {
+    getChecking: function getChecking() {
       var _this = this;
+
+      wx.checkSession({
+        success: function success(res) {
+          console.log(res);
+          //session_key 未过期，并且在本生命周期一直有效
+        },
+        fail: function fail(res) {
+          // session_key 已经失效，需要重新执行登录流程
+          _this.getLogin(); //重新登录
+        }
+      });
+    },
+    getLogin: function getLogin() {
+      var _this2 = this;
 
       wx.login({
         success: function success(res) {
           console.log(res);
-          var appid = "wx724f11fd7a80ac59";
-          var secret = "ab9039e11f2c99e9d093223c1be451a5";
+          // let appid = "wx724f11fd7a80ac59";
+          // let secret = "ab9039e11f2c99e9d093223c1be451a5";
           var code = res.code;
 
-          _this.$httpWX.post({
+          _this2.$httpWX.post({
             url: "xwxlogin",
             data: {
               // openid: e.data.openid,
@@ -153,35 +172,13 @@ if (false) {(function () {
           }).then(function (res) {
             console.log(res);
           });
-          // wx.request({
-          //   url:
-          //     "https://api.weixin.qq.com/sns/jscode2session?appid=" +
-          //     appid +
-          //     "&secret=" +
-          //     secret +
-          //     "&js_code=" +
-          //     code +
-          //     "&grant_type=authorization_code", // 仅为示例，并非真实的接口地址
-          //   method: "get",
-          //   data: {},
-          //   headers: {
-          //     "content-type": "application/json" // 默认值
-          //   },
-          //   success: (e) => {
-          //     console.log(e);
-
-          //   },
-          //   fail: function(e) {
-          //     // console.log('fail:'+e)
-          //   },
-          //   complete: function(e) {
-          //     // console.log(e)
-          //   }
-          // });
         },
         fail: function fail() {},
         complete: function complete() {}
       });
+    },
+    onGotUserInfo: function onGotUserInfo(res) {
+      console.log(res);
     }
   }
 });
@@ -201,10 +198,16 @@ var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._sel
     staticClass: "other"
   }, [_c('p', [_vm._v("其他登录方式")])], 1), _vm._v(" "), _c('div', {
     staticClass: "wechat"
-  }, [_c('img', {
+  }, [_c('button', {
+    staticClass: "but_img",
     attrs: {
-      "src": "https://fb.hxweixin.top/images/mine/mine_wechat.png",
-      "alt": ""
+      "type": "primary",
+      "open-type": "getUserInfo",
+      "eventid": '0'
+    },
+    on: {
+      "click": _vm.getChecking,
+      "getuserinfo": _vm.onGotUserInfo
     }
   }), _vm._v(" "), _c('p', [_vm._v("微信登录")])], 1)])
 }

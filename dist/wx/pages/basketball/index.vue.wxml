@@ -1,4 +1,4 @@
-<template name="c5635f64">
+<template name="74e1d3fc">
   <view class="_div data-v-0277f77c">
     <wux-tabs wux-class="bordered" controlled current="{{key}}" bindchange="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}" class="_wux-tabs data-v-0277f77c">
       <block wx:key="item.key" key="{{item.key}}" wx:for="{{tabs}}" wx:for-index="index" wx:for-item="item">

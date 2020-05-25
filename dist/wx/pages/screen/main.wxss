@@ -1,7 +1,7 @@
 @import "../../common/vendor.wxss";
 
 .nav.wux-tabs__tab--current {
-  border-bottom: 2rpx solid #4CB13B;
+  border-bottom: 2rpx solid #4cb13b;
 }
 .nav::after {
   content: none;
@@ -26,16 +26,16 @@
   display: flex;
   align-items: center;
 }
-.footer .lf>._div {
+.footer .lf > ._div {
   color: #333;
   font-size: 32rpx;
   padding: 0 20rpx;
 }
-.footer .lf>._div:first-child {
+.footer .lf > ._div:first-child {
   position: relative;
   padding: 0 20rpx 0 30rpx;
 }
-.footer .lf>._div:first-child::after {
+.footer .lf > ._div:first-child::after {
   content: "";
   position: absolute;
   right: 0;
@@ -43,7 +43,7 @@
   transform: translateY(-50%);
   width: 2rpx;
   height: 18rpx;
-  background: rgba(0, 0, 0, .1);
+  background: rgba(0, 0, 0, 0.1);
 }
 .footer .lf .text {
   color: #999;
@@ -51,7 +51,7 @@
   margin-left: 0rpx;
 }
 .footer .rh {
-  background: #4CB13B;
+  background: #4cb13b;
   color: #fff;
   font-size: 32rpx;
   padding: 30rpx 45rpx;
@@ -81,8 +81,8 @@
   border: 2rpx solid #fff;
 }
 .content .list.on {
-  border: 2rpx dashed #4CB13B;
-  background: #E6F0EA;
+  border: 2rpx dashed #4cb13b;
+  background: #e6f0ea;
 }
 .content .list .input {
   position: absolute;

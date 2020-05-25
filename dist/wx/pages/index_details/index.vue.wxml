@@ -1,5 +1,5 @@
-<template name="89794df0">
+<template name="daa7e2cc">
   <view class="_div data-v-379af2ce">
-    <web-view src="https://fb.hxweixin.top/images/distH5/football/index.html" class="_web-view data-v-379af2ce"></web-view>
+    <web-view src="{{url}}" class="_web-view data-v-379af2ce"></web-view>
   </view>
 </template>

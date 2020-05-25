@@ -1,4 +1,4 @@
-<template name="c9e612c8">
+<template name="79c054ca">
   <view class="_div data-v-199d7860">
     <view class="_div data-v-199d7860 logo">
       <image src="https://fb.hxweixin.top/images/mine/mine_logo.png" alt class="_img data-v-199d7860"></image>
@@ -20,8 +20,7 @@
     <view class="_div data-v-199d7860 other">
       <view class="_p data-v-199d7860">其他登录方式</view>
     </view>
-    <view class="_div data-v-199d7860 wechat">
-      <image src="https://fb.hxweixin.top/images/mine/mine_wechat.png" alt class="_img data-v-199d7860"></image>
+    <view class="_div data-v-199d7860 wechat"><button bindtap="handleProxy" type="primary" bindgetuserinfo="handleProxy" open-type="getUserInfo" class="_button data-v-199d7860 but_img" data-eventid="{{'0'}}" data-comkey="{{$k}}"></button>
       <view class="_p data-v-199d7860">微信登录</view>
     </view>
   </view>

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <web-view src="https://fb.hxweixin.top/images/distH5/football/index.html"></web-view>
+    <web-view :src="url"></web-view>
   </div>
 </template>
 
@@ -485,6 +485,13 @@ export default {
   components: {
     mpvueEcharts
   },
+  onLoad(e){
+    
+    this.urlid = e.id
+    let url = 'https://fb.hxweixin.top/images/distH5/football/index.html?id=' + e.id
+    this.url = url
+    // console.log(this.urlid)
+  },
   created() {},
   data() {
     return {
@@ -525,12 +532,15 @@ export default {
       radarImg: "",
       prog1: '60',
       prog2: '40',
+      urlid: '',
+      url: ''
       // opts: {
       //   onInit: initChart("column", 400, 300, F2)
       // }
     };
   },
   methods: {
+    
     onBtn(e) {
       // console.log(e)
       this.key = e.currentTarget.dataset.key;
@@ -600,6 +610,7 @@ export default {
 .header .item img {
   width: 108rpx;
   height: 108rpx;
+  /* display: block; */ 
 }
 .header .item p {
   color: #fff;

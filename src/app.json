@@ -1,9 +1,13 @@
 {
   "pages": [
-    "pages/mine/main",
     "pages/index/main",
-    "pages/basketball_details/main",
     "pages/screen/main",
+    
+    
+    
+    "pages/mine/main",
+    "pages/basketball_details/main",
+    
     "pages/index_details/main",
     "pages/details_data/size_data/main",
     "pages/details_data/yz_data/main",
